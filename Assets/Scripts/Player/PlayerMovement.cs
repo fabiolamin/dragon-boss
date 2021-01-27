@@ -4,12 +4,15 @@ public class PlayerMovement : MonoBehaviour
 {
     private Vector2 _firstTouchPosition;
     private Vector2 _lastTouchPosition;
-    private float _dragDistance = 5f;
     private Vector3 _direction = Vector3.zero;
+    private float _dragDistance = 5f;
+    private Transform _waypoint;
 
     [SerializeField]
     [Tooltip("%")]
     private int _minimumOfScreen = 15;
+
+    [SerializeField] private float _speed = 10f;
 
 
     private void Awake()
@@ -19,18 +22,17 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        Move();
-
-        Debug.Log(_direction);
+        CheckPlayerInput();
+        MoveToWaypoint();
     }
 
-    private void Move()
+    private void CheckPlayerInput()
     {
         if (Input.touchCount == 1)
         {
             GetTouchInput();
             SetDirection();
-            MoveToWaypoint();
+            CheckRaycast();
         }
     }
 
@@ -111,18 +113,26 @@ public class PlayerMovement : MonoBehaviour
         return Mathf.Abs(_lastTouchPosition.x - _firstTouchPosition.x);
     }
 
-    private void MoveToWaypoint()
+    private void CheckRaycast()
     {
         RaycastHit hit;
         if (Physics.Raycast(transform.position, _direction, out hit, 5f))
         {
             if (hit.collider.CompareTag("Waypoint"))
             {
-                transform.position = new Vector3(
-                hit.transform.position.x,
-                transform.position.y,
-                hit.transform.position.z);
+                _waypoint = hit.transform;
             }
+        }
+    }
+
+    private void MoveToWaypoint()
+    {
+        if (_waypoint != null)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(
+                _waypoint.position.x,
+                transform.position.y,
+                _waypoint.position.z), _speed * Time.deltaTime);
         }
     }
 }
