@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 4576445659066666787}
   - component: {fileID: 4576445659066666784}
   - component: {fileID: 4576445659066666788}
+  - component: {fileID: 1479542585}
+  - component: {fileID: 3202956419565306944}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -109,5 +111,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16814c6f55d052044bc1868b1f746d2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _minimumOfScreen: 5
+  _playerInput: {fileID: 0}
+  _waypoint: {fileID: 0}
   _speed: 20
+--- !u!114 &1479542585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4576445659066666785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3756015ebfdf5bb479f7d03e6ec17a82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spell: {fileID: 757749141744541641, guid: b3cdd4c93cac2b94f9c53ffa025e9d72, type: 3}
+--- !u!114 &3202956419565306944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4576445659066666785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25ff70f519ee8bc458bcf5ffcbb470f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _minimumOfScreen: 15
