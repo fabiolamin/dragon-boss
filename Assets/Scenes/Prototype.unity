@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  healthDisplay: {fileID: 1472527102}
+  _healthDisplay: {fileID: 1472527102}
 --- !u!1 &534002338
 GameObject:
   m_ObjectHideFlags: 0
@@ -1529,7 +1529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  healthDisplay: {fileID: 1730468012}
+  _healthDisplay: {fileID: 1730468012}
 --- !u!1001 &2013393022278095123
 PrefabInstance:
   m_ObjectHideFlags: 0

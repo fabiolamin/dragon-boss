@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spell: {fileID: 757749141744541641, guid: b3cdd4c93cac2b94f9c53ffa025e9d72, type: 3}
-  casting: {fileID: 869264702981084361}
+  _casting: {fileID: 869264702981084361}
 --- !u!114 &3202956419565306944
 MonoBehaviour:
   m_ObjectHideFlags: 0

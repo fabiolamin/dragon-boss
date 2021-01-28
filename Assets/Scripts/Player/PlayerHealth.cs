@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class PlayerHealth : Health
 {
-    [SerializeField] private Text healthDisplay;
+    [SerializeField] private Text _healthDisplay;
 
     private void Awake()
     {
@@ -16,6 +16,6 @@ public class PlayerHealth : Health
 
     protected override void UpdateHealthDisplay()
     {
-        healthDisplay.text = health.ToString();
+        _healthDisplay.text = health.ToString();
     }
 }
