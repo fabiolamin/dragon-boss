@@ -3,24 +3,30 @@ using UnityEngine.UI;
 
 public abstract class Health : MonoBehaviour
 {
+    [SerializeField] protected float _currentHealth;
     [SerializeField] protected float health = 3f;
+
+    private void Awake()
+    {
+        _currentHealth = health;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        GetDamage(1f);
+        UpdateHealth(-1f);
         other.gameObject.SetActive(false);
     }
 
-    public void GetDamage(float amount)
+    public void UpdateHealth(float amount)
     {
-        health -= amount;
+        _currentHealth = Mathf.Clamp(_currentHealth + amount, 0, health);
         UpdateHealthDisplay();
         CheckHealth();
     }
 
     private void CheckHealth()
     {
-        if(health <= 0)
+        if(_currentHealth <= 0)
         {
             SetDeath();
         }

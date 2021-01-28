@@ -5,7 +5,7 @@ public class PlayerHealth : Health
 {
     [SerializeField] private Text _healthDisplay;
 
-    private void Awake()
+    private void Start()
     {
         UpdateHealthDisplay();   
     }
@@ -16,6 +16,6 @@ public class PlayerHealth : Health
 
     protected override void UpdateHealthDisplay()
     {
-        _healthDisplay.text = health.ToString();
+        _healthDisplay.text = _currentHealth.ToString();
     }
 }
