@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public abstract class Health : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public abstract class Health : MonoBehaviour
     public void GetDamage(float amount)
     {
         health -= amount;
+        UpdateHealthDisplay();
         CheckHealth();
     }
 
@@ -25,4 +27,5 @@ public abstract class Health : MonoBehaviour
     }
 
     protected abstract void SetDeath();
+    protected abstract void UpdateHealthDisplay();
 }
