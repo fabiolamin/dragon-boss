@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private PlayerInput _playerInput;
-    [SerializeField] private Transform _waypoint;
+    private PlayerInput _playerInput;
+    private Transform _waypoint;
     [SerializeField] private float _speed = 10f;
 
     private void Awake()
