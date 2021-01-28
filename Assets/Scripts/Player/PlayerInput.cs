@@ -2,19 +2,23 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
+    private PlayerAttack _playerAttack;
     private Vector2 _firstTouchPosition;
     private Vector2 _lastTouchPosition;
-    private float _dragDistance = 5f;
+    private float _swipeDistance;
+    private float _tapDistance;
+    private bool _hasTouched = false;
 
-    [SerializeField]
-    [Tooltip("%")]
-    private int _minimumOfScreen = 15;
+    [SerializeField] private float _minOfScreen = 15;
+    [SerializeField] private float _minValueTap = 0.5f;
 
     public Vector3 SwipeDirection { get; private set; } = Vector3.zero;
 
     private void Awake()
     {
-        _dragDistance = Screen.height * _minimumOfScreen / 100;
+        _playerAttack = GetComponent<PlayerAttack>();
+        _swipeDistance = Screen.height * _minOfScreen / 100;
+        _tapDistance = Screen.height * _minValueTap / 100;
     }
 
     private void Update()
@@ -29,7 +33,7 @@ public class PlayerInput : MonoBehaviour
         if (Input.touchCount == 1)
         {
             GetTouchInput();
-            SetSwipeDirection();
+            CheckTouch();
         }
     }
 
@@ -44,27 +48,38 @@ public class PlayerInput : MonoBehaviour
         switch (touch.phase)
         {
             case TouchPhase.Began:
+                _hasTouched = true;
                 _firstTouchPosition = touch.position;
                 _lastTouchPosition = touch.position;
                 break;
             case TouchPhase.Ended:
                 _lastTouchPosition = touch.position;
+                _hasTouched = false;
                 break;
+        }
+    }
+
+    private void CheckTouch()
+    {
+        if (IsSwiping())
+        {
+            SetSwipeDirection();
+        }
+        else if (IsOneSingleTap())
+        {
+            SetTap();
         }
     }
 
     private void SetSwipeDirection()
     {
-        if (IsDragging())
+        if (GetHorizontalDelta() > GetVerticalDelta())
         {
-            if (GetHorizontalDelta() > GetVerticalDelta())
-            {
-                SetHorizontalDirection();
-            }
-            else if (GetVerticalDelta() > GetHorizontalDelta())
-            {
-                SetVerticalDirection();
-            }
+            SetHorizontalDirection();
+        }
+        else if (GetVerticalDelta() > GetHorizontalDelta())
+        {
+            SetVerticalDirection();
         }
     }
 
@@ -92,10 +107,10 @@ public class PlayerInput : MonoBehaviour
         }
     }
 
-    private bool IsDragging()
+    private bool IsSwiping()
     {
-        return (GetHorizontalDelta() > _dragDistance ||
-            GetVerticalDelta() > _dragDistance);
+        return (GetHorizontalDelta() > _swipeDistance ||
+            GetVerticalDelta() > _swipeDistance);
     }
 
     private float GetVerticalDelta()
@@ -106,5 +121,16 @@ public class PlayerInput : MonoBehaviour
     private float GetHorizontalDelta()
     {
         return Mathf.Abs(_lastTouchPosition.x - _firstTouchPosition.x);
+    }
+
+    private bool IsOneSingleTap()
+    {
+        return GetHorizontalDelta() < _tapDistance &&
+        GetVerticalDelta() < _tapDistance && !_hasTouched;
+    }
+
+    private void SetTap()
+    {
+        _playerAttack.CastSpell();
     }
 }
