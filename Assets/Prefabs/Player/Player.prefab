@@ -93,7 +93,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4576445659066666785}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -111,8 +111,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16814c6f55d052044bc1868b1f746d2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerInput: {fileID: 0}
-  _waypoint: {fileID: 0}
   _speed: 20
 --- !u!114 &1479542585
 MonoBehaviour:
@@ -139,4 +137,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25ff70f519ee8bc458bcf5ffcbb470f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _minimumOfScreen: 15
+  _minOfScreen: 15
+  _minValueTap: 0.5
