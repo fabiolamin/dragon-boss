@@ -5,10 +5,6 @@ public class PlayerHealth : Health
 {
     [SerializeField] private Text _healthDisplay;
 
-    private void Start()
-    {
-        UpdateHealthDisplay();   
-    }
     protected override void SetDeath()
     {
         Debug.Log("Player Dead!");
