@@ -6,7 +6,8 @@ public abstract class Health : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        GetDamage(1f);    
+        GetDamage(1f);
+        other.gameObject.SetActive(false);
     }
 
     public void GetDamage(float amount)
