@@ -5,8 +5,8 @@ public class LifeSpawner : MonoBehaviour
 {
     [SerializeField] private Transform[] _spawnLocations;
     [SerializeField] private Life _life;
-    [SerializeField] private float _activationDelay = 4f;
-    [SerializeField] private float _deactivationDelay = 3f;
+    [SerializeField] private float _minDelay = 4f;
+    [SerializeField] private float _maxDelay = 3f;
 
     public void UpdateLifePosition()
     {
@@ -16,16 +16,17 @@ public class LifeSpawner : MonoBehaviour
         _life.transform.position.y,
         _spawnLocations[random].position.z);
 
-        StartCoroutine(SetActivation(false, _deactivationDelay));
+        StartCoroutine(SetActivation(false));
     }
 
     public void SpawnLife()
     {
-        StartCoroutine(SetActivation(true, _activationDelay));
+        StartCoroutine(SetActivation(true));
     }
 
-    public IEnumerator SetActivation(bool isActive, float delay)
+    public IEnumerator SetActivation(bool isActive)
     {
+        float delay = Random.Range(_minDelay, _maxDelay);
         yield return new WaitForSeconds(delay);
         _life.gameObject.SetActive(isActive);
     }
