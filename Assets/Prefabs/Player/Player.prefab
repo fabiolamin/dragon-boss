@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 869264702981084361}
   - component: {fileID: 7739196211147469805}
   - component: {fileID: 4151905275735278463}
+  - component: {fileID: 4502864938730063371}
   m_Layer: 0
   m_Name: Casting Position
   m_TagString: Untagged
@@ -81,6 +82,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4502864938730063371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2499674970061104495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2611bc4a08081a4b8ed21cb6d2ae570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spell: {fileID: 757749141744541641, guid: b3cdd4c93cac2b94f9c53ffa025e9d72, type: 3}
+  _amount: 5
+  _spellsParent: {fileID: 0}
 --- !u!1 &4576445659066666785
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,8 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3756015ebfdf5bb479f7d03e6ec17a82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spell: {fileID: 757749141744541641, guid: b3cdd4c93cac2b94f9c53ffa025e9d72, type: 3}
-  _casting: {fileID: 869264702981084361}
+  _spellRecycling: {fileID: 4502864938730063371}
 --- !u!114 &3202956419565306944
 MonoBehaviour:
   m_ObjectHideFlags: 0
