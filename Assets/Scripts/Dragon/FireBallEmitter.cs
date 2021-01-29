@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class FireBallEmitter : MonoBehaviour
 {
-    [SerializeField] private FireBall _fireBall;
-    [SerializeField] private float minDelay = 1f;
-    [SerializeField] private float maxDelay = 3f;
+    [SerializeField] private SpellRecycling _spellRecycling;
+    [SerializeField] private float _minDelay = 1f;
+    [SerializeField] private float _maxDelay = 3f;
 
     private void Awake()
     {
@@ -16,7 +16,7 @@ public class FireBallEmitter : MonoBehaviour
     {
         while (true)
         {
-            float randomDelay = Random.Range(minDelay, maxDelay);
+            float randomDelay = Random.Range(_minDelay, _maxDelay);
             yield return new WaitForSeconds(randomDelay);
             Emit();
         }
@@ -24,6 +24,6 @@ public class FireBallEmitter : MonoBehaviour
 
     private void Emit()
     {
-        Instantiate(_fireBall, transform.position, Quaternion.identity);
+        _spellRecycling.ActivateSpell();
     }
 }
