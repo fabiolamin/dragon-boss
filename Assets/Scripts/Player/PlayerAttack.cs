@@ -3,9 +3,10 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     [SerializeField] private Spell _spell;
+    [SerializeField] private Transform _casting;
 
     public void CastSpell()
     {
-        Instantiate(_spell, transform.position, Quaternion.identity);
+        Instantiate(_spell, _casting.position, Quaternion.identity);
     }
 }
