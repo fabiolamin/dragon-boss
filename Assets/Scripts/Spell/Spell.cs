@@ -8,6 +8,6 @@ public class Spell : MonoBehaviour
     private void Awake()
     {
         _spellRb = GetComponent<Rigidbody>();
-        _spellRb.velocity = transform.forward * _speed;
+        _spellRb.velocity = transform.parent.forward * _speed;
     }
 }

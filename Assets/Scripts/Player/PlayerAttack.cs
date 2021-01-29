@@ -7,6 +7,6 @@ public class PlayerAttack : MonoBehaviour
 
     public void CastSpell()
     {
-        Instantiate(_spell, _casting.position, Quaternion.identity);
+        Instantiate(_spell, _casting.position, Quaternion.identity, transform);
     }
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class FireBallEmitter : MonoBehaviour
 {
-    [SerializeField] private FireBall _fireBall;
+    [SerializeField] private Spell _fireBall;
     [SerializeField] private float minDelay = 1f;
     [SerializeField] private float maxDelay = 3f;
 
@@ -24,6 +24,6 @@ public class FireBallEmitter : MonoBehaviour
 
     private void Emit()
     {
-        Instantiate(_fireBall, transform.position, Quaternion.identity);
+        Instantiate(_fireBall, transform.position, Quaternion.identity, transform);
     }
 }
