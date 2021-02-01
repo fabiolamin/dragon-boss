@@ -4,14 +4,11 @@ using UnityEngine.UI;
 
 public class DragonHealth : Health
 {
-    public delegate void DragonDeath();
-    public static event DragonDeath OnDragonDeath;
-
     [SerializeField] private Text _healthDisplay;
 
     protected override void SetDeath()
     {
-        OnDragonDeath.Invoke();
+        DragonController.SetDragonDeath();
         gameObject.SetActive(false);
 
         //Increase game difficulty

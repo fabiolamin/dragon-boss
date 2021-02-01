@@ -8,11 +8,14 @@ public class DragonController : MonoBehaviour
     [SerializeField] private float _maxFireBallSpeed = 20f;
     [SerializeField] private float _healthIncrementPerArena = 50f;
 
+    public delegate void DragonDeath();
+    public static event DragonDeath OnDragonDeath;
+
     private void Awake()
     {
         _dragons.ToList().ForEach(d => d.SetActive(false));
         ActiveDragon();
-        DragonHealth.OnDragonDeath += IncreaseDragonDifficulty;
+        OnDragonDeath += IncreaseDragonDifficulty;
     }
 
     public void ActiveDragon()
@@ -29,5 +32,10 @@ public class DragonController : MonoBehaviour
             dragon.GetComponent<FireBallController>().IncreaseFireBallsSpeed(_speedIncrementPerArena);
             dragon.GetComponent<DragonHealth>().IncreaseHealth(_healthIncrementPerArena);
         }
+    }
+
+    public static void SetDragonDeath()
+    {
+        OnDragonDeath.Invoke();
     }
 }
