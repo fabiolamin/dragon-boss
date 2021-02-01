@@ -9,7 +9,6 @@ public class PlayerHealth : Health
 
     protected override void SetDeath()
     {
-        //Save player's arena score
         //Set game over UI
 
         OnPlayerDeath.Invoke();

@@ -14,7 +14,6 @@ public class DragonHealth : Health
         OnDragonDeath.Invoke();
         gameObject.SetActive(false);
 
-        //Increase player's number of arenas
         //Increase game difficulty
         //Set the win UI
     }
@@ -22,5 +21,12 @@ public class DragonHealth : Health
     protected override void UpdateHealthDisplay()
     {
         _healthDisplay.text = _currentHealth.ToString();
+    }
+
+    public void IncreaseHealth(float amount)
+    {
+        health += amount;
+        _currentHealth = health;
+        UpdateHealthDisplay();
     }
 }
