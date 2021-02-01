@@ -1360,7 +1360,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7861038138217670938, guid: e3db56479d5c3014cbaf15e65b9e55aa, type: 3}
-      propertyPath: arenaDisplay
+      propertyPath: playerArenasDisplay
       value: 
       objectReference: {fileID: 696361023}
     m_RemovedComponents: []
