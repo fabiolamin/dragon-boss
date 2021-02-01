@@ -113,6 +113,7 @@ GameObject:
   - component: {fileID: 1479542585}
   - component: {fileID: 3202956419565306944}
   - component: {fileID: 291126781}
+  - component: {fileID: 7861038138217670938}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -253,3 +254,16 @@ MonoBehaviour:
   _currentHealth: 0
   health: 3
   _healthDisplay: {fileID: 0}
+--- !u!114 &7861038138217670938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4576445659066666785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c18586ba8374c74e84b251b8fcd0834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerArenasDisplay: {fileID: 0}

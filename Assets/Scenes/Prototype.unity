@@ -241,6 +241,7 @@ RectTransform:
   m_LocalScale: {x: 0.13177083, y: 0.13177083, z: 0.13177083}
   m_Children:
   - {fileID: 1472527101}
+  - {fileID: 696361022}
   - {fileID: 1730468011}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -326,6 +327,85 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2013393022351195454, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
   m_PrefabInstance: {fileID: 2013393022278095123}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &696361021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 696361022}
+  - component: {fileID: 696361024}
+  - component: {fileID: 696361023}
+  m_Layer: 5
+  m_Name: Player Arenas Display
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &696361022
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696361021}
+  m_LocalRotation: {x: 0.32615286, y: -0, z: -0, w: 0.94531703}
+  m_LocalPosition: {x: 0, y: 0, z: 63.6}
+  m_LocalScale: {x: 0.51126, y: 0.5336, z: 1}
+  m_Children: []
+  m_Father: {fileID: 534002342}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 38.071, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -998.2, y: -1751.1}
+  m_SizeDelta: {x: 48.002, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &696361023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696361021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.94783777, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 23
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 150
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 3
+--- !u!222 &696361024
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696361021}
+  m_CullTransparentMesh: 1
 --- !u!4 &698779291 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2013393021052618227, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
@@ -682,7 +762,7 @@ RectTransform:
   m_LocalScale: {x: 0.51126, y: 0.5336, z: 1}
   m_Children: []
   m_Father: {fileID: 534002342}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 84.3, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -790,6 +870,10 @@ PrefabInstance:
       propertyPath: _spellsParent
       value: 
       objectReference: {fileID: 2112626262}
+    - target: {fileID: 1558020738045106833, guid: 825d4bd5fe1b22d49aae80ac2577bd9e, type: 3}
+      propertyPath: health
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1558020738045106833, guid: 825d4bd5fe1b22d49aae80ac2577bd9e, type: 3}
       propertyPath: _healthDisplay
       value: 
@@ -1275,5 +1359,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7861038138217670938, guid: e3db56479d5c3014cbaf15e65b9e55aa, type: 3}
+      propertyPath: playerArenasDisplay
+      value: 
+      objectReference: {fileID: 696361023}
+    - target: {fileID: 7861038138217670938, guid: e3db56479d5c3014cbaf15e65b9e55aa, type: 3}
+      propertyPath: _playerArenasDisplay
+      value: 
+      objectReference: {fileID: 696361023}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3db56479d5c3014cbaf15e65b9e55aa, type: 3}
