@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 public class DragonController : MonoBehaviour
@@ -9,20 +10,23 @@ public class DragonController : MonoBehaviour
 
     private void Awake()
     {
+        _dragons.ToList().ForEach(d => d.SetActive(false));
         ActiveDragon();
+        DragonHealth.OnDragonDeath += IncreaseDragonDifficulty;
     }
 
-    private void ActiveDragon()
+    public void ActiveDragon()
     {
         int random = Random.Range(0, _dragons.Length);
         _dragons[random].SetActive(true);
+        _dragons[random].GetComponent<FireBallController>().SetMaxFireBallsSpeed(_maxFireBallSpeed);
     }
 
     private void IncreaseDragonDifficulty()
     {
         foreach (var dragon in _dragons)
         {
-            // Increase Spell speed
+            dragon.GetComponent<FireBallController>().IncreaseFireBallsSpeed(_speedIncrementPerArena);
             dragon.GetComponent<DragonHealth>().IncreaseHealth(_healthIncrementPerArena);
         }
     }

@@ -110,8 +110,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spellRecycling: {fileID: 1558020737406853939}
-  minDelay: 1
-  maxDelay: 2.5
+  _minDelay: 1
+  _maxDelay: 3
 --- !u!114 &1558020737406853939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,8 +125,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spell: {fileID: 8022679354908832993, guid: 77b5680c892e40541aad3e607a02b14c, type: 3}
-  _amount: 10
-  castingPos: {fileID: 1558020737406853900}
+  _amount: 5
+  _spellsParent: {fileID: 0}
 --- !u!1 &1558020737739725618
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,6 +172,7 @@ GameObject:
   - component: {fileID: 1558020738045106835}
   - component: {fileID: 1558020738045106834}
   - component: {fileID: 1558020738045106833}
+  - component: {fileID: 5498697404263113833}
   m_Layer: 0
   m_Name: Dragon
   m_TagString: Untagged
@@ -224,8 +225,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentHealth: 0
-  health: 3
+  health: 10
   _healthDisplay: {fileID: 0}
+--- !u!114 &5498697404263113833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558020738045106924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871dfbf0b6717f54fb17d3772d889ab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fireBallEmitters:
+  - {fileID: 1558020738949049817}
+  - {fileID: 1558020737406853938}
+  - {fileID: 1558020738285304698}
+  - {fileID: 1558020739024051359}
 --- !u!1 &1558020738112489281
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,8 +449,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spellRecycling: {fileID: 1558020738285304699}
-  minDelay: 1
-  maxDelay: 2.5
+  _minDelay: 1
+  _maxDelay: 3
 --- !u!114 &1558020738285304699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,8 +464,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spell: {fileID: 8022679354908832993, guid: 77b5680c892e40541aad3e607a02b14c, type: 3}
-  _amount: 10
-  castingPos: {fileID: 1558020738285304692}
+  _amount: 5
+  _spellsParent: {fileID: 0}
 --- !u!1 &1558020738439831890
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,8 +861,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spellRecycling: {fileID: 1558020738949049816}
-  minDelay: 1
-  maxDelay: 2.5
+  _minDelay: 1
+  _maxDelay: 3
 --- !u!114 &1558020738949049816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -858,8 +876,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spell: {fileID: 8022679354908832993, guid: 77b5680c892e40541aad3e607a02b14c, type: 3}
-  _amount: 10
-  castingPos: {fileID: 1558020738949049818}
+  _amount: 5
+  _spellsParent: {fileID: 0}
 --- !u!1 &1558020739024051354
 GameObject:
   m_ObjectHideFlags: 0
@@ -970,8 +988,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spellRecycling: {fileID: 1558020739024051352}
-  minDelay: 1
-  maxDelay: 2.5
+  _minDelay: 1
+  _maxDelay: 3
 --- !u!114 &1558020739024051352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -985,5 +1003,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spell: {fileID: 8022679354908832993, guid: 77b5680c892e40541aad3e607a02b14c, type: 3}
-  _amount: 10
-  castingPos: {fileID: 1558020739024051353}
+  _amount: 5
+  _spellsParent: {fileID: 0}

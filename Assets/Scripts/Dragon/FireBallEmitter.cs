@@ -7,6 +7,8 @@ public class FireBallEmitter : MonoBehaviour
     [SerializeField] private float _minDelay = 1f;
     [SerializeField] private float _maxDelay = 3f;
 
+    public SpellRecycling SpellRecycling { get { return _spellRecycling; } }
+
     private void Awake()
     {
         StartCoroutine(DelayToEmit());
