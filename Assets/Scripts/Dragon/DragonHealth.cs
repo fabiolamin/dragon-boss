@@ -15,7 +15,7 @@ public class DragonHealth : Health
 
         //Increase player's number of arenas
         //Increase game difficulty
-        //Show the win screen
+        //Set the win UI
     }
 
     protected override void UpdateHealthDisplay()

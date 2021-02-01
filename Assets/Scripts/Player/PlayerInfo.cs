@@ -11,6 +11,7 @@ public class PlayerInfo : MonoBehaviour
     {
         UpdateArenaDisplay();
         DragonHealth.OnDragonDeath += AddArena;
+        PlayerHealth.OnPlayerDeath += SaveArenas;
     }
 
     private void UpdateArenaDisplay()
@@ -24,7 +25,7 @@ public class PlayerInfo : MonoBehaviour
         UpdateArenaDisplay();
     }
 
-    public void SaveArenas()
+    private void SaveArenas()
     {
         PlayerPrefs.SetInt("PlayerArenas", arenas);
     }
