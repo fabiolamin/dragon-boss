@@ -12,6 +12,7 @@ public class DragonHealth : Health
     protected override void SetDeath()
     {
         OnDragonDeath.Invoke();
+        gameObject.SetActive(false);
 
         //Increase player's number of arenas
         //Increase game difficulty

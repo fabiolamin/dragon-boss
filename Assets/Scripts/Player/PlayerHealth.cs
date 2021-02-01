@@ -13,6 +13,7 @@ public class PlayerHealth : Health
         //Set game over UI
 
         OnPlayerDeath.Invoke();
+        gameObject.SetActive(false);
     }
 
     protected override void UpdateHealthDisplay()
