@@ -10,8 +10,8 @@ public class PlayerInfo : MonoBehaviour
     private void Awake()
     {
         UpdateArenaDisplay();
-        DragonController.OnDragonDeath += AddArena;
-        PlayerHealth.OnPlayerDeath += SaveArenas;
+        DragonController.DragonDeathHandler += AddArena;
+        PlayerHealth.PlayerDeathHandler += SaveArenas;
     }
 
     private void UpdateArenaDisplay()

@@ -8,15 +8,10 @@ public class SpellRecycling : MonoBehaviour
 
     public Spell[] Spells { get; private set; }
 
-
-    private void Awake()
+    public void InstantiateSpells()
     {
         Spells = new Spell[_amount];
-        InstantiateSpells();
-    }
 
-    private void InstantiateSpells()
-    {
         for (int x = 0; x < _amount; x++)
         {
             Spell spell = Instantiate(_spell, transform.position, Quaternion.identity);

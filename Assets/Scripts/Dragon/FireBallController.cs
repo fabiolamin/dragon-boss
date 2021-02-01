@@ -25,4 +25,20 @@ public class FireBallController : MonoBehaviour
             }
         }
     }
+
+    public void SetFireBalls()
+    {
+        foreach (var fireBallEmitter in _fireBallEmitters)
+        {
+            fireBallEmitter.SpellRecycling.InstantiateSpells();
+        }
+    }
+
+    public void EmitFireBalls()
+    {
+        foreach (var fireBallEmitter in _fireBallEmitters)
+        {
+            StartCoroutine(fireBallEmitter.DelayToEmit());
+        }
+    }
 }

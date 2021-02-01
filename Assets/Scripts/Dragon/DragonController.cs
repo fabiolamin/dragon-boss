@@ -9,20 +9,31 @@ public class DragonController : MonoBehaviour
     [SerializeField] private float _healthIncrementPerArena = 50f;
 
     public delegate void DragonDeath();
-    public static event DragonDeath OnDragonDeath;
+    public static event DragonDeath DragonDeathHandler;
 
     private void Awake()
     {
-        _dragons.ToList().ForEach(d => d.SetActive(false));
-        ActiveDragon();
-        OnDragonDeath += IncreaseDragonDifficulty;
+        SetDragons();
+        ActiveRandomDragon();
+        DragonDeathHandler += IncreaseDragonDifficulty;
     }
 
-    public void ActiveDragon()
+    private void SetDragons()
+    {
+        foreach (var dragon in _dragons)
+        {
+            FireBallController fireBallController = dragon.GetComponent<FireBallController>();
+            fireBallController.SetFireBalls();
+            fireBallController.SetMaxFireBallsSpeed(_maxFireBallSpeed);
+            dragon.SetActive(false);
+        }
+    }
+
+    public void ActiveRandomDragon()
     {
         int random = Random.Range(0, _dragons.Length);
         _dragons[random].SetActive(true);
-        _dragons[random].GetComponent<FireBallController>().SetMaxFireBallsSpeed(_maxFireBallSpeed);
+        _dragons[random].GetComponent<FireBallController>().EmitFireBalls();
     }
 
     private void IncreaseDragonDifficulty()
@@ -32,10 +43,12 @@ public class DragonController : MonoBehaviour
             dragon.GetComponent<FireBallController>().IncreaseFireBallsSpeed(_speedIncrementPerArena);
             dragon.GetComponent<DragonHealth>().IncreaseHealth(_healthIncrementPerArena);
         }
+
+        ActiveRandomDragon();
     }
 
-    public static void SetDragonDeath()
+    public static void OnDragonDeath()
     {
-        OnDragonDeath.Invoke();
+        DragonDeathHandler.Invoke();
     }
 }

@@ -8,10 +8,9 @@ public class DragonHealth : Health
 
     protected override void SetDeath()
     {
-        DragonController.SetDragonDeath();
         gameObject.SetActive(false);
+        DragonController.OnDragonDeath();
 
-        //Increase game difficulty
         //Set the win UI
     }
 

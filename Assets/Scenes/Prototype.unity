@@ -1359,10 +1359,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6169005408606871761, guid: bf0633f994f84e9408f244d0a22d0efc, type: 3}
-      propertyPath: _dragons.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6169005408606871761, guid: bf0633f994f84e9408f244d0a22d0efc, type: 3}
       propertyPath: _dragons.Array.data[0]
       value: 
       objectReference: {fileID: 1377555174}

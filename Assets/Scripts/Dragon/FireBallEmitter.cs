@@ -9,12 +9,7 @@ public class FireBallEmitter : MonoBehaviour
 
     public SpellRecycling SpellRecycling { get { return _spellRecycling; } }
 
-    private void Awake()
-    {
-        StartCoroutine(DelayToEmit());
-    }
-
-    private IEnumerator DelayToEmit()
+    public IEnumerator DelayToEmit()
     {
         while (true)
         {
