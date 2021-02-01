@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public abstract class Health : MonoBehaviour
 {
@@ -17,10 +16,10 @@ public abstract class Health : MonoBehaviour
         switch (other.gameObject.tag)
         {
             case "Spell":
-                UpdateHealth(-1f);
+                UpdateCurrentHealth(-1f);
                 break;
             case "Life":
-                UpdateHealth(1f);
+                UpdateCurrentHealth(1f);
                 break;
         }
 
@@ -29,11 +28,11 @@ public abstract class Health : MonoBehaviour
 
     protected void GetDamage(Collider other)
     {
-        UpdateHealth(-1f);
+        UpdateCurrentHealth(-1f);
         other.gameObject.SetActive(false);
     }
 
-    protected void UpdateHealth(float amount)
+    protected void UpdateCurrentHealth(float amount)
     {
         _currentHealth = Mathf.Clamp(_currentHealth + amount, 0, health);
         UpdateHealthDisplay();

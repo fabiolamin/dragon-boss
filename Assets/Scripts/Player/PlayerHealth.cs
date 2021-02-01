@@ -4,15 +4,14 @@ using UnityEngine.UI;
 public class PlayerHealth : Health
 {
     public delegate void PlayerDeath();
-    public static event PlayerDeath OnPlayerDeath;
+    public static event PlayerDeath PlayerDeathHandler;
     [SerializeField] private Text _healthDisplay;
 
     protected override void SetDeath()
     {
-        //Save player's arena score
         //Set game over UI
 
-        OnPlayerDeath.Invoke();
+        PlayerDeathHandler.Invoke();
         gameObject.SetActive(false);
     }
 
