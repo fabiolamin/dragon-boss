@@ -41,9 +41,8 @@ public class DragonController : MonoBehaviour
         {
             dragon.GetComponent<FireBallController>().IncreaseFireBallsSpeed(_speedIncrementPerArena);
             dragon.GetComponent<DragonHealth>().IncreaseHealth(_healthIncrementPerArena);
+            dragon.GetComponent<FireBallController>().DeactivateSpells();
         }
-
-        ActiveRandomDragon();
     }
 
     public static void OnDragonDeath()

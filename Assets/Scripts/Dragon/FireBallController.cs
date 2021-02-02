@@ -41,4 +41,12 @@ public class FireBallController : MonoBehaviour
             StartCoroutine(fireBallEmitter.DelayToEmit());
         }
     }
+
+    public void DeactivateSpells()
+    {
+        foreach (var fireBallEmitter in _fireBallEmitters)
+        {
+            fireBallEmitter.SpellRecycling.DeactivateSpells();
+        }
+    }
 }

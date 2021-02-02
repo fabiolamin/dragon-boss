@@ -7,10 +7,12 @@ public class PlayerAttack : MonoBehaviour
     private void Awake()
     {
         _spellRecycling.InstantiateSpells();
+        DragonController.DragonDeathHandler += _spellRecycling.DeactivateSpells;
     }
 
     public void CastSpell()
     {
-        _spellRecycling.ActivateSpell();
+        if (Time.timeScale == 1)
+            _spellRecycling.ActivateSpell();
     }
 }
