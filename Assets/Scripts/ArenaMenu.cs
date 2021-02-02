@@ -11,6 +11,8 @@ public class ArenaMenu : MonoBehaviour
     [SerializeField] private float _delayToNextArena = 3f;
     [SerializeField] private Text _delayResumeDisplay;
     [SerializeField] private GameObject _winPanel;
+    [SerializeField] private Text _nextArenaText;
+    [SerializeField] private GameObject _playerArenasDisplay;
 
     private void Awake()
     {
@@ -63,13 +65,16 @@ public class ArenaMenu : MonoBehaviour
     public void ActivateWinPanel()
     {
         Time.timeScale = 0;
+        _nextArenaText.text = "Go to Arena " + PlayerInfo.WonArenas + "!";
         _winPanel.SetActive(true);
+        _playerArenasDisplay.SetActive(false);
     }
 
     public void StartNextArena()
     {
         StartDelay(_winPanel);
         _dragonController.ActiveRandomDragon();
+        _playerArenasDisplay.SetActive(true);
     }
 
     private void StartDelay(GameObject panel)

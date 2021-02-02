@@ -3,9 +3,9 @@ using UnityEngine.UI;
 
 public class PlayerInfo : MonoBehaviour
 {
-    private int _wonArenas = 1;
-
     [SerializeField] private Text _playerArenasDisplay;
+
+    public static int WonArenas { get; private set; } = 1;
 
     private void Awake()
     {
@@ -16,17 +16,17 @@ public class PlayerInfo : MonoBehaviour
 
     private void UpdateArenaDisplay()
     {
-        _playerArenasDisplay.text = _wonArenas.ToString();
+        _playerArenasDisplay.text = WonArenas.ToString();
     }
 
     private void AddArena()
     {
-        _wonArenas++;
+        WonArenas++;
         UpdateArenaDisplay();
     }
 
     private void SaveArenas()
     {
-        PlayerPrefs.SetInt("PlayerArenas", _wonArenas);
+        PlayerPrefs.SetInt("PlayerArenas", WonArenas);
     }
 }

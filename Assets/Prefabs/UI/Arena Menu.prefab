@@ -44,3 +44,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pauseMenu: {fileID: 0}
+  _delayToResume: 4
+  _delayToNextArena: 3
+  _delayResumeDisplay: {fileID: 0}
+  _winPanel: {fileID: 0}
+  _nextArenaText: {fileID: 0}
+  _playerArenasDisplay: {fileID: 0}

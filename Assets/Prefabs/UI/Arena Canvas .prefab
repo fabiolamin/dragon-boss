@@ -120,7 +120,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 264486828}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ArenaMenu, Assembly-CSharp
+        m_MethodName: StartNextArena
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &502171002
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,7 +271,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &569503064
 RectTransform:
   m_ObjectHideFlags: 0
@@ -489,7 +501,7 @@ GameObject:
   - component: {fileID: 1081615942}
   - component: {fileID: 1081615941}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Next Arena Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1231,7 +1243,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ArenaMenu, Assembly-CSharp
-        m_MethodName: SetResumeDelay
+        m_MethodName: ResumeGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
