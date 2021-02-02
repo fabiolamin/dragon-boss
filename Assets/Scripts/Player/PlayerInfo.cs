@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class PlayerInfo : MonoBehaviour
 {
-    private int _wonArenas = 0;
+    private int _wonArenas = 1;
 
     [SerializeField] private Text _playerArenasDisplay;
 
