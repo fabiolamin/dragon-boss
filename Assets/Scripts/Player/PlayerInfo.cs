@@ -1,34 +1,18 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerInfo : MonoBehaviour
 {
-    [SerializeField] private Text _playerArenasDisplay;
-
-    public int CurrentArena { get; private set; } = 1;
+    private DragonController _dragonController;
 
     private void Awake()
     {
-        UpdateArenaDisplay();
-        DragonController.DragonDeathHandler += AddArena;
+        _dragonController = FindObjectOfType<DragonController>();
     }
-
-    private void UpdateArenaDisplay()
+    public void SaveHighDefeatedDragon()
     {
-        _playerArenasDisplay.text = CurrentArena.ToString();
-    }
+        int wonArenas = _dragonController.CurrentDragon - 1;
 
-    public void AddArena()
-    {
-        CurrentArena++;
-        UpdateArenaDisplay();
-    }
-
-    public void SaveWonArenas()
-    {
-        int wonArenas = CurrentArena - 1;
-
-        if ((wonArenas) > PlayerPrefs.GetInt("HighArena"))
-            PlayerPrefs.SetInt("HighArena", wonArenas);
+        if ((wonArenas) > PlayerPrefs.GetInt("MaxDragon"))
+            PlayerPrefs.SetInt("MaxDragon", wonArenas);
     }
 }

@@ -15,7 +15,7 @@ public class PlayerHealth : Health
     }
     protected override void SetDeath()
     {
-        _playerInfo.SaveWonArenas();
+        _playerInfo.SaveHighDefeatedDragon();
         _arenaMenu.ActivateGameOverPanel();
         gameObject.SetActive(false);
     }

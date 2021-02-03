@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DragonController : MonoBehaviour
 {
     [SerializeField] private GameObject[] _dragons;
+    [SerializeField] private Text _currentDragonDisplay;
     [SerializeField] private float _speedIncrementPerArena = 0.5f;
     [SerializeField] private float _maxFireBallSpeed = 20f;
     [SerializeField] private float _healthIncrementPerArena = 50f;
@@ -10,10 +12,14 @@ public class DragonController : MonoBehaviour
     public delegate void DragonDeath();
     public static event DragonDeath DragonDeathHandler;
 
+    public int CurrentDragon { get; private set; } = 1;
+
     private void Awake()
     {
         SetDragons();
         ActiveRandomDragon();
+        UpdateCurrentDragonDisplay();
+        DragonDeathHandler += NextDragon;
         DragonDeathHandler += IncreaseDragonDifficulty;
         DragonDeathHandler += ActiveRandomDragon;
     }
@@ -38,6 +44,17 @@ public class DragonController : MonoBehaviour
             fireBallController.SetMaxFireBallsSpeed(_maxFireBallSpeed);
             dragon.SetActive(false);
         }
+    }
+
+    private void UpdateCurrentDragonDisplay()
+    {
+        _currentDragonDisplay.text = "Dragon " + CurrentDragon.ToString();
+    }
+
+    public void NextDragon()
+    {
+        CurrentDragon++;
+        UpdateCurrentDragonDisplay();
     }
 
     public void ActiveRandomDragon()
