@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6169005408606871775
+--- !u!1 &8779503539279010677
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6169005408606871774}
-  - component: {fileID: 6169005408606871761}
+  - component: {fileID: 8779503539279010676}
+  - component: {fileID: 637671947779399959}
   m_Layer: 0
-  m_Name: Dragon Controller
+  m_Name: Arena Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6169005408606871774
+--- !u!4 &8779503539279010676
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6169005408606871775}
+  m_GameObject: {fileID: 8779503539279010677}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,22 +31,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6169005408606871761
+--- !u!114 &637671947779399959
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6169005408606871775}
+  m_GameObject: {fileID: 8779503539279010677}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2e17c5e8b97dfd4a8b0e66c2a4a6fb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 88a0a8a8720156742a34d5e93516b077, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dragons:
-  - {fileID: 0}
-  - {fileID: 0}
-  _currentDragonDisplay: {fileID: 0}
-  _speedIncrementPerArena: 0.5
-  _maxFireBallSpeed: 20
-  _healthIncrementPerArena: 5
+  _pauseMenu: {fileID: 0}
+  _delayToResume: 4
+  _delayToNextArena: 3
+  _delayResumeDisplay: {fileID: 0}
+  _winPanel: {fileID: 0}
+  _gameOverPanel: {fileID: 0}
+  _nextArenaText: {fileID: 0}
+  _playerArenasDisplay: {fileID: 0}
+  _wonArenas: {fileID: 0}

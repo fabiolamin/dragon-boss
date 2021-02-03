@@ -34,4 +34,12 @@ public class SpellRecycling : MonoBehaviour
             }
         }
     }
+
+    public void DeactivateSpells()
+    {
+        foreach (var spell in Spells)
+        {
+            spell.gameObject.SetActive(false);
+        }
+    }
 }

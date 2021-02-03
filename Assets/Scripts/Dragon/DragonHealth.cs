@@ -9,8 +9,6 @@ public class DragonHealth : Health
     {
         gameObject.SetActive(false);
         DragonController.OnDragonDeath();
-
-        //Set the win UI
     }
 
     protected override void UpdateHealthDisplay()
