@@ -5,29 +5,22 @@ using UnityEngine.SceneManagement;
 public class ArenaMenu : MonoBehaviour
 {
     private PlayerInfo _playerInfo;
-    private DragonController _dragonController;
     private bool _isDelaying = false;
     private float _delayAux;
     [SerializeField] private GameObject _pauseMenu;
     [SerializeField] private float _delayToResume = 4f;
-    [SerializeField] private float _delayToNextArena = 3f;
     [SerializeField] private Text _delayResumeDisplay;
-    [SerializeField] private GameObject _winPanel;
     [SerializeField] private GameObject _gameOverPanel;
-    [SerializeField] private Text _nextArenaText;
     [SerializeField] private GameObject _playerArenasDisplay;
     [SerializeField] private Text _wonArenas;
 
     private void Awake()
     {
         _playerInfo = FindObjectOfType<PlayerInfo>();
-        _dragonController = FindObjectOfType<DragonController>();
         _pauseMenu.SetActive(false);
         _delayResumeDisplay.gameObject.SetActive(false);
-        _winPanel.SetActive(false);
         _gameOverPanel.SetActive(false);
         _delayAux = _delayToResume;
-        DragonController.DragonDeathHandler += ActivateWinPanel;
     }
 
     private void Update()
@@ -67,22 +60,7 @@ public class ArenaMenu : MonoBehaviour
     {
         StartDelay(_pauseMenu);
     }
-
-    public void ActivateWinPanel()
-    {
-        Time.timeScale = 0;
-        _nextArenaText.text = "Go to Arena " + _playerInfo.WonArenas + "!";
-        _winPanel.SetActive(true);
-        _playerArenasDisplay.SetActive(false);
-    }
-
-    public void StartNextArena()
-    {
-        StartDelay(_winPanel);
-        _dragonController.ActiveRandomDragon();
-        _playerArenasDisplay.SetActive(true);
-    }
-
+    
     private void StartDelay(GameObject panel)
     {
         _isDelaying = true;
