@@ -11,6 +11,7 @@ public class PlayerHealth : Health
     {
         _arenaMenu = FindObjectOfType<ArenaMenu>();
         _playerInfo = GetComponent<PlayerInfo>();
+        DragonController.DragonDeathHandler += RecoverHealth;
     }
     protected override void SetDeath()
     {

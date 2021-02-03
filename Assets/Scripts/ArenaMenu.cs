@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class ArenaMenu : MonoBehaviour
 {
-    private PlayerHealth _playerHealth;
     private PlayerInfo _playerInfo;
     private DragonController _dragonController;
     private bool _isDelaying = false;
@@ -21,7 +20,6 @@ public class ArenaMenu : MonoBehaviour
 
     private void Awake()
     {
-        _playerHealth = FindObjectOfType<PlayerHealth>();
         _playerInfo = FindObjectOfType<PlayerInfo>();
         _dragonController = FindObjectOfType<DragonController>();
         _pauseMenu.SetActive(false);
@@ -81,7 +79,6 @@ public class ArenaMenu : MonoBehaviour
     public void StartNextArena()
     {
         StartDelay(_winPanel);
-        _playerHealth.RecoverHealth();
         _dragonController.ActiveRandomDragon();
         _playerArenasDisplay.SetActive(true);
     }
