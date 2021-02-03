@@ -15,8 +15,8 @@ public class PlayerHealth : Health
     }
     protected override void SetDeath()
     {
+        _playerInfo.SaveWonArenas();
         _arenaMenu.ActivateGameOverPanel();
-        _playerInfo.SaveArenas();
         gameObject.SetActive(false);
     }
 

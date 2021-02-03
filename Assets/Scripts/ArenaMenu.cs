@@ -13,6 +13,7 @@ public class ArenaMenu : MonoBehaviour
     [SerializeField] private GameObject _gameOverPanel;
     [SerializeField] private GameObject _playerArenasDisplay;
     [SerializeField] private Text _wonArenas;
+    [SerializeField] private Text _highArena;
 
     private void Awake()
     {
@@ -60,7 +61,7 @@ public class ArenaMenu : MonoBehaviour
     {
         StartDelay(_pauseMenu);
     }
-    
+
     private void StartDelay(GameObject panel)
     {
         _isDelaying = true;
@@ -73,7 +74,8 @@ public class ArenaMenu : MonoBehaviour
         _gameOverPanel.SetActive(true);
         Time.timeScale = 0;
         _playerArenasDisplay.SetActive(false);
-        _wonArenas.text = "Arenas Won: " + (_playerInfo.WonArenas - 1).ToString();
+        _wonArenas.text = "Arenas Won: " + (_playerInfo.CurrentArena - 1);
+        _highArena.text = "High Arena: " + PlayerPrefs.GetInt("HighArena");
     }
 
     public void Restart()

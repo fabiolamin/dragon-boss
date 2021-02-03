@@ -5,7 +5,7 @@ public class PlayerInfo : MonoBehaviour
 {
     [SerializeField] private Text _playerArenasDisplay;
 
-    public int WonArenas { get; private set; } = 1;
+    public int CurrentArena { get; private set; } = 1;
 
     private void Awake()
     {
@@ -15,17 +15,20 @@ public class PlayerInfo : MonoBehaviour
 
     private void UpdateArenaDisplay()
     {
-        _playerArenasDisplay.text = WonArenas.ToString();
+        _playerArenasDisplay.text = CurrentArena.ToString();
     }
 
     public void AddArena()
     {
-        WonArenas++;
+        CurrentArena++;
         UpdateArenaDisplay();
     }
 
-    public void SaveArenas()
+    public void SaveWonArenas()
     {
-        PlayerPrefs.SetInt("PlayerArenas", WonArenas - 1);
+        int wonArenas = CurrentArena - 1;
+
+        if ((wonArenas) > PlayerPrefs.GetInt("HighArena"))
+            PlayerPrefs.SetInt("HighArena", wonArenas);
     }
 }

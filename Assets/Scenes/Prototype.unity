@@ -504,6 +504,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1204749295 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1204749295, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
+  m_PrefabInstance: {fileID: 4578667602968970240}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1325055554 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2013393022732780212, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
@@ -1431,6 +1442,10 @@ PrefabInstance:
       propertyPath: _winPanel
       value: 
       objectReference: {fileID: 569503063}
+    - target: {fileID: 637671947779399959, guid: 98a95123d5b0b71419eb064324fd49f3, type: 3}
+      propertyPath: _highArena
+      value: 
+      objectReference: {fileID: 1204749295}
     - target: {fileID: 637671947779399959, guid: 98a95123d5b0b71419eb064324fd49f3, type: 3}
       propertyPath: _pauseMenu
       value: 
