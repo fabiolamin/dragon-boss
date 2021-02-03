@@ -5,13 +5,12 @@ public class PlayerInfo : MonoBehaviour
 {
     [SerializeField] private Text _playerArenasDisplay;
 
-    public static int WonArenas { get; private set; } = 1;
+    public int WonArenas { get; private set; } = 1;
 
     private void Awake()
     {
         UpdateArenaDisplay();
         DragonController.DragonDeathHandler += AddArena;
-        PlayerHealth.PlayerDeathHandler += SaveArenas;
     }
 
     private void UpdateArenaDisplay()
@@ -19,14 +18,14 @@ public class PlayerInfo : MonoBehaviour
         _playerArenasDisplay.text = WonArenas.ToString();
     }
 
-    private void AddArena()
+    public void AddArena()
     {
         WonArenas++;
         UpdateArenaDisplay();
     }
 
-    private void SaveArenas()
+    public void SaveArenas()
     {
-        PlayerPrefs.SetInt("PlayerArenas", WonArenas);
+        PlayerPrefs.SetInt("PlayerArenas", WonArenas - 1);
     }
 }

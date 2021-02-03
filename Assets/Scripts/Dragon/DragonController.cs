@@ -17,6 +17,17 @@ public class DragonController : MonoBehaviour
         DragonDeathHandler += IncreaseDragonDifficulty;
     }
 
+    private void OnDestroy()
+    {
+        if (DragonDeathHandler != null)
+        {
+            foreach (var item in DragonDeathHandler.GetInvocationList())
+            {
+                DragonDeathHandler -= (DragonDeath)item;
+            }
+        }
+    }
+
     private void SetDragons()
     {
         foreach (var dragon in _dragons)

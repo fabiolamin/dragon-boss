@@ -17,5 +17,4 @@ public class Life : MonoBehaviour
     {
         _lifeSpawner.SpawnLife();
     }
-
 }
