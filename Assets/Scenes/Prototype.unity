@@ -964,6 +964,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e816b3c1a564b64ca2f873b56260638, type: 3}
+--- !u!114 &2791886153214801188 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7341916440399340256, guid: 7e816b3c1a564b64ca2f873b56260638, type: 3}
+  m_PrefabInstance: {fileID: 2791886153214801187}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4069185721977843123
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1178,13 +1189,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7861038138217670938, guid: e3db56479d5c3014cbaf15e65b9e55aa, type: 3}
-      propertyPath: playerArenasDisplay
+      propertyPath: playerCoinsDisplay
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7861038138217670938, guid: e3db56479d5c3014cbaf15e65b9e55aa, type: 3}
-      propertyPath: _playerArenasDisplay
-      value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2791886153214801188}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3db56479d5c3014cbaf15e65b9e55aa, type: 3}
 --- !u!1001 &4578667602968970240

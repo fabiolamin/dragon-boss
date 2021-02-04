@@ -1,14 +1,18 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerInfo : MonoBehaviour
 {
     private DragonController _dragonController;
     private int coins;
 
+    [SerializeField] private Text playerCoinsDisplay;
+
     private void Awake()
     {
         _dragonController = FindObjectOfType<DragonController>();
         coins = PlayerPrefs.GetInt("Coins");
+        UpdatePlayerCoinsDisplay();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -19,10 +23,16 @@ public class PlayerInfo : MonoBehaviour
         }
     }
 
+    private void UpdatePlayerCoinsDisplay()
+    {
+        playerCoinsDisplay.text = coins.ToString();
+    }
+
     private void SaveCoins(Collider other)
     {
         coins++;
         PlayerPrefs.SetInt("Coins", coins);
+        UpdatePlayerCoinsDisplay();
         other.gameObject.SetActive(false);
     }
 
