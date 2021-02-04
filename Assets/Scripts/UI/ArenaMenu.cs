@@ -20,6 +20,7 @@ public class ArenaMenu : MonoBehaviour
 
     private void Awake()
     {
+        Time.timeScale = 1;
         _playerInfo = FindObjectOfType<PlayerInfo>();
         _playerHealth = FindObjectOfType<PlayerHealth>();
         _dragonController = FindObjectOfType<DragonController>();
@@ -96,5 +97,10 @@ public class ArenaMenu : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void GoToMainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }
