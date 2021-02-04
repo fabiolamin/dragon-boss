@@ -34,13 +34,14 @@ RectTransform:
   - {fileID: 2098771037}
   - {fileID: 470067489}
   - {fileID: 1204749294}
+  - {fileID: 2916364912495250154}
   m_Father: {fileID: 1816204398386292455}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 77.926}
-  m_SizeDelta: {x: 431.666, y: 617.859}
+  m_AnchorMin: {x: 0.5, y: 0.587}
+  m_AnchorMax: {x: 0.5, y: 0.587}
+  m_AnchoredPosition: {x: 0.0020046, y: -26.76}
+  m_SizeDelta: {x: 431.67, y: 639.187}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &30885194
 CanvasRenderer:
@@ -1027,7 +1028,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.77647406}
   m_AnchorMax: {x: 1, y: 0.92452604}
-  m_AnchoredPosition: {x: -0.16999817, y: 0.5}
+  m_AnchoredPosition: {x: -0.17001343, y: 0.5}
   m_SizeDelta: {x: -0.34000015, y: 13.072998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1061637131
@@ -1183,10 +1184,10 @@ RectTransform:
   m_Father: {fileID: 30885192}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.044000003, y: 0.440237}
-  m_AnchorMax: {x: 0.9745174, y: 0.553237}
-  m_AnchoredPosition: {x: -4.1667, y: 2.290001}
-  m_SizeDelta: {x: -1.3649998, y: -2.7890015}
+  m_AnchorMin: {x: 0.044000003, y: 0.51473105}
+  m_AnchorMax: {x: 0.9488142, y: 0.61700004}
+  m_AnchoredPosition: {x: 1.7904053, y: 0.5}
+  m_SizeDelta: {x: 12.635, y: 6.2109985}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1204749296
 CanvasRenderer:
@@ -1229,7 +1230,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'High Arena: '
+  m_Text: 'Max Dragons Defeated: 5'
 --- !u!1 &1457683636
 GameObject:
   m_ObjectHideFlags: 0
@@ -1632,10 +1633,10 @@ RectTransform:
   m_Father: {fileID: 30885192}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.044000003, y: 0.627237}
-  m_AnchorMax: {x: 0.9745174, y: 0.73276305}
-  m_AnchoredPosition: {x: -4.1558228, y: -1.5}
-  m_SizeDelta: {x: -1.3649998, y: 2.2109985}
+  m_AnchorMin: {x: 0.044000003, y: 0.64954484}
+  m_AnchorMax: {x: 0.9745174, y: 0.7562276}
+  m_AnchoredPosition: {x: -5.2095947, y: 9.964996}
+  m_SizeDelta: {x: -1.3649998, y: 1.2109985}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2098771039
 CanvasRenderer:
@@ -1678,7 +1679,86 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Arenas Won: 2'
+  m_Text: 'Defeated Dragons: 2'
+--- !u!1 &345959579486833126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2916364912495250154}
+  - component: {fileID: 6400585097168235326}
+  - component: {fileID: 1104831892643761114}
+  m_Layer: 5
+  m_Name: Total Coins
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2916364912495250154
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345959579486833126}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 30885192}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.044000003, y: 0.3554552}
+  m_AnchorMax: {x: 0.9488142, y: 0.4532207}
+  m_AnchoredPosition: {x: -6.317505, y: 7.5}
+  m_SizeDelta: {x: 12.635, y: 9.210999}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6400585097168235326
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345959579486833126}
+  m_CullTransparentMesh: 1
+--- !u!114 &1104831892643761114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345959579486833126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8867924, g: 0.5604514, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 0
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 0
+    m_MaxSize: 80
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Total Coins: 5'
 --- !u!1 &645014822034280996
 GameObject:
   m_ObjectHideFlags: 0

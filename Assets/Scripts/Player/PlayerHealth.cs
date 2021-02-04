@@ -7,6 +7,8 @@ public class PlayerHealth : Health
     private PlayerInfo _playerInfo;
     [SerializeField] private Text _healthDisplay;
 
+    public GameObject HealthDisplay { get { return _healthDisplay.gameObject; } }
+
     private void Start()
     {
         _arenaMenu = FindObjectOfType<ArenaMenu>();

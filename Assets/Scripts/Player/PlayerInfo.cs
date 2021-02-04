@@ -4,14 +4,15 @@ using UnityEngine.UI;
 public class PlayerInfo : MonoBehaviour
 {
     private DragonController _dragonController;
-    private int coins;
 
     [SerializeField] private Text playerCoinsDisplay;
+    public int Coins { get; private set; }
+    public GameObject PlayerCoinsDisplay { get { return playerCoinsDisplay.gameObject; } }
 
     private void Awake()
     {
         _dragonController = FindObjectOfType<DragonController>();
-        coins = PlayerPrefs.GetInt("Coins");
+        Coins = PlayerPrefs.GetInt("Coins");
         UpdatePlayerCoinsDisplay();
     }
 
@@ -25,13 +26,13 @@ public class PlayerInfo : MonoBehaviour
 
     private void UpdatePlayerCoinsDisplay()
     {
-        playerCoinsDisplay.text = coins.ToString();
+        playerCoinsDisplay.text = Coins.ToString();
     }
 
     private void SaveCoins(Collider other)
     {
-        coins++;
-        PlayerPrefs.SetInt("Coins", coins);
+        Coins++;
+        PlayerPrefs.SetInt("Coins", Coins);
         UpdatePlayerCoinsDisplay();
         other.gameObject.SetActive(false);
     }
