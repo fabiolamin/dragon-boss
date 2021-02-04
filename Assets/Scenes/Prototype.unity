@@ -520,6 +520,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1297542358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1297542360}
+  - component: {fileID: 1297542359}
+  m_Layer: 0
+  m_Name: Coin Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1297542359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297542358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93a5c85bf3fe2584085cec64e816e9bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawnLocations: []
+  _item: {fileID: 0}
+  _minDelay: 4
+  _maxDelay: 3
+--- !u!4 &1297542360
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297542358}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1325055554 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2013393022732780212, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
@@ -1046,6 +1093,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Life Spawner
       objectReference: {fileID: 0}
+    - target: {fileID: 4157097507393142611, guid: 4e1c5c167c7704a4488ad232fd1e7611, type: 3}
+      propertyPath: _item
+      value: 
+      objectReference: {fileID: 1635955150}
     - target: {fileID: 4157097507393142611, guid: 4e1c5c167c7704a4488ad232fd1e7611, type: 3}
       propertyPath: _life
       value: 
