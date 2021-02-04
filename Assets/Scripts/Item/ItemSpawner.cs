@@ -10,15 +10,12 @@ public class ItemSpawner : MonoBehaviour
 
     public void UpdateItemPosition()
     {
-        if (_item != null)
-        {
-            int random = Random.Range(0, _spawnLocations.Length);
-            _item.transform.position = new Vector3(_spawnLocations[random].position.x,
-            _item.transform.position.y,
-            _spawnLocations[random].position.z);
+        int random = Random.Range(0, _spawnLocations.Length);
+        _item.transform.position = new Vector3(_spawnLocations[random].position.x,
+        _item.transform.position.y,
+        _spawnLocations[random].position.z);
 
-            StartCoroutine(SetActivation(false));
-        }
+        StartCoroutine(SetActivation(false));
     }
 
     public void SpawnItem()
