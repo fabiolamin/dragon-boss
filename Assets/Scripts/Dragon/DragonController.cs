@@ -13,6 +13,7 @@ public class DragonController : MonoBehaviour
     public static event DragonDeath DragonDeathHandler;
 
     public int CurrentDragon { get; private set; } = 1;
+    public GameObject CurrentDragonDisplay { get { return _currentDragonDisplay.gameObject; } }
 
     private void Awake()
     {

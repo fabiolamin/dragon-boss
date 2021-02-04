@@ -4,19 +4,24 @@ using UnityEngine.SceneManagement;
 
 public class ArenaMenu : MonoBehaviour
 {
+    private PlayerInfo _playerInfo;
+    private PlayerHealth _playerHealth;
     private DragonController _dragonController;
     private bool _isDelaying = false;
     private float _delayAux;
+    [SerializeField] private GameObject _pauseButton;
     [SerializeField] private GameObject _pauseMenu;
     [SerializeField] private float _delayToResume = 4f;
     [SerializeField] private Text _delayResumeDisplay;
     [SerializeField] private GameObject _gameOverPanel;
-    [SerializeField] private GameObject _currentDragonDisplay;
     [SerializeField] private Text _defeatedDragons;
     [SerializeField] private Text _maxDefeatedDragons;
+    [SerializeField] private Text _totalCoins;
 
     private void Awake()
     {
+        _playerInfo = FindObjectOfType<PlayerInfo>();
+        _playerHealth = FindObjectOfType<PlayerHealth>();
         _dragonController = FindObjectOfType<DragonController>();
         _pauseMenu.SetActive(false);
         _delayResumeDisplay.gameObject.SetActive(false);
@@ -71,11 +76,20 @@ public class ArenaMenu : MonoBehaviour
 
     public void ActivateGameOverPanel()
     {
-        _gameOverPanel.SetActive(true);
+        SetGameInfo();
         Time.timeScale = 0;
-        _currentDragonDisplay.SetActive(false);
+        _gameOverPanel.SetActive(true);
+        _dragonController.CurrentDragonDisplay.SetActive(false);
+        _playerInfo.PlayerCoinsDisplay.SetActive(false);
+        _playerHealth.HealthDisplay.SetActive(false);
+        _pauseButton.SetActive(false);
+    }
+
+    private void SetGameInfo()
+    {
         _defeatedDragons.text = "Dragons Defeated: " + (_dragonController.CurrentDragon - 1);
         _maxDefeatedDragons.text = "Max Dragons Defeated: " + PlayerPrefs.GetInt("MaxDragon");
+        _totalCoins.text = "Total Coins: " + _playerInfo.Coins;
     }
 
     public void Restart()
