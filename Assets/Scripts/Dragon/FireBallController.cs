@@ -15,17 +15,6 @@ public class FireBallController : MonoBehaviour
         }
     }
 
-    public void SetMaxFireBallsSpeed(float speed)
-    {
-        foreach (var fireBallEmitter in _fireBallEmitters)
-        {
-            foreach (var spell in fireBallEmitter.SpellRecycling.Spells)
-            {
-                spell.MaxSpeed = speed;
-            }
-        }
-    }
-
     public void SetFireBalls()
     {
         foreach (var fireBallEmitter in _fireBallEmitters)

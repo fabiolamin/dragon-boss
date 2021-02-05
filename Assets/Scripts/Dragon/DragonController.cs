@@ -6,7 +6,6 @@ public class DragonController : MonoBehaviour
     [SerializeField] private GameObject[] _dragons;
     [SerializeField] private Text _currentDragonDisplay;
     [SerializeField] private float _speedIncrementPerArena = 0.5f;
-    [SerializeField] private float _maxFireBallSpeed = 20f;
     [SerializeField] private float _healthIncrementPerArena = 50f;
 
     public delegate void DragonDeath();
@@ -42,7 +41,6 @@ public class DragonController : MonoBehaviour
         {
             FireBallController fireBallController = dragon.GetComponent<FireBallController>();
             fireBallController.SetFireBalls();
-            fireBallController.SetMaxFireBallsSpeed(_maxFireBallSpeed);
             dragon.SetActive(false);
         }
     }

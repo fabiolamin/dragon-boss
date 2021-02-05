@@ -4,9 +4,9 @@ public class Spell : MonoBehaviour
 {
     private Rigidbody _spellRb;
     [SerializeField] private float _speed = 10f;
+    [SerializeField] private float _maxSpeed = 20f;
 
     public float Speed { get { return _speed; } set { _speed = value; } }
-    public float MaxSpeed { get; set; }
 
     public Transform CastingOrigin { get; set; }
 
@@ -23,6 +23,6 @@ public class Spell : MonoBehaviour
 
     public void IncreaseSpeed(float amount)
     {
-        _speed = Mathf.Clamp(_speed + amount, 0, MaxSpeed);
+        _speed = Mathf.Clamp(_speed + amount, 0, _maxSpeed);
     }
 }
