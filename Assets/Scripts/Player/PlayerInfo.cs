@@ -52,12 +52,8 @@ public class PlayerInfo : MonoBehaviour
 
     public void UpdateAmountOfSpells(SpellName spellName, int value)
     {
-        int amount = PlayerPrefs.GetInt(spellName.ToString());
-
-        if (amount > 0)
-        {
-            amount += value;
-            PlayerPrefs.SetInt(name, amount);
-        }
+        int amount = GetAmountOfSpells(spellName);
+        amount += value;
+        PlayerPrefs.SetInt(spellName.ToString(), amount);
     }
 }

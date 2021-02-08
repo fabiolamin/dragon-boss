@@ -11,28 +11,17 @@ public class SpellHUD : MonoBehaviour, IPointerDownHandler
 
     private void Awake()
     {
+        _block.SetActive(true);
+        PlayerPrefs.SetInt(_spellName.ToString(), 5);
         _playerAttack = FindObjectOfType<PlayerAttack>();
         UpdateDisplay();
-        CheckSpellAmount(PlayerPrefs.GetInt(_spellName.ToString()));
     }
 
     public void UpdateDisplay()
     {
         int amount = PlayerPrefs.GetInt(_spellName.ToString());
         _spellAmountDisplay.text = amount.ToString();
-        CheckSpellAmount(amount);
-    }
-
-    private void CheckSpellAmount(int amount)
-    {
-        if (amount <= 0)
-        {
-            _block.SetActive(true);
-        }
-        else
-        {
-            _block.SetActive(false);
-        }
+        _block.SetActive(amount == 0);
     }
 
     public void OnPointerDown(PointerEventData eventData)
