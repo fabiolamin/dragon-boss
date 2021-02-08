@@ -21,6 +21,6 @@ public class FireBallEmitter : MonoBehaviour
 
     private void Emit()
     {
-        _spellRecycling.ActivateSpell();
+        _spellRecycling.ActivateSpell(SpellName.Default);
     }
 }

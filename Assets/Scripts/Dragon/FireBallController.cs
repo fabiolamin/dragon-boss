@@ -8,20 +8,9 @@ public class FireBallController : MonoBehaviour
     {
         foreach (var fireBallEmitter in _fireBallEmitters)
         {
-            foreach (var spell in fireBallEmitter.SpellRecycling.Spells)
+            foreach (var spell in fireBallEmitter.SpellRecycling.SpellsInstantiated)
             {
                 spell.IncreaseSpeed(amount);
-            }
-        }
-    }
-
-    public void SetMaxFireBallsSpeed(float speed)
-    {
-        foreach (var fireBallEmitter in _fireBallEmitters)
-        {
-            foreach (var spell in fireBallEmitter.SpellRecycling.Spells)
-            {
-                spell.MaxSpeed = speed;
             }
         }
     }

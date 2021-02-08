@@ -37,11 +37,23 @@ public class PlayerInfo : MonoBehaviour
         other.gameObject.SetActive(false);
     }
 
-    public void SaveHighDefeatedDragon()
+    public void SaveMaxDefeatedDragon()
     {
         int wonArenas = _dragonController.CurrentDragon - 1;
 
         if ((wonArenas) > PlayerPrefs.GetInt("MaxDragon"))
             PlayerPrefs.SetInt("MaxDragon", wonArenas);
+    }
+
+    public int GetAmountOfSpells(SpellName spellName)
+    {
+        return PlayerPrefs.GetInt(spellName.ToString());
+    }
+
+    public void UpdateAmountOfSpells(SpellName spellName, int value)
+    {
+        int amount = GetAmountOfSpells(spellName);
+        amount += value;
+        PlayerPrefs.SetInt(spellName.ToString(), amount);
     }
 }

@@ -1,9 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Linq;
 
 public class ArenaMenu : MonoBehaviour
 {
+    private SpellHUD[] _spellHUDs;
     private PlayerInfo _playerInfo;
     private PlayerHealth _playerHealth;
     private DragonController _dragonController;
@@ -21,6 +23,7 @@ public class ArenaMenu : MonoBehaviour
     private void Awake()
     {
         Time.timeScale = 1;
+        _spellHUDs = FindObjectsOfType<SpellHUD>();
         _playerInfo = FindObjectOfType<PlayerInfo>();
         _playerHealth = FindObjectOfType<PlayerHealth>();
         _dragonController = FindObjectOfType<DragonController>();
@@ -84,6 +87,7 @@ public class ArenaMenu : MonoBehaviour
         _playerInfo.PlayerCoinsDisplay.SetActive(false);
         _playerHealth.HealthDisplay.SetActive(false);
         _pauseButton.SetActive(false);
+        _spellHUDs.ToList().ForEach(s => s.gameObject.SetActive(false));
     }
 
     private void SetGameInfo()

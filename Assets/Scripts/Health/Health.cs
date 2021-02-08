@@ -16,7 +16,8 @@ public abstract class Health : MonoBehaviour
         switch (other.gameObject.tag)
         {
             case "Spell":
-                UpdateCurrentHealth(-1f);
+                Spell spell = other.gameObject.GetComponent<Spell>();
+                UpdateCurrentHealth(-spell.Damage);
                 break;
             case "Life":
                 UpdateCurrentHealth(1f);

@@ -1,32 +1,34 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class SpellRecycling : MonoBehaviour
 {
-    [SerializeField] private Spell _spell;
+    [SerializeField] private Spell[] _spells;
     [SerializeField] private int _amount = 10;
     [SerializeField] private Transform _spellsParent;
 
-    public Spell[] Spells { get; private set; }
+    public List<Spell> SpellsInstantiated { get; private set; } = new List<Spell>();
 
     public void InstantiateSpells()
     {
-        Spells = new Spell[_amount];
-
-        for (int x = 0; x < _amount; x++)
+        for (int y = 0; y < _spells.Length; y++)
         {
-            Spell spell = Instantiate(_spell, transform.position, Quaternion.identity);
-            spell.transform.parent = _spellsParent;
-            spell.CastingOrigin = transform;
-            spell.gameObject.SetActive(false);
-            Spells[x] = spell;
+            for (int x = 0; x < _amount; x++)
+            {
+                Spell spell = Instantiate(_spells[y], transform.position, Quaternion.identity);
+                spell.transform.parent = _spellsParent;
+                spell.CastingOrigin = transform;
+                spell.gameObject.SetActive(false);
+                SpellsInstantiated.Add(spell);
+            }
         }
     }
 
-    public void ActivateSpell()
+    public void ActivateSpell(SpellName spellName)
     {
-        foreach (var spell in Spells)
+        foreach (var spell in SpellsInstantiated)
         {
-            if (!spell.gameObject.activeSelf)
+            if (!spell.gameObject.activeSelf && spell.SpellName == spellName)
             {
                 spell.gameObject.SetActive(true);
                 spell.transform.position = transform.position;
@@ -37,7 +39,7 @@ public class SpellRecycling : MonoBehaviour
 
     public void DeactivateSpells()
     {
-        foreach (var spell in Spells)
+        foreach (var spell in SpellsInstantiated)
         {
             spell.gameObject.SetActive(false);
         }
