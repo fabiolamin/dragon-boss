@@ -135,13 +135,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2722304141573250552, guid: 527ad9a5d022f4a499c12877ce6ab579, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0013427734
+      objectReference: {fileID: 0}
     - target: {fileID: 2722304143620758817, guid: 527ad9a5d022f4a499c12877ce6ab579, type: 3}
       propertyPath: m_Name
       value: Fade Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 2722304143620758817, guid: 527ad9a5d022f4a499c12877ce6ab579, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2722304143620758821, guid: 527ad9a5d022f4a499c12877ce6ab579, type: 3}
       propertyPath: m_Pivot.x
@@ -1581,38 +1581,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8779503539535636118}
-    - target: {fileID: 470067490, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GoToMainMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 502171004, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 502171004, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 502171004, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8779503539535636118}
-    - target: {fileID: 502171004, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 502171004, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GoToMainMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 502171004, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ArenaMenu, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 502171004, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 1934339897, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
