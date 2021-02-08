@@ -1,7 +1,9 @@
 using UnityEngine;
+using System.Linq;
 
 public class PlayerAttack : MonoBehaviour
 {
+    private SpellHUD[] _spellHUDs;
     private PlayerInfo _playerInfo;
     [SerializeField] private SpellRecycling _spellRecycling;
 
@@ -9,6 +11,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void Awake()
     {
+        _spellHUDs = FindObjectsOfType<SpellHUD>();
         _playerInfo = GetComponent<PlayerInfo>();
         _spellRecycling.InstantiateSpells();
         SpellName = SpellName.Default;
@@ -18,14 +21,17 @@ public class PlayerAttack : MonoBehaviour
     public void CastSpell()
     {
         if (Time.timeScale == 1)
-            ActivateSpell(SpellName);
-    }
-
-    private void ActivateSpell(SpellName spellName)
-    {
-        if (_playerInfo.GetAmountOfSpells(spellName) > 0)
-            _spellRecycling.ActivateSpell(spellName);
-        else
-            _spellRecycling.ActivateSpell(SpellName.Default);
+        {
+            if (_playerInfo.GetAmountOfSpells(SpellName) > 0)
+            {
+                _spellRecycling.ActivateSpell(SpellName);
+                _playerInfo.UpdateAmountOfSpells(SpellName, -1);
+                _spellHUDs.ToList().ForEach(s => s.UpdateDisplay());
+            }
+            else
+            {
+                _spellRecycling.ActivateSpell(SpellName.Default);
+            }
+        }
     }
 }
