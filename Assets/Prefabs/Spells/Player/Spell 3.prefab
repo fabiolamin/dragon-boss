@@ -128,3 +128,4 @@ MonoBehaviour:
   _spellName: 3
   _speed: 30
   _maxSpeed: 20
+  _damage: 30

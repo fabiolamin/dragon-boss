@@ -6,9 +6,11 @@ public class Spell : MonoBehaviour
     [SerializeField] private SpellName _spellName;
     [SerializeField] private float _speed = 10f;
     [SerializeField] private float _maxSpeed = 20f;
+    [SerializeField] private float _damage = 1f;
 
     public SpellName SpellName { get { return _spellName; } }
     public float Speed { get { return _speed; } set { _speed = value; } }
+    public float Damage { get { return _damage; } }
 
     public Transform CastingOrigin { get; set; }
 
