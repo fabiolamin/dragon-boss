@@ -44,4 +44,10 @@ public class PlayerInfo : MonoBehaviour
         if ((wonArenas) > PlayerPrefs.GetInt("MaxDragon"))
             PlayerPrefs.SetInt("MaxDragon", wonArenas);
     }
+
+    public int GetAmountOfSpells(SpellName spellName)
+    {
+        string name = spellName.ToString();
+        return PlayerPrefs.GetInt(name);
+    }
 }

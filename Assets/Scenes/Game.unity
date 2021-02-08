@@ -1480,6 +1480,14 @@ PrefabInstance:
       propertyPath: _spellsParent
       value: 
       objectReference: {fileID: 765048202}
+    - target: {fileID: 4502864938730063371, guid: e3db56479d5c3014cbaf15e65b9e55aa, type: 3}
+      propertyPath: _spells.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4502864938730063371, guid: e3db56479d5c3014cbaf15e65b9e55aa, type: 3}
+      propertyPath: _spells.Array.data[0]
+      value: 
+      objectReference: {fileID: 757749141744541641, guid: b3cdd4c93cac2b94f9c53ffa025e9d72, type: 3}
     - target: {fileID: 4576445659066666785, guid: e3db56479d5c3014cbaf15e65b9e55aa, type: 3}
       propertyPath: m_Name
       value: Player

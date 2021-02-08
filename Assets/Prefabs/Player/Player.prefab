@@ -94,7 +94,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2611bc4a08081a4b8ed21cb6d2ae570, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spell: {fileID: 757749141744541641, guid: b3cdd4c93cac2b94f9c53ffa025e9d72, type: 3}
+  _spells:
+  - {fileID: 757749141744541641, guid: b3cdd4c93cac2b94f9c53ffa025e9d72, type: 3}
   _amount: 5
   _spellsParent: {fileID: 0}
 --- !u!1 &4576445659066666785
