@@ -44,4 +44,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _storePanel: {fileID: 0}
+  _optionsPanel: {fileID: 0}
   _playerCoinsDisplay: {fileID: 0}
+  _backButton: {fileID: 0}
