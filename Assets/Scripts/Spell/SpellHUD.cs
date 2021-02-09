@@ -12,7 +12,6 @@ public class SpellHUD : MonoBehaviour, IPointerDownHandler
     private void Awake()
     {
         _block.SetActive(true);
-        PlayerPrefs.SetInt(_spellName.ToString(), 5);
         _playerAttack = FindObjectOfType<PlayerAttack>();
         UpdateDisplay();
     }

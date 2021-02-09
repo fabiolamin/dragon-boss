@@ -17,7 +17,7 @@ public abstract class Health : MonoBehaviour
         {
             case "Spell":
                 Spell spell = other.gameObject.GetComponent<Spell>();
-                UpdateCurrentHealth(-spell.Damage);
+                UpdateCurrentHealth(-spell.SpellInfo.Damage);
                 break;
             case "Life":
                 UpdateCurrentHealth(1f);
