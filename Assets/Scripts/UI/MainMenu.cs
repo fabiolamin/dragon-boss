@@ -1,14 +1,10 @@
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-
 public class MainMenu : MonoBehaviour
 {
     private AudioController _audioController;
     [SerializeField] private GameObject _storePanel, _optionsPanel;
     [SerializeField] private GameObject _playerCoinsDisplay;
     [SerializeField] private GameObject _backButton;
-
 
     private void Awake()
     {
@@ -39,10 +35,5 @@ public class MainMenu : MonoBehaviour
         _playerCoinsDisplay.SetActive(false);
         _backButton.SetActive(false);
         _audioController.UpdateAudioVolume();
-    }
-
-    public void PlayGame()
-    {
-        SceneManager.LoadScene(1);
     }
 }
