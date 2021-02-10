@@ -22,7 +22,6 @@ public class MainMenu : MonoBehaviour
     public void ActivateOptionsPanel()
     {
         _optionsPanel.SetActive(true);
-        _playerCoinsDisplay.SetActive(true);
         _backButton.SetActive(true);
     }
 
