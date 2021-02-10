@@ -62,13 +62,17 @@ public class ArenaMenu : MonoBehaviour
 
     public void Pause()
     {
-        Time.timeScale = 0;
-        _pauseMenu.SetActive(true);
+        if (!SceneLoader.IsLoading)
+        {
+            Time.timeScale = 0;
+            _pauseMenu.SetActive(true);
+        }
     }
 
     public void ResumeGame()
     {
-        StartDelay(_pauseMenu);
+        if (!SceneLoader.IsLoading)
+            StartDelay(_pauseMenu);
     }
 
     private void StartDelay(GameObject panel)
@@ -101,11 +105,5 @@ public class ArenaMenu : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
-    public void GoToMainMenu()
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene(0);
     }
 }
