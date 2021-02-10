@@ -16,8 +16,8 @@ public class ArenaMenu : MonoBehaviour
     [SerializeField] private float _delayToResume = 4f;
     [SerializeField] private Text _delayResumeDisplay;
     [SerializeField] private GameObject _gameOverPanel;
-    [SerializeField] private Text _defeatedDragons;
-    [SerializeField] private Text _maxDefeatedDragons;
+    [SerializeField] private Text _scoreDisplay;
+    [SerializeField] private Text _highScoreDisplay;
     [SerializeField] private Text _totalCoins;
 
     private void Awake()
@@ -92,8 +92,8 @@ public class ArenaMenu : MonoBehaviour
 
     private void SetGameInfo()
     {
-        _defeatedDragons.text = "Dragons Defeated: " + (_dragonController.CurrentDragon - 1);
-        _maxDefeatedDragons.text = "Max Dragons Defeated: " + PlayerPrefs.GetInt("MaxDragon");
+        _scoreDisplay.text = "Score: " + (_dragonController.CurrentDragon - 1);
+        _highScoreDisplay.text = "HighScore: " + PlayerPrefs.GetInt("HighScore");
         _totalCoins.text = "Total Coins: " + _playerInfo.Coins;
     }
 

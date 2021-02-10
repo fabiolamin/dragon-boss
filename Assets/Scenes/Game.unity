@@ -1903,21 +1903,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 204203288}
     - target: {fileID: 637671947779399959, guid: 98a95123d5b0b71419eb064324fd49f3, type: 3}
+      propertyPath: _scoreDisplay
+      value: 
+      objectReference: {fileID: 2098771038}
+    - target: {fileID: 637671947779399959, guid: 98a95123d5b0b71419eb064324fd49f3, type: 3}
       propertyPath: _gameOverPanel
       value: 
       objectReference: {fileID: 30885191}
     - target: {fileID: 637671947779399959, guid: 98a95123d5b0b71419eb064324fd49f3, type: 3}
-      propertyPath: _defeatedDragons
+      propertyPath: _highScoreDisplay
       value: 
-      objectReference: {fileID: 2098771038}
+      objectReference: {fileID: 1204749295}
     - target: {fileID: 637671947779399959, guid: 98a95123d5b0b71419eb064324fd49f3, type: 3}
       propertyPath: _delayResumeDisplay
       value: 
       objectReference: {fileID: 1949096584}
-    - target: {fileID: 637671947779399959, guid: 98a95123d5b0b71419eb064324fd49f3, type: 3}
-      propertyPath: _maxDefeatedDragons
-      value: 
-      objectReference: {fileID: 1204749295}
     - target: {fileID: 8779503539279010676, guid: 98a95123d5b0b71419eb064324fd49f3, type: 3}
       propertyPath: m_RootOrder
       value: 4
