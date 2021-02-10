@@ -48,6 +48,6 @@ MonoBehaviour:
   _delayToResume: 4
   _delayResumeDisplay: {fileID: 0}
   _gameOverPanel: {fileID: 0}
-  _defeatedDragons: {fileID: 0}
-  _maxDefeatedDragons: {fileID: 0}
+  _scoreDisplay: {fileID: 0}
+  _highScoreDisplay: {fileID: 0}
   _totalCoins: {fileID: 0}
