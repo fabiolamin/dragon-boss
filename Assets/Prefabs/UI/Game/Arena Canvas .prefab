@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 264486829}
   - component: {fileID: 264486828}
   - component: {fileID: 264486827}
+  - component: {fileID: 4578667602968970250}
   m_Layer: 5
   m_Name: Next Arena Button
   m_TagString: Untagged
@@ -214,6 +215,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4578667602968970250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264486825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea8352075fc371d41a4b43157732bccc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToIncrease: 0.2
+  _buttonAudioClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
 --- !u!1 &304199807
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,6 +241,7 @@ GameObject:
   - component: {fileID: 304199811}
   - component: {fileID: 304199810}
   - component: {fileID: 304199809}
+  - component: {fileID: 4578667602968970249}
   m_Layer: 5
   m_Name: Restart Button
   m_TagString: Untagged
@@ -347,6 +363,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4578667602968970249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304199807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea8352075fc371d41a4b43157732bccc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToIncrease: 0.2
+  _buttonAudioClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
 --- !u!1 &305736016
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,6 +547,7 @@ GameObject:
   - component: {fileID: 470067492}
   - component: {fileID: 470067491}
   - component: {fileID: 470067490}
+  - component: {fileID: 4578667602968970248}
   m_Layer: 5
   m_Name: Menu Button
   m_TagString: Untagged
@@ -638,6 +669,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4578667602968970248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470067488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea8352075fc371d41a4b43157732bccc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToIncrease: 0.2
+  _buttonAudioClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
 --- !u!1 &502171002
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,6 +695,7 @@ GameObject:
   - component: {fileID: 502171006}
   - component: {fileID: 502171005}
   - component: {fileID: 502171004}
+  - component: {fileID: 4578667602968970251}
   m_Layer: 5
   m_Name: Menu Button
   m_TagString: Untagged
@@ -771,6 +817,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4578667602968970251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502171002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea8352075fc371d41a4b43157732bccc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToIncrease: 0.2
+  _buttonAudioClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
 --- !u!1 &569503063
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,6 +1473,7 @@ GameObject:
   - component: {fileID: 1934339899}
   - component: {fileID: 1934339898}
   - component: {fileID: 1934339897}
+  - component: {fileID: 204203289}
   m_Layer: 5
   m_Name: Pause Button
   m_TagString: Untagged
@@ -1534,6 +1595,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &204203289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934339895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea8352075fc371d41a4b43157732bccc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToIncrease: 0.2
+  _buttonAudioClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
 --- !u!1 &1949096582
 GameObject:
   m_ObjectHideFlags: 0
@@ -2046,6 +2121,7 @@ GameObject:
   - component: {fileID: 6549668580001930909}
   - component: {fileID: 2851393799158652760}
   - component: {fileID: 7190997724591512838}
+  - component: {fileID: 4578667602968970252}
   m_Layer: 5
   m_Name: Resume Button
   m_TagString: Untagged
@@ -2167,6 +2243,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4578667602968970252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4740056472587852882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea8352075fc371d41a4b43157732bccc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToIncrease: 0.2
+  _buttonAudioClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
 --- !u!1 &6941205670957210122
 GameObject:
   m_ObjectHideFlags: 0
