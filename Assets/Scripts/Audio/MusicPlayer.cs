@@ -7,6 +7,7 @@ public class MusicPlayer : MonoBehaviour
     private void Awake()
     {
         _audioSource = GetComponent<AudioSource>();
+
         int musicPlayers = FindObjectsOfType<MusicPlayer>().Length;
 
         if (musicPlayers > 1)
