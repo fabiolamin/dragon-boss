@@ -35,9 +35,12 @@ public abstract class Health : MonoBehaviour
 
     protected void UpdateCurrentHealth(float amount)
     {
-        _currentHealth = Mathf.Clamp(_currentHealth + amount, 0, health);
-        UpdateHealthDisplay();
-        CheckHealth();
+        if (!SceneLoader.IsLoading)
+        {
+            _currentHealth = Mathf.Clamp(_currentHealth + amount, 0, health);
+            UpdateHealthDisplay();
+            CheckHealth();
+        }
     }
 
     private void CheckHealth()

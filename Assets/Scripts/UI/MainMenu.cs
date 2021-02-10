@@ -17,15 +17,21 @@ public class MainMenu : MonoBehaviour
 
     public void ActivateOptionsPanel()
     {
-        _optionsPanel.SetActive(true);
-        _backButton.SetActive(true);
+        if (!SceneLoader.IsLoading)
+        {
+            _optionsPanel.SetActive(true);
+            _backButton.SetActive(true);
+        }
     }
 
     public void ActivateStorePanel()
     {
-        _storePanel.SetActive(true);
-        _playerCoinsDisplay.SetActive(true);
-        _backButton.SetActive(true);
+        if (!SceneLoader.IsLoading)
+        {
+            _storePanel.SetActive(true);
+            _playerCoinsDisplay.SetActive(true);
+            _backButton.SetActive(true);
+        }
     }
 
     public void ActivateMainMenu()
