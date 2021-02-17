@@ -45,8 +45,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dragons:
   - {fileID: 0}
-  - {fileID: 0}
   _currentDragonDisplay: {fileID: 0}
   _speedIncrementPerArena: 0.5
-  _maxFireBallSpeed: 20
   _healthIncrementPerArena: 5
