@@ -2,6 +2,7 @@ using UnityEngine;
 
 public abstract class Health : MonoBehaviour
 {
+    private bool _isAlive = true;
     [SerializeField] protected float _currentHealth;
     [SerializeField] protected float health = 3f;
 
@@ -27,15 +28,9 @@ public abstract class Health : MonoBehaviour
         other.gameObject.SetActive(false);
     }
 
-    protected void GetDamage(Collider other)
-    {
-        UpdateCurrentHealth(-1f);
-        other.gameObject.SetActive(false);
-    }
-
     protected void UpdateCurrentHealth(float amount)
     {
-        if (!SceneLoader.IsLoading)
+        if (!SceneLoader.IsLoading && _isAlive)
         {
             _currentHealth = Mathf.Clamp(_currentHealth + amount, 0, health);
             UpdateHealthDisplay();
@@ -47,8 +42,14 @@ public abstract class Health : MonoBehaviour
     {
         if (_currentHealth <= 0)
         {
+            _isAlive = false;
             SetDeath();
         }
+    }
+
+    private void OnEnable()
+    {
+        _isAlive = true;
     }
 
     protected abstract void SetDeath();
