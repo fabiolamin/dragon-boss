@@ -1,13 +1,17 @@
 using UnityEngine;
+using System.Collections;
 
 public abstract class Health : MonoBehaviour
 {
-    private bool _isAlive = true;
+    protected Animator animator;
     [SerializeField] protected float _currentHealth;
     [SerializeField] protected float health = 3f;
 
+    public bool IsAlive { get; private set; } = true;
+
     private void Awake()
     {
+        animator = GetComponent<Animator>();
         _currentHealth = health;
         UpdateHealthDisplay();
     }
@@ -17,8 +21,7 @@ public abstract class Health : MonoBehaviour
         switch (other.gameObject.tag)
         {
             case "Spell":
-                Spell spell = other.gameObject.GetComponent<Spell>();
-                UpdateCurrentHealth(-spell.SpellInfo.Damage);
+                GetDamage(other);
                 break;
             case "Life":
                 UpdateCurrentHealth(1f);
@@ -28,9 +31,19 @@ public abstract class Health : MonoBehaviour
         other.gameObject.SetActive(false);
     }
 
+    private void GetDamage(Collider other)
+    {
+        if (IsAlive)
+        {
+            animator.SetTrigger("Damage");
+            Spell spell = other.gameObject.GetComponent<Spell>();
+            UpdateCurrentHealth(-spell.SpellInfo.Damage);
+        }
+    }
+
     protected void UpdateCurrentHealth(float amount)
     {
-        if (!SceneLoader.IsLoading && _isAlive)
+        if (!SceneLoader.IsLoading && IsAlive)
         {
             _currentHealth = Mathf.Clamp(_currentHealth + amount, 0, health);
             UpdateHealthDisplay();
@@ -42,14 +55,21 @@ public abstract class Health : MonoBehaviour
     {
         if (_currentHealth <= 0)
         {
-            _isAlive = false;
-            SetDeath();
+            IsAlive = false;
+            animator.SetTrigger("Death");
+            StartCoroutine(DelayDeathTrigger());
         }
+    }
+
+    private IEnumerator DelayDeathTrigger()
+    {
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+        SetDeath();
     }
 
     private void OnEnable()
     {
-        _isAlive = true;
+        IsAlive = true;
     }
 
     protected abstract void SetDeath();
