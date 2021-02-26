@@ -1,14 +1,22 @@
 using UnityEngine;
-
 public class PlayerMovement : MonoBehaviour
 {
     private PlayerInput _playerInput;
+    private PlayerAttack _playerAttack;
+    private PlayerHealth _playerHealth;
+    private PlayerAnimation _playerAnimation;
     private Transform _waypoint;
+    private Animator _animator;
     [SerializeField] private float _speed = 10f;
+    [SerializeField] private float _delayToDefaultForward = 0.6f;
 
     private void Awake()
     {
         _playerInput = GetComponent<PlayerInput>();
+        _playerAttack = GetComponent<PlayerAttack>();
+        _playerHealth = GetComponent<PlayerHealth>();
+        _playerAnimation = GetComponent<PlayerAnimation>();
+        _animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -25,6 +33,8 @@ public class PlayerMovement : MonoBehaviour
             if (hit.collider.CompareTag("Waypoint"))
             {
                 _waypoint = hit.transform;
+                _playerAttack.CanAttack = false;
+                StartCoroutine(_playerAnimation.SetMovementAnimation());
             }
         }
     }
