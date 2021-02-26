@@ -1551,6 +1551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentHealth: 0
   health: 10
+  _delayDeathTrigger: 1.4
   _healthDisplay: {fileID: 2919229281470483737}
 --- !u!114 &8217768265254610298
 MonoBehaviour:

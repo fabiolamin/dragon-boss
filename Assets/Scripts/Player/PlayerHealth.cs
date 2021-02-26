@@ -1,18 +1,20 @@
 using UnityEngine;
 using UnityEngine.UI;
-
 public class PlayerHealth : Health
 {
     private ArenaMenu _arenaMenu;
     private PlayerInfo _playerInfo;
+    private PlayerAnimation _playerAnimation;
     [SerializeField] private Text _healthDisplay;
 
     public GameObject HealthDisplay { get { return _healthDisplay.gameObject; } }
+    public bool WasHit { get; set; } = false;
 
     private void Start()
     {
         _arenaMenu = FindObjectOfType<ArenaMenu>();
         _playerInfo = GetComponent<PlayerInfo>();
+        _playerAnimation = GetComponent<PlayerAnimation>();
         DragonController.DragonDeathHandler += RecoverHealth;
     }
     protected override void SetDeath()
@@ -31,5 +33,10 @@ public class PlayerHealth : Health
     {
         _currentHealth = health;
         UpdateHealthDisplay();
+    }
+
+    protected override void SetDamageAnimation()
+    {
+        StartCoroutine(_playerAnimation.SetDamageAnimation());
     }
 }
