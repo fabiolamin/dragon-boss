@@ -6,7 +6,7 @@ public abstract class Health : MonoBehaviour
     protected Animator animator;
     [SerializeField] protected float _currentHealth;
     [SerializeField] protected float health = 3f;
-
+    [SerializeField] protected float _delayDeathTrigger = 0.5f;
     public bool IsAlive { get; private set; } = true;
 
     private void Awake()
@@ -35,7 +35,7 @@ public abstract class Health : MonoBehaviour
     {
         if (IsAlive)
         {
-            animator.SetTrigger("Damage");
+            SetDamageAnimation();
             Spell spell = other.gameObject.GetComponent<Spell>();
             UpdateCurrentHealth(-spell.SpellInfo.Damage);
         }
@@ -63,7 +63,7 @@ public abstract class Health : MonoBehaviour
 
     private IEnumerator DelayDeathTrigger()
     {
-        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+        yield return new WaitForSeconds(_delayDeathTrigger);
         SetDeath();
     }
 
@@ -74,4 +74,5 @@ public abstract class Health : MonoBehaviour
 
     protected abstract void SetDeath();
     protected abstract void UpdateHealthDisplay();
+    protected abstract void SetDamageAnimation();
 }

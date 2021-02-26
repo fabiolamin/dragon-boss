@@ -1508,6 +1508,7 @@ GameObject:
   - component: {fileID: 697592198699495674}
   - component: {fileID: 697592198699495675}
   - component: {fileID: 697592198699495676}
+  - component: {fileID: 5720146731212257314}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1524,7 +1525,7 @@ Transform:
   m_GameObject: {fileID: 696417220312906380}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.16, y: -11.43, z: -3.95}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 694027174446318410}
   - {fileID: 702137576788640362}
@@ -1622,7 +1623,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16814c6f55d052044bc1868b1f746d2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 20
+  _delayToDefaultForward: 0.6
 --- !u!114 &697592198699495673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1635,7 +1637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25ff70f519ee8bc458bcf5ffcbb470f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _minOfScreen: 15
+  _minOfScreen: 1
   _minValueTap: 0.5
 --- !u!114 &697592198699495674
 MonoBehaviour:
@@ -1678,6 +1680,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spellRecycling: {fileID: 697592199893397360}
+--- !u!114 &5720146731212257314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696417220312906380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b251a13ff216b43a01cc6219a1a20d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _delayDefaultForward: 0.4
+  _delayFinishDamage: 0.5
 --- !u!1 &696417539659673492
 GameObject:
   m_ObjectHideFlags: 0

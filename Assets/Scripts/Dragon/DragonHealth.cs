@@ -21,4 +21,9 @@ public class DragonHealth : Health
         _currentHealth = health;
         UpdateHealthDisplay();
     }
+
+    protected override void SetDamageAnimation()
+    {
+        animator.SetTrigger("Damage");
+    }
 }

@@ -2178,6 +2178,10 @@ PrefabInstance:
       propertyPath: _healthDisplay
       value: 
       objectReference: {fileID: 1204407192}
+    - target: {fileID: 697592198699495675, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
+      propertyPath: _delayDeathTrigger
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 697592199893397360, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
       propertyPath: _spellsParent
       value: 
@@ -2192,7 +2196,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 702071599726169444, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.43
+      value: -11.42
       objectReference: {fileID: 0}
     - target: {fileID: 702071599726169444, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
       propertyPath: m_LocalPosition.z
