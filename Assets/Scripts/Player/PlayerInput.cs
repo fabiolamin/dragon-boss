@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerInput : MonoBehaviour
 {
     private PlayerAttack _playerAttack;
+    private PlayerHealth _playerHealth;
     private Vector2 _firstTouchPosition;
     private Vector2 _lastTouchPosition;
     private float _swipeDistance;
@@ -17,13 +18,15 @@ public class PlayerInput : MonoBehaviour
     private void Awake()
     {
         _playerAttack = GetComponent<PlayerAttack>();
+        _playerHealth = GetComponent<PlayerHealth>();
         _swipeDistance = Screen.height * _minOfScreen / 100;
         _tapDistance = Screen.height * _minValueTap / 100;
     }
 
     private void Update()
     {
-        CheckInput();
+        if (_playerHealth.IsAlive && !_playerHealth.WasHit)
+            CheckInput();
     }
 
     private void CheckInput()
