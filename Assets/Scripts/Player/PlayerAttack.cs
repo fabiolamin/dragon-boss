@@ -27,6 +27,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if (CanCastSpell())
         {
+            transform.forward = new Vector3(0f, 0f, 1f);
             _animator.SetTrigger("Attack");
 
             if (_playerInfo.GetAmountOfSpells(SpellName) > 0)
