@@ -16,20 +16,12 @@ public class PlayerInfo : MonoBehaviour
         UpdatePlayerCoinsDisplay();
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Coin"))
-        {
-            SaveCoins(other);
-        }
-    }
-
     private void UpdatePlayerCoinsDisplay()
     {
         playerCoinsDisplay.text = Coins.ToString();
     }
 
-    private void SaveCoins(Collider other)
+    public void SaveCoins(Collider other)
     {
         Coins++;
         PlayerPrefs.SetInt("Coins", Coins);

@@ -2103,7 +2103,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 696417220312906380, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 696417539659673492, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
       propertyPath: m_Layer
@@ -2652,6 +2652,10 @@ PrefabInstance:
     - target: {fileID: 8570170568047911852, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
       propertyPath: m_Name
       value: Spell Item Spawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570170568047911852, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}

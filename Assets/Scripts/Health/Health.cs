@@ -16,22 +16,7 @@ public abstract class Health : MonoBehaviour
         UpdateHealthDisplay();
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        switch (other.gameObject.tag)
-        {
-            case "Spell":
-                GetDamage(other);
-                break;
-            case "Life":
-                UpdateCurrentHealth(1f);
-                break;
-        }
-
-        other.gameObject.SetActive(false);
-    }
-
-    private void GetDamage(Collider other)
+    public void GetDamage(Collider other)
     {
         if (IsAlive)
         {
@@ -41,7 +26,7 @@ public abstract class Health : MonoBehaviour
         }
     }
 
-    protected void UpdateCurrentHealth(float amount)
+    public void UpdateCurrentHealth(float amount)
     {
         if (!SceneLoader.IsLoading && IsAlive)
         {
