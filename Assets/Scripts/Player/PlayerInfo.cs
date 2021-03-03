@@ -1,8 +1,10 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class PlayerInfo : MonoBehaviour
 {
+    private SpellHUD[] _spellHUDs;
     private DragonController _dragonController;
 
     [SerializeField] private Text playerCoinsDisplay;
@@ -11,17 +13,10 @@ public class PlayerInfo : MonoBehaviour
 
     private void Awake()
     {
+        _spellHUDs = FindObjectsOfType<SpellHUD>();
         _dragonController = FindObjectOfType<DragonController>();
         Coins = PlayerPrefs.GetInt("Coins");
         UpdatePlayerCoinsDisplay();
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Coin"))
-        {
-            SaveCoins(other);
-        }
     }
 
     private void UpdatePlayerCoinsDisplay()
@@ -29,7 +24,7 @@ public class PlayerInfo : MonoBehaviour
         playerCoinsDisplay.text = Coins.ToString();
     }
 
-    private void SaveCoins(Collider other)
+    public void SaveCoins(Collider other)
     {
         Coins++;
         PlayerPrefs.SetInt("Coins", Coins);
@@ -55,5 +50,6 @@ public class PlayerInfo : MonoBehaviour
         int amount = GetAmountOfSpells(spellName);
         amount += value;
         PlayerPrefs.SetInt(spellName.ToString(), amount);
+        _spellHUDs.ToList().ForEach(s => s.UpdateDisplay());
     }
 }

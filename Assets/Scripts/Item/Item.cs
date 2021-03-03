@@ -2,15 +2,19 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    [SerializeField] private ItemSpawner _itemSpawner;
+    private ItemSpawner _itemSpawner;
 
-    private void OnEnable()
+    public SpawnLocation SpawnLocation { get; set; }
+
+    private void Awake()
     {
-        _itemSpawner.UpdateItemPosition();
+        _itemSpawner = transform.parent.GetComponent<ItemSpawner>();
+        gameObject.SetActive(false);
     }
 
     private void OnDisable()
     {
-        _itemSpawner.SpawnItem();
+        if (SpawnLocation) { SpawnLocation.HasItem = false; }
+        _itemSpawner.StartSpawn(this);
     }
 }

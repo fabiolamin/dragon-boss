@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3051450600075914420}
   - component: {fileID: 4756891299237785701}
   - component: {fileID: 1437229176323741268}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Waypoint 1 (20)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ee9ef87c7eac0c54e80b34b667dbac1f, type: 2}
+  - {fileID: 2100000, guid: 921b1dc18105ce6428fbde3049e2ad61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 7461049301493378003}
   - component: {fileID: 518295543672728403}
   - component: {fileID: 4123931890881510451}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Waypoint 1 (27)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ee9ef87c7eac0c54e80b34b667dbac1f, type: 2}
+  - {fileID: 2100000, guid: 921b1dc18105ce6428fbde3049e2ad61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 4539289785929779463}
   - component: {fileID: 1191359748210568701}
   - component: {fileID: 3971173053494179919}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Waypoint 1 (23)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -250,7 +250,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cf798282ae9ed1c47bf97d6f4055b2b2, type: 2}
+  - {fileID: 2100000, guid: 5d8af8f434f69794eabd684fb44b4fbf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -297,7 +297,8 @@ GameObject:
   - component: {fileID: 2013393021052618188}
   - component: {fileID: 2013393021052618189}
   - component: {fileID: 2013393021052618190}
-  m_Layer: 0
+  - component: {fileID: 6818746219693153206}
+  m_Layer: 8
   m_Name: Waypoint 1 (11)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -345,7 +346,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ee9ef87c7eac0c54e80b34b667dbac1f, type: 2}
+  - {fileID: 2100000, guid: 921b1dc18105ce6428fbde3049e2ad61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -380,6 +381,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 5.549767, z: 1}
   m_Center: {x: 0, y: 2.2748835, z: 0}
+--- !u!114 &6818746219693153206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013393021052618191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2013393021123273513
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,7 +405,7 @@ GameObject:
   - component: {fileID: 2013393021123273518}
   - component: {fileID: 2013393021123273519}
   - component: {fileID: 2013393021123273512}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Waypoint 1 (2)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -440,7 +453,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cf798282ae9ed1c47bf97d6f4055b2b2, type: 2}
+  - {fileID: 2100000, guid: 5d8af8f434f69794eabd684fb44b4fbf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -487,7 +500,8 @@ GameObject:
   - component: {fileID: 2013393021296052192}
   - component: {fileID: 2013393021296052193}
   - component: {fileID: 2013393021296052194}
-  m_Layer: 0
+  - component: {fileID: 6799985044110459528}
+  m_Layer: 8
   m_Name: Waypoint 1 (13)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -535,7 +549,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cf798282ae9ed1c47bf97d6f4055b2b2, type: 2}
+  - {fileID: 2100000, guid: 5d8af8f434f69794eabd684fb44b4fbf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -570,6 +584,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 5.549767, z: 1}
   m_Center: {x: 0, y: 2.2748835, z: 0}
+--- !u!114 &6799985044110459528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013393021296052195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2013393021448998379
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,7 +608,8 @@ GameObject:
   - component: {fileID: 2013393021448998376}
   - component: {fileID: 2013393021448998377}
   - component: {fileID: 2013393021448998378}
-  m_Layer: 0
+  - component: {fileID: 3296320043370885008}
+  m_Layer: 8
   m_Name: Waypoint 1 (6)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -630,7 +657,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ee9ef87c7eac0c54e80b34b667dbac1f, type: 2}
+  - {fileID: 2100000, guid: 921b1dc18105ce6428fbde3049e2ad61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -665,6 +692,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 5.549767, z: 1}
   m_Center: {x: 0, y: 2.2748835, z: 0}
+--- !u!114 &3296320043370885008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013393021448998379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2013393021497074916
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,7 +716,8 @@ GameObject:
   - component: {fileID: 2013393021497074921}
   - component: {fileID: 2013393021497074922}
   - component: {fileID: 2013393021497074923}
-  m_Layer: 0
+  - component: {fileID: 7730133322226938395}
+  m_Layer: 8
   m_Name: Waypoint 1 (8)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -725,7 +765,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cf798282ae9ed1c47bf97d6f4055b2b2, type: 2}
+  - {fileID: 2100000, guid: 5d8af8f434f69794eabd684fb44b4fbf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -760,6 +800,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 5.549767, z: 1}
   m_Center: {x: 0, y: 2.2748835, z: 0}
+--- !u!114 &7730133322226938395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013393021497074916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2013393021563516406
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,7 +824,7 @@ GameObject:
   - component: {fileID: 2013393021563516411}
   - component: {fileID: 2013393021563516404}
   - component: {fileID: 2013393021563516405}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Waypoint 1 (1)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -820,7 +872,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ee9ef87c7eac0c54e80b34b667dbac1f, type: 2}
+  - {fileID: 2100000, guid: 921b1dc18105ce6428fbde3049e2ad61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -867,7 +919,8 @@ GameObject:
   - component: {fileID: 2013393021648770387}
   - component: {fileID: 2013393021648770348}
   - component: {fileID: 2013393021648770349}
-  m_Layer: 0
+  - component: {fileID: 5829757012064958594}
+  m_Layer: 8
   m_Name: Waypoint 1 (14)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -915,7 +968,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ee9ef87c7eac0c54e80b34b667dbac1f, type: 2}
+  - {fileID: 2100000, guid: 921b1dc18105ce6428fbde3049e2ad61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -950,6 +1003,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 5.549767, z: 1}
   m_Center: {x: 0, y: 2.2748835, z: 0}
+--- !u!114 &5829757012064958594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013393021648770350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2013393021933729835
 GameObject:
   m_ObjectHideFlags: 0
@@ -962,7 +1027,8 @@ GameObject:
   - component: {fileID: 2013393021933729832}
   - component: {fileID: 2013393021933729833}
   - component: {fileID: 2013393021933729834}
-  m_Layer: 0
+  - component: {fileID: 7432286869683946510}
+  m_Layer: 8
   m_Name: Waypoint 1 (4)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -1010,7 +1076,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ee9ef87c7eac0c54e80b34b667dbac1f, type: 2}
+  - {fileID: 2100000, guid: 921b1dc18105ce6428fbde3049e2ad61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1045,6 +1111,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 5.549767, z: 1}
   m_Center: {x: 0, y: 2.2748835, z: 0}
+--- !u!114 &7432286869683946510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013393021933729835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2013393022211594325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,7 +1135,7 @@ GameObject:
   - component: {fileID: 2013393022211594330}
   - component: {fileID: 2013393022211594331}
   - component: {fileID: 2013393022211594324}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Waypoint 1 (3)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -1105,7 +1183,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ee9ef87c7eac0c54e80b34b667dbac1f, type: 2}
+  - {fileID: 2100000, guid: 921b1dc18105ce6428fbde3049e2ad61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1210,7 +1288,8 @@ GameObject:
   - component: {fileID: 2013393022318576462}
   - component: {fileID: 2013393022318576463}
   - component: {fileID: 2013393022318576456}
-  m_Layer: 0
+  - component: {fileID: 4407103218424989032}
+  m_Layer: 8
   m_Name: Waypoint 1 (9)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -1258,7 +1337,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ee9ef87c7eac0c54e80b34b667dbac1f, type: 2}
+  - {fileID: 2100000, guid: 921b1dc18105ce6428fbde3049e2ad61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1293,6 +1372,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 5.549767, z: 1}
   m_Center: {x: 0, y: 2.2748835, z: 0}
+--- !u!114 &4407103218424989032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013393022318576457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2013393022338394617
 GameObject:
   m_ObjectHideFlags: 0
@@ -1305,7 +1396,8 @@ GameObject:
   - component: {fileID: 2013393022338394622}
   - component: {fileID: 2013393022338394623}
   - component: {fileID: 2013393022338394616}
-  m_Layer: 0
+  - component: {fileID: 6573158228023750008}
+  m_Layer: 8
   m_Name: Waypoint 1 (15)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -1353,7 +1445,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cf798282ae9ed1c47bf97d6f4055b2b2, type: 2}
+  - {fileID: 2100000, guid: 5d8af8f434f69794eabd684fb44b4fbf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1388,6 +1480,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 5.549767, z: 1}
   m_Center: {x: 0, y: 2.2748835, z: 0}
+--- !u!114 &6573158228023750008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013393022338394617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2013393022351195450
 GameObject:
   m_ObjectHideFlags: 0
@@ -1400,7 +1504,8 @@ GameObject:
   - component: {fileID: 2013393022351195455}
   - component: {fileID: 2013393022351195448}
   - component: {fileID: 2013393022351195449}
-  m_Layer: 0
+  - component: {fileID: 71804161049878460}
+  m_Layer: 8
   m_Name: Waypoint 1 (12)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -1448,7 +1553,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ee9ef87c7eac0c54e80b34b667dbac1f, type: 2}
+  - {fileID: 2100000, guid: 921b1dc18105ce6428fbde3049e2ad61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1483,6 +1588,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 5.549767, z: 1}
   m_Center: {x: 0, y: 2.2748835, z: 0}
+--- !u!114 &71804161049878460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013393022351195450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2013393022732780208
 GameObject:
   m_ObjectHideFlags: 0
@@ -1495,7 +1612,8 @@ GameObject:
   - component: {fileID: 2013393022732780213}
   - component: {fileID: 2013393022732780214}
   - component: {fileID: 2013393022732780215}
-  m_Layer: 0
+  - component: {fileID: 2464477667799614678}
+  m_Layer: 8
   m_Name: Waypoint 1 (10)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -1543,7 +1661,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cf798282ae9ed1c47bf97d6f4055b2b2, type: 2}
+  - {fileID: 2100000, guid: 5d8af8f434f69794eabd684fb44b4fbf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1578,6 +1696,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 5.549767, z: 1}
   m_Center: {x: 0, y: 2.2748835, z: 0}
+--- !u!114 &2464477667799614678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013393022732780208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2013393022843351509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1590,7 +1720,8 @@ GameObject:
   - component: {fileID: 2013393022843351514}
   - component: {fileID: 2013393022843351515}
   - component: {fileID: 2013393022843351508}
-  m_Layer: 0
+  - component: {fileID: 7369388660647415533}
+  m_Layer: 8
   m_Name: Waypoint 1 (7)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -1638,7 +1769,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cf798282ae9ed1c47bf97d6f4055b2b2, type: 2}
+  - {fileID: 2100000, guid: 5d8af8f434f69794eabd684fb44b4fbf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1673,6 +1804,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 5.549767, z: 1}
   m_Center: {x: 0, y: 2.2748835, z: 0}
+--- !u!114 &7369388660647415533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013393022843351509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2013393022933629291
 GameObject:
   m_ObjectHideFlags: 0
@@ -1685,7 +1828,8 @@ GameObject:
   - component: {fileID: 2013393022933629288}
   - component: {fileID: 2013393022933629289}
   - component: {fileID: 2013393022933629290}
-  m_Layer: 0
+  - component: {fileID: 3991956382278968697}
+  m_Layer: 8
   m_Name: Waypoint 1 (5)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -1733,7 +1877,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cf798282ae9ed1c47bf97d6f4055b2b2, type: 2}
+  - {fileID: 2100000, guid: 5d8af8f434f69794eabd684fb44b4fbf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1768,6 +1912,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 5.549767, z: 1}
   m_Center: {x: 0, y: 2.2748835, z: 0}
+--- !u!114 &3991956382278968697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013393022933629291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2347904558257818527
 GameObject:
   m_ObjectHideFlags: 0
@@ -1780,7 +1936,7 @@ GameObject:
   - component: {fileID: 6936384585752081443}
   - component: {fileID: 8644480407414966983}
   - component: {fileID: 4077566346383624609}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Waypoint 1 (16)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -1828,7 +1984,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cf798282ae9ed1c47bf97d6f4055b2b2, type: 2}
+  - {fileID: 2100000, guid: 5d8af8f434f69794eabd684fb44b4fbf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1875,7 +2031,7 @@ GameObject:
   - component: {fileID: 8934748625418079631}
   - component: {fileID: 5303187448157813890}
   - component: {fileID: 8639130869724440711}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Waypoint 1 (22)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -1923,7 +2079,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ee9ef87c7eac0c54e80b34b667dbac1f, type: 2}
+  - {fileID: 2100000, guid: 921b1dc18105ce6428fbde3049e2ad61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1970,7 +2126,7 @@ GameObject:
   - component: {fileID: 9100744597403916425}
   - component: {fileID: 2749334967720939075}
   - component: {fileID: 4284708757666256030}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Waypoint 1 (17)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -2018,7 +2174,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ee9ef87c7eac0c54e80b34b667dbac1f, type: 2}
+  - {fileID: 2100000, guid: 921b1dc18105ce6428fbde3049e2ad61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2065,7 +2221,7 @@ GameObject:
   - component: {fileID: 9057583440926757805}
   - component: {fileID: 6792912822996657925}
   - component: {fileID: 4161042993530845487}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Waypoint 1 (19)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -2113,7 +2269,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ee9ef87c7eac0c54e80b34b667dbac1f, type: 2}
+  - {fileID: 2100000, guid: 921b1dc18105ce6428fbde3049e2ad61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2160,7 +2316,7 @@ GameObject:
   - component: {fileID: 6505959923832506015}
   - component: {fileID: 9191958481109427352}
   - component: {fileID: 934231842065085398}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Waypoint 1 (24)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -2208,7 +2364,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cf798282ae9ed1c47bf97d6f4055b2b2, type: 2}
+  - {fileID: 2100000, guid: 5d8af8f434f69794eabd684fb44b4fbf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2255,7 +2411,7 @@ GameObject:
   - component: {fileID: 7042382760446276824}
   - component: {fileID: 8288072464456332235}
   - component: {fileID: 3536863336515149433}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Waypoint 1 (25)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -2303,7 +2459,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ee9ef87c7eac0c54e80b34b667dbac1f, type: 2}
+  - {fileID: 2100000, guid: 921b1dc18105ce6428fbde3049e2ad61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2350,7 +2506,7 @@ GameObject:
   - component: {fileID: 6622023442502390843}
   - component: {fileID: 5127865478654239397}
   - component: {fileID: 2096888225207050479}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Waypoint 1 (21)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -2398,7 +2554,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cf798282ae9ed1c47bf97d6f4055b2b2, type: 2}
+  - {fileID: 2100000, guid: 5d8af8f434f69794eabd684fb44b4fbf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2445,7 +2601,7 @@ GameObject:
   - component: {fileID: 4779492177035333023}
   - component: {fileID: 5617081828251172925}
   - component: {fileID: 7266487931038770870}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Waypoint 1 (18)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -2493,7 +2649,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cf798282ae9ed1c47bf97d6f4055b2b2, type: 2}
+  - {fileID: 2100000, guid: 5d8af8f434f69794eabd684fb44b4fbf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2540,7 +2696,7 @@ GameObject:
   - component: {fileID: 6072234321054700839}
   - component: {fileID: 3267122309413869323}
   - component: {fileID: 4696817703748769918}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Waypoint 1 (26)
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
@@ -2588,7 +2744,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cf798282ae9ed1c47bf97d6f4055b2b2, type: 2}
+  - {fileID: 2100000, guid: 5d8af8f434f69794eabd684fb44b4fbf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2634,6 +2790,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waypoint 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3866262565969238684, guid: ebeecf48759a0334f82e7aee12b2f9f7, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 3866262565969238688, guid: ebeecf48759a0334f82e7aee12b2f9f7, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2678,6 +2838,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3866262565969238690, guid: ebeecf48759a0334f82e7aee12b2f9f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5d8af8f434f69794eabd684fb44b4fbf, type: 2}
     - target: {fileID: 3866262565969238691, guid: ebeecf48759a0334f82e7aee12b2f9f7, type: 3}
       propertyPath: m_IsTrigger
       value: 1

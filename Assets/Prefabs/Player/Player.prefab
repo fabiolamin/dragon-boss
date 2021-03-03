@@ -1508,7 +1508,7 @@ GameObject:
   - component: {fileID: 697592198699495674}
   - component: {fileID: 697592198699495675}
   - component: {fileID: 697592198699495676}
-  - component: {fileID: 5720146731212257314}
+  - component: {fileID: 7793988030726769978}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1624,7 +1624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 20
-  _delayToDefaultForward: 0.6
+  _movementTime: 0.6
 --- !u!114 &697592198699495673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1666,7 +1666,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentHealth: 0
   health: 3
+  _delayDeathTrigger: 0.5
   _healthDisplay: {fileID: 0}
+  _delayFinishDamage: 0.5
 --- !u!114 &697592198699495676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1680,7 +1682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spellRecycling: {fileID: 697592199893397360}
---- !u!114 &5720146731212257314
+--- !u!114 &7793988030726769978
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1689,11 +1691,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 696417220312906380}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b251a13ff216b43a01cc6219a1a20d, type: 3}
+  m_Script: {fileID: 11500000, guid: 1d8834d069cb107458926809b7b8bea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _delayDefaultForward: 0.4
-  _delayFinishDamage: 0.5
 --- !u!1 &696417539659673492
 GameObject:
   m_ObjectHideFlags: 0

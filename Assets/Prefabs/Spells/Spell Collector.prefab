@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4069185721888173725}
   - component: {fileID: 4069185721888173726}
   - component: {fileID: 4069185721888173727}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Spell Collector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
