@@ -8,6 +8,7 @@ TagManager:
   - Spell
   - Life
   - Coin
+  - Spell Item
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Spawn Location
   - Item
   - Spell
-  - 
+  - Spell Collector
   - 
   - 
   - 
