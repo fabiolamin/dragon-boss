@@ -24,6 +24,10 @@ public class PlayerCollider : MonoBehaviour
             case "Coin":
                 _playerInfo.SaveCoins(other);
                 break;
+            case "Spell Item":
+                SpellItem spellItem = other.GetComponent<SpellItem>();
+                _playerInfo.UpdateAmountOfSpells(spellItem.SpellInfo.SpellName, 1);
+                break;
         }
 
         other.gameObject.SetActive(false);
