@@ -2666,46 +2666,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1204283988, guid: 7e816b3c1a564b64ca2f873b56260638, type: 3}
-      propertyPath: m_Color.b
-      value: 0.47058824
-      objectReference: {fileID: 0}
-    - target: {fileID: 1204283988, guid: 7e816b3c1a564b64ca2f873b56260638, type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1204283988, guid: 7e816b3c1a564b64ca2f873b56260638, type: 3}
-      propertyPath: m_Color.r
-      value: 0.41568628
-      objectReference: {fileID: 0}
-    - target: {fileID: 1395200354, guid: 7e816b3c1a564b64ca2f873b56260638, type: 3}
-      propertyPath: m_Color.g
-      value: 0.101960786
-      objectReference: {fileID: 0}
-    - target: {fileID: 1587272495, guid: 7e816b3c1a564b64ca2f873b56260638, type: 3}
-      propertyPath: m_Color.b
-      value: 0.011764706
-      objectReference: {fileID: 0}
-    - target: {fileID: 1587272495, guid: 7e816b3c1a564b64ca2f873b56260638, type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1587272495, guid: 7e816b3c1a564b64ca2f873b56260638, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717226961, guid: 7e816b3c1a564b64ca2f873b56260638, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717226961, guid: 7e816b3c1a564b64ca2f873b56260638, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717226961, guid: 7e816b3c1a564b64ca2f873b56260638, type: 3}
-      propertyPath: m_Color.r
-      value: 0.4392157
-      objectReference: {fileID: 0}
     - target: {fileID: 2791886153759847664, guid: 7e816b3c1a564b64ca2f873b56260638, type: 3}
       propertyPath: m_Name
       value: Player Canvas
