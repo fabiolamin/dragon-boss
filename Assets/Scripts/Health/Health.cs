@@ -7,6 +7,7 @@ public abstract class Health : MonoBehaviour
     [SerializeField] protected float _currentHealth;
     [SerializeField] protected float health = 3f;
     [SerializeField] protected float _delayDeathTrigger = 0.5f;
+    [SerializeField] protected ParticleSystem damageVFX;
     public bool IsAlive { get; private set; } = true;
 
     private void Awake()
@@ -20,6 +21,7 @@ public abstract class Health : MonoBehaviour
     {
         if (IsAlive)
         {
+            damageVFX.Play();
             SetDamageAnimation();
             Spell spell = other.gameObject.GetComponent<Spell>();
             UpdateCurrentHealth(-spell.SpellInfo.Damage);
