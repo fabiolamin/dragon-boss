@@ -17,11 +17,11 @@ public class DragonController : MonoBehaviour
     private void Awake()
     {
         SetDragons();
-        ActiveRandomDragon();
+        SpawnRandomDragon();
         UpdateCurrentDragonDisplay();
         DragonDeathHandler += NextDragon;
         DragonDeathHandler += IncreaseDragonDifficulty;
-        DragonDeathHandler += ActiveRandomDragon;
+        DragonDeathHandler += SpawnRandomDragon;
     }
 
     private void OnDestroy()
@@ -56,11 +56,10 @@ public class DragonController : MonoBehaviour
         UpdateCurrentDragonDisplay();
     }
 
-    public void ActiveRandomDragon()
+    public void SpawnRandomDragon()
     {
         int random = Random.Range(0, _dragons.Length);
-        _dragons[random].SetActive(true);
-        _dragons[random].GetComponent<FireBallController>().EmitFireBalls();
+        _dragons[random].GetComponent<DragonSpawner>().Spawn();
     }
 
     private void IncreaseDragonDifficulty()

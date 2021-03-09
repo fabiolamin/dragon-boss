@@ -9,6 +9,7 @@ public class ItemSpawner : MonoBehaviour
     [SerializeField] private float _spawnInterval = 1f;
     [SerializeField] private float _minDelay = 4f;
     [SerializeField] private float _maxDelay = 3f;
+    [SerializeField] private ParticleSystem _spawnVFXPrefab;
 
     private void Awake()
     {
@@ -32,6 +33,7 @@ public class ItemSpawner : MonoBehaviour
         SetItemPosition(item);
         float delay = Random.Range(_minDelay, _maxDelay);
         yield return new WaitForSeconds(delay);
+        item.SpawnLocation.PlaySpawnVFX();
         item.gameObject.SetActive(false);
     }
 

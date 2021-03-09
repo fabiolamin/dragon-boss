@@ -5,6 +5,8 @@ public class PlayerCollider : MonoBehaviour
     private PlayerHealth _playerHealth;
     private PlayerInfo _playerInfo;
 
+    [SerializeField] private ParticleSystem _pickUpItemVFX;
+
     private void Awake()
     {
         _playerHealth = GetComponent<PlayerHealth>();
@@ -19,12 +21,15 @@ public class PlayerCollider : MonoBehaviour
                 _playerHealth.GetDamage(other);
                 break;
             case "Life":
+                _pickUpItemVFX.Play();
                 _playerHealth.UpdateCurrentHealth(1f);
                 break;
             case "Coin":
+                _pickUpItemVFX.Play();
                 _playerInfo.SaveCoins(other);
                 break;
             case "Spell Item":
+                _pickUpItemVFX.Play();
                 SpellItem spellItem = other.GetComponent<SpellItem>();
                 _playerInfo.UpdateAmountOfSpells(spellItem.SpellInfo.SpellName, 1);
                 break;
