@@ -2236,22 +2236,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1428889119}
     m_Modifications:
-    - target: {fileID: 345421574693449198, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 11.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 1607614745756302121, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 15.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 4922202338073365880, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 9.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7703576625073860995, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 13.0199995
-      objectReference: {fileID: 0}
     - target: {fileID: 8570170568047911842, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2299,10 +2283,6 @@ PrefabInstance:
     - target: {fileID: 8570170568047911852, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
       propertyPath: m_Name
       value: Spell Item Spawner
-      objectReference: {fileID: 0}
-    - target: {fileID: 8570170568047911852, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
