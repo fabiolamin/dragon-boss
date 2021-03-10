@@ -657,30 +657,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin Spawner
       objectReference: {fileID: 0}
-    - target: {fileID: 1902351165864308809, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
-      propertyPath: _maxDelay
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1902351165864308809, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
-      propertyPath: _minDelay
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1902351165864308809, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
-      propertyPath: _spawnInterval
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3910786797843858848, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 15.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 3939195482218051923, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 13.009999
-      objectReference: {fileID: 0}
-    - target: {fileID: 7765445286616576581, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 9.099999
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
 --- !u!4 &424668863 stripped
@@ -1348,10 +1324,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4157097507877949309, guid: 4e1c5c167c7704a4488ad232fd1e7611, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 11
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e1c5c167c7704a4488ad232fd1e7611, type: 3}
 --- !u!4 &1323156442 stripped
@@ -1925,6 +1897,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 696417220312906380, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 697592198699495674, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
       propertyPath: playerCoinsDisplay
       value: 
@@ -2260,22 +2236,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1428889119}
     m_Modifications:
-    - target: {fileID: 345421574693449198, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 11.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 1607614745756302121, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 15.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 4922202338073365880, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 9.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7703576625073860995, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 13.0199995
-      objectReference: {fileID: 0}
     - target: {fileID: 8570170568047911842, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2323,10 +2283,6 @@ PrefabInstance:
     - target: {fileID: 8570170568047911852, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
       propertyPath: m_Name
       value: Spell Item Spawner
-      objectReference: {fileID: 0}
-    - target: {fileID: 8570170568047911852, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
