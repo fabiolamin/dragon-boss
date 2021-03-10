@@ -657,30 +657,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin Spawner
       objectReference: {fileID: 0}
-    - target: {fileID: 1902351165864308809, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
-      propertyPath: _maxDelay
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1902351165864308809, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
-      propertyPath: _minDelay
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1902351165864308809, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
-      propertyPath: _spawnInterval
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3910786797843858848, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 15.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 3939195482218051923, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 13.009999
-      objectReference: {fileID: 0}
-    - target: {fileID: 7765445286616576581, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 9.099999
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
 --- !u!4 &424668863 stripped
@@ -1924,6 +1900,10 @@ PrefabInstance:
     - target: {fileID: 696417220312906380, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 696417220312906380, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 697592198699495674, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
       propertyPath: playerCoinsDisplay

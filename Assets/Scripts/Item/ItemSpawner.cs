@@ -9,7 +9,6 @@ public class ItemSpawner : MonoBehaviour
     [SerializeField] private float _spawnInterval = 1f;
     [SerializeField] private float _minDelay = 4f;
     [SerializeField] private float _maxDelay = 3f;
-    [SerializeField] private ParticleSystem _spawnVFXPrefab;
 
     private void Awake()
     {
