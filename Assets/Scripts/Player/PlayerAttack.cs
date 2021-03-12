@@ -2,16 +2,17 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     private PlayerInfo _playerInfo;
-    private Animator _animator;
+    private HeroController _heroController;
+
     [SerializeField] private SpellRecycling _spellRecycling;
 
     public SpellName SpellName { get; set; }
     public bool CanAttack { get; set; } = true;
 
-    private void Awake()
+    private void Start()
     {
         _playerInfo = GetComponent<PlayerInfo>();
-        _animator = GetComponent<Animator>();
+        _heroController = GetComponent<HeroController>();
         _spellRecycling.InstantiateSpells();
         SpellName = SpellName.Default;
         DragonController.DragonDeathHandler += _spellRecycling.DeactivateSpells;
@@ -22,7 +23,7 @@ public class PlayerAttack : MonoBehaviour
         if (CanCastSpell())
         {
             transform.forward = new Vector3(0f, 0f, 1f);
-            _animator.SetTrigger("Attack");
+            _heroController.HeroAnimator.SetTrigger("Attack");
 
             if (_playerInfo.GetAmountOfSpells(SpellName) > 0)
             {

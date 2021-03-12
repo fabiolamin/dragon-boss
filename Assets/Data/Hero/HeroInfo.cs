@@ -7,7 +7,7 @@ public class HeroInfo : ScriptableObject
     [SerializeField] private string _name;
     [SerializeField] private int _price;
 
-    public int Id { get; private set; }
-    public string Name { get; private set; }
-    public int Price { get; private set; }
+    public int Id { get { return _id; } }
+    public string Name { get { return _name; } }
+    public int Price { get { return _price; } }
 }

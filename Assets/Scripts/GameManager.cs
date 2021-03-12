@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
         {
             PlayerPrefs.SetFloat("Music", 1);
             PlayerPrefs.SetFloat("Sounds", 1);
-
+            PlayerPrefs.SetInt("Hero", 1);
             PlayerPrefs.SetInt("FirstPlay", 1);
         }
     }

@@ -4,6 +4,11 @@ public class DragonHealth : Health
 {
     [SerializeField] private Text _healthDisplay;
 
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     protected override void SetDeath()
     {
         gameObject.SetActive(false);

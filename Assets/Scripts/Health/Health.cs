@@ -12,7 +12,6 @@ public abstract class Health : MonoBehaviour
 
     private void Awake()
     {
-        animator = GetComponent<Animator>();
         _currentHealth = health;
         UpdateHealthDisplay();
     }

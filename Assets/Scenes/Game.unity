@@ -1696,10 +1696,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 696417220312906380, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 697592198699495674, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
       propertyPath: playerCoinsDisplay
       value: 
