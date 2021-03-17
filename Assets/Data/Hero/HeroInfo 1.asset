@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: HeroInfo 1
   m_EditorClassIdentifier: 
   _id: 1
-  _name: Hero 1
+  _name: Hadrian
   _price: 100

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: HeroInfo 6
   m_EditorClassIdentifier: 
   _id: 6
-  _name: Hero 6
+  _name: Doran
   _price: 600

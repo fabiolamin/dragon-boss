@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: HeroInfo 3
   m_EditorClassIdentifier: 
   _id: 3
-  _name: Hero 3
+  _name: Gregory
   _price: 300
