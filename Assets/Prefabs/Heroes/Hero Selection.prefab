@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2062371991769296726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2062371991769296727}
+  - component: {fileID: 2062371991769296724}
+  - component: {fileID: 5849603121661737806}
+  m_Layer: 0
+  m_Name: Hero Selection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2062371991769296727
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062371991769296726}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2062371991769296724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062371991769296726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f28ab70d88dc52840b299bdcd34f993b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _heroesPrefab:
+  - {fileID: 3926647734050794478, guid: b6bbab99d097a3a488909bfad2f349c6, type: 3}
+  - {fileID: 5110578145187410278, guid: 683883bf731413a488b49dfce586b32c, type: 3}
+  - {fileID: 6457587656783908589, guid: a0ef2ab73c81f7e48b1c932b211e19ab, type: 3}
+  - {fileID: 7966336131172033562, guid: afb7ad6559adaa54c8fc6538aa669f05, type: 3}
+  - {fileID: 2716638628928368552, guid: ce7d4235b93bf6f46bddfdb0d305d91f, type: 3}
+  - {fileID: 25763911413379027, guid: 5009377bc1527174f9d0056c05731e48, type: 3}
+  _storeHeroPlaceholder: {fileID: 0}
+  _selectedHeroPlaceholder: {fileID: 0}
+  _heroNameDisplay: {fileID: 0}
+  _heroPriceDisplay: {fileID: 0}
+  _playerCoinsDisplay: {fileID: 0}
+  _selectButton: {fileID: 0}
+  _buyButton: {fileID: 0}
+  _selectedDisplay: {fileID: 0}
+  _notificationDisplay: {fileID: 0}
+  _notificationDelay: 3
+--- !u!114 &5849603121661737806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062371991769296726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2f22cf0b2166c340a92e8b3848ec8f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
