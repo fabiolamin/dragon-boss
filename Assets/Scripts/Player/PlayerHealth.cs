@@ -5,6 +5,7 @@ public class PlayerHealth : Health
 {
     private ArenaMenu _arenaMenu;
     private PlayerInfo _playerInfo;
+    private HeroController _heroController;
     [SerializeField] private Text _healthDisplay;
     [SerializeField] private float _delayFinishDamage = 0.5f;
 
@@ -15,6 +16,8 @@ public class PlayerHealth : Health
     {
         _arenaMenu = FindObjectOfType<ArenaMenu>();
         _playerInfo = GetComponent<PlayerInfo>();
+        _heroController = GetComponent<HeroController>();
+        animator = _heroController.HeroAnimator;
         DragonController.DragonDeathHandler += RecoverHealth;
     }
     protected override void SetDeath()

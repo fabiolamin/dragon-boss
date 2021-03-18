@@ -5,15 +5,16 @@ public class PlayerMovement : MonoBehaviour
     private PlayerInput _playerInput;
     private PlayerAttack _playerAttack;
     private Transform _waypoint;
-    private Animator _animator;
+    private HeroController _heroController;
+   
     [SerializeField] private float _speed = 10f;
     [SerializeField] private float _movementTime = 0.6f;
 
-    private void Awake()
+    private void Start()
     {
         _playerInput = GetComponent<PlayerInput>();
         _playerAttack = GetComponent<PlayerAttack>();
-        _animator = GetComponent<Animator>();
+        _heroController = GetComponent<HeroController>();
     }
 
     private void Update()
@@ -39,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
     {
         _playerAttack.CanAttack = false;
         transform.forward = _playerInput.SwipeDirection;
-        _animator.SetTrigger("Move");
+        _heroController.HeroAnimator.SetTrigger("Move");
         yield return new WaitForSeconds(_movementTime);
         _playerAttack.CanAttack = true;
     }

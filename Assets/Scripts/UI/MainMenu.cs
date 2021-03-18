@@ -2,15 +2,20 @@ using UnityEngine;
 public class MainMenu : MonoBehaviour
 {
     private AudioController _audioController;
+    private HeroSelection _heroSelection;
     [SerializeField] private GameObject _storePanel, _optionsPanel;
+    [SerializeField] private GameObject _spellStore, _heroesStore;
     [SerializeField] private GameObject _playerCoinsDisplay;
     [SerializeField] private GameObject _backButton;
 
-    private void Awake()
+    private void Start()
     {
         _audioController = FindObjectOfType<AudioController>();
+        _heroSelection = FindObjectOfType<HeroSelection>();
         _storePanel.SetActive(false);
         _optionsPanel.SetActive(false);
+        _spellStore.SetActive(true);
+        _heroesStore.SetActive(false);
         _playerCoinsDisplay.SetActive(false);
         _backButton.SetActive(false);
     }
@@ -31,6 +36,8 @@ public class MainMenu : MonoBehaviour
             _storePanel.SetActive(true);
             _playerCoinsDisplay.SetActive(true);
             _backButton.SetActive(true);
+            _heroSelection.ResetHeroes();
+            _heroSelection.ShowHero(0);
         }
     }
 
@@ -41,5 +48,18 @@ public class MainMenu : MonoBehaviour
         _playerCoinsDisplay.SetActive(false);
         _backButton.SetActive(false);
         _audioController.UpdateAudioVolume();
+        _heroSelection.ShowSelectedHero();
+    }
+
+    public void ActivateSpellStore()
+    {
+        _heroesStore.SetActive(false);
+        _spellStore.SetActive(true);
+    }
+
+    public void ActivateHeroesStore()
+    {
+        _heroesStore.SetActive(true);
+        _spellStore.SetActive(false);
     }
 }
