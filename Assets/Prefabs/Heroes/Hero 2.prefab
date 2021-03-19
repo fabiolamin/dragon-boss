@@ -2807,7 +2807,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e9a97c2bbcc0a459b382bf398aae23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _heroInfo: {fileID: 11400000, guid: 2624b552adcbe814ebdff0658274b67f, type: 2}
+  _id: 2
+  _name: Arabella
+  _price: 200
 --- !u!1 &3936922844813801298
 GameObject:
   m_ObjectHideFlags: 0

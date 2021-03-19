@@ -1626,7 +1626,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e9a97c2bbcc0a459b382bf398aae23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _heroInfo: {fileID: 11400000, guid: a4a4bce60dbe962428afd1f0a4171bfa, type: 2}
+  _id: 5
+  _name: Aleida
+  _price: 400
 --- !u!1 &8246360959980599520
 GameObject:
   m_ObjectHideFlags: 0
