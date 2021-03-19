@@ -2747,7 +2747,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e9a97c2bbcc0a459b382bf398aae23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _heroInfo: {fileID: 11400000, guid: 631de26a1fa7f8a4e8bcd9ea1ce2fffd, type: 2}
+  _id: 6
+  _name: Doran
+  _price: 600
 --- !u!1 &3937964425675281665
 GameObject:
   m_ObjectHideFlags: 0
