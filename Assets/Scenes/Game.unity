@@ -1707,22 +1707,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1121953039}
-    - target: {fileID: 1934339896, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -54
-      objectReference: {fileID: 0}
     - target: {fileID: 1934339897, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8779503539535636118}
-    - target: {fileID: 1364107364397787155, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 34
-      objectReference: {fileID: 0}
-    - target: {fileID: 1364107364397787155, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
-      propertyPath: m_FontData.m_Alignment
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 1816204398386292451, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
       propertyPath: m_Name
       value: 'Arena Canvas '
@@ -1810,38 +1798,6 @@ PrefabInstance:
     - target: {fileID: 1816204398386292455, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7175456465270681853, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.53940713
-      objectReference: {fileID: 0}
-    - target: {fileID: 7175456465270681853, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.87132853
-      objectReference: {fileID: 0}
-    - target: {fileID: 7175456465270681853, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.53940713
-      objectReference: {fileID: 0}
-    - target: {fileID: 7175456465270681853, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.87132853
-      objectReference: {fileID: 0}
-    - target: {fileID: 7175456465270681853, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 209.183
-      objectReference: {fileID: 0}
-    - target: {fileID: 7175456465270681853, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 7175456465270681853, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 14.287
-      objectReference: {fileID: 0}
-    - target: {fileID: 7175456465270681853, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 7190997724591512838, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
