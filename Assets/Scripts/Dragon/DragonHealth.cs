@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class DragonHealth : Health
 {
-    [SerializeField] private Text _healthDisplay;
+    [SerializeField] private Image _healthBarDisplay;
 
     private void Start()
     {
@@ -17,7 +17,7 @@ public class DragonHealth : Health
 
     protected override void UpdateHealthDisplay()
     {
-        _healthDisplay.text = _currentHealth.ToString();
+        _healthBarDisplay.fillAmount = _currentHealth / health;
     }
 
     public void IncreaseHealth(float amount)
