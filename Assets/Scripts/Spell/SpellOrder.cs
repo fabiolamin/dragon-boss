@@ -28,7 +28,7 @@ public class SpellOrder : MonoBehaviour
     {
         _nameDisplay.text = _spellInfo.SpellName.ToString();
         _damageDisplay.text = "Damage: " + _spellInfo.Damage;
-        _priceDisplay.text = "Price: " + _spellInfo.Price;
+        _priceDisplay.text = _spellInfo.Price.ToString();
     }
 
     private void PurchaseSpell()
