@@ -11,7 +11,6 @@ public class ArenaMenu : MonoBehaviour
     private DragonController _dragonController;
     private bool _isDelaying = false;
     private float _delayAux;
-    [SerializeField] private GameObject _pauseButton;
     [SerializeField] private GameObject _pauseMenu;
     [SerializeField] private float _delayToResume = 4f;
     [SerializeField] private Text _delayResumeDisplay;
@@ -90,7 +89,6 @@ public class ArenaMenu : MonoBehaviour
         _dragonController.CurrentDragonDisplay.SetActive(false);
         _playerInfo.PlayerCoinsDisplay.SetActive(false);
         _playerHealth.HealthDisplay.SetActive(false);
-        _pauseButton.SetActive(false);
         _spellHUDs.ToList().ForEach(s => s.gameObject.SetActive(false));
     }
 
@@ -98,7 +96,7 @@ public class ArenaMenu : MonoBehaviour
     {
         _scoreDisplay.text = "Score: " + (_dragonController.CurrentDragon - 1);
         _highScoreDisplay.text = "HighScore: " + PlayerPrefs.GetInt("HighScore");
-        _totalCoins.text = "Total Coins: " + _playerInfo.Coins;
+        _totalCoins.text = _playerInfo.Coins.ToString();
     }
 
     public void Restart()
