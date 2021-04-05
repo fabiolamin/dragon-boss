@@ -43,7 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88a0a8a8720156742a34d5e93516b077, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pauseButton: {fileID: 0}
   _pauseMenu: {fileID: 0}
   _delayToResume: 4
   _delayResumeDisplay: {fileID: 0}

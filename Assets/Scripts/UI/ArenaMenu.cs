@@ -94,8 +94,8 @@ public class ArenaMenu : MonoBehaviour
 
     private void SetGameInfo()
     {
-        _scoreDisplay.text = "Score: " + (_dragonController.CurrentDragon - 1);
-        _highScoreDisplay.text = "HighScore: " + PlayerPrefs.GetInt("HighScore");
+        _scoreDisplay.text = (_dragonController.CurrentDragon - 1).ToString();
+        _highScoreDisplay.text = PlayerPrefs.GetInt("HighScore").ToString();
         _totalCoins.text = _playerInfo.Coins.ToString();
     }
 
