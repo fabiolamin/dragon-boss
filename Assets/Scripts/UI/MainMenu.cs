@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
     private AudioController _audioController;
@@ -6,6 +7,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject _storePanel, _optionsPanel, _creditsPanel;
     [SerializeField] private GameObject _spellStore, _heroesStore;
     [SerializeField] private GameObject _playerCoinsDisplay;
+    [SerializeField] private Text _highScoreDisplay;
     [SerializeField] private GameObject _backButton;
 
     private void Start()
@@ -18,6 +20,7 @@ public class MainMenu : MonoBehaviour
         _spellStore.SetActive(true);
         _heroesStore.SetActive(false);
         _playerCoinsDisplay.SetActive(false);
+        _highScoreDisplay.text = PlayerPrefs.GetInt("HighScore").ToString();
         _backButton.SetActive(false);
     }
 
