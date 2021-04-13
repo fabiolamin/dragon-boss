@@ -13,7 +13,7 @@ public class ButtonClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             transform.localScale +=
         new Vector3(amountToIncrease, amountToIncrease, amountToIncrease);
 
-            AudioSource.PlayClipAtPoint(_buttonAudioClip, Camera.main.transform.position, PlayerPrefs.GetFloat("Sounds"));
+            AudioManager.Instance.PlaySound(_buttonAudioClip);
         }
     }
 

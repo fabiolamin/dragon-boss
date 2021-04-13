@@ -3,14 +3,12 @@ using UnityEngine.UI;
 
 public class AudioSettings : MonoBehaviour
 {
-    private MusicPlayer _musicPlayer;
     [SerializeField] private Slider _musicSlider, _soundsSlider;
     [SerializeField] private GameObject _optionsPanel;
 
     private void Start()
     {
-        _musicPlayer = FindObjectOfType<MusicPlayer>();
-        _musicPlayer.UpdateVolume(PlayerPrefs.GetFloat("Music"));
+        AudioManager.Instance.UpdateVolume(PlayerPrefs.GetFloat("Music"), PlayerPrefs.GetFloat("Sounds"));
         SetOptionsSliders();
     }
 
@@ -18,7 +16,7 @@ public class AudioSettings : MonoBehaviour
     {
         if (_optionsPanel.activeSelf)
         {
-            _musicPlayer.UpdateVolume(_musicSlider.value);
+            AudioManager.Instance.UpdateVolume(_musicSlider.value, _soundsSlider.value);
         }
     }
 

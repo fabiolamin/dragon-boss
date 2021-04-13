@@ -1461,7 +1461,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1506054104245603683, guid: 85852d78a502eef4885c51bd4d03c193, type: 3}
       propertyPath: m_Name
-      value: Music Player
+      value: Audio Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1580579894108458681, guid: 85852d78a502eef4885c51bd4d03c193, type: 3}
+      propertyPath: m_audioClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7473222239369383853, guid: 85852d78a502eef4885c51bd4d03c193, type: 3}
       propertyPath: m_audioClip
@@ -1469,11 +1473,6 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 06c1daf1504805b4c9f5ccf81d6d58ac, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85852d78a502eef4885c51bd4d03c193, type: 3}
---- !u!82 &1506054103643356032 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 7473222239369383853, guid: 85852d78a502eef4885c51bd4d03c193, type: 3}
-  m_PrefabInstance: {fileID: 1506054103643356031}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1842627612509142032
 Transform:
   m_ObjectHideFlags: 0
@@ -4300,7 +4299,7 @@ PrefabInstance:
     - target: {fileID: 6888042542581050478, guid: 7ccd29816d0565640b56ba1b6febaef4, type: 3}
       propertyPath: _musicAudioSource
       value: 
-      objectReference: {fileID: 1506054103643356032}
+      objectReference: {fileID: 0}
     - target: {fileID: 6888042542581050479, guid: 7ccd29816d0565640b56ba1b6febaef4, type: 3}
       propertyPath: m_Name
       value: Audio Settings
