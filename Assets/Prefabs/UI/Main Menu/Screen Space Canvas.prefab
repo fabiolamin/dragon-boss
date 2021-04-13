@@ -399,7 +399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
-  _buttonAudioClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
+  _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
 --- !u!1 &317052428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1900,7 +1900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
-  _buttonAudioClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
+  _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
 --- !u!1 &913740719
 GameObject:
   m_ObjectHideFlags: 0
@@ -2477,7 +2477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
-  _buttonAudioClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
+  _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
 --- !u!1 &1128214307
 GameObject:
   m_ObjectHideFlags: 0
@@ -3348,7 +3348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
-  _buttonAudioClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
+  _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
 --- !u!1 &1369863501
 GameObject:
   m_ObjectHideFlags: 0
@@ -3858,7 +3858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
-  _buttonAudioClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
+  _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
 --- !u!1 &1470860701
 GameObject:
   m_ObjectHideFlags: 0
@@ -4291,7 +4291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
-  _buttonAudioClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
+  _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
 --- !u!1 &1549008120
 GameObject:
   m_ObjectHideFlags: 0
@@ -4439,7 +4439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
-  _buttonAudioClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
+  _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
 --- !u!1 &1550146908
 GameObject:
   m_ObjectHideFlags: 0
@@ -4865,7 +4865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
-  _buttonAudioClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
+  _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
 --- !u!1 &1716201189
 GameObject:
   m_ObjectHideFlags: 0
@@ -5001,7 +5001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
-  _buttonAudioClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
+  _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
 --- !u!1 &1718769584
 GameObject:
   m_ObjectHideFlags: 0
@@ -5506,7 +5506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
-  _buttonAudioClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
+  _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
 --- !u!1 &1881066666
 GameObject:
   m_ObjectHideFlags: 0
@@ -5891,7 +5891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
-  _buttonAudioClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
+  _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
 --- !u!1 &2060370328
 GameObject:
   m_ObjectHideFlags: 0
@@ -6189,7 +6189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
-  _buttonAudioClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
+  _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
 --- !u!1 &169318755502544692
 GameObject:
   m_ObjectHideFlags: 0
@@ -6574,7 +6574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
-  _buttonAudioClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
+  _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
 --- !u!1 &1244538500869181061
 GameObject:
   m_ObjectHideFlags: 0
@@ -7698,7 +7698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
-  _buttonAudioClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
+  _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
 --- !u!1 &3022597692871201178
 GameObject:
   m_ObjectHideFlags: 0
@@ -8518,7 +8518,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
-  _buttonAudioClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
+  _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
 --- !u!1 &4544101255657101641
 GameObject:
   m_ObjectHideFlags: 0
@@ -8629,7 +8629,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.39800003, y: 0.611}
   m_AnchorMax: {x: 0.39800003, y: 0.611}
-  m_AnchoredPosition: {x: 5.799999, y: 0.82299805}
+  m_AnchoredPosition: {x: 5.799988, y: 0.82299805}
   m_SizeDelta: {x: 177.1404, y: 90.355}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &107739227361275544
@@ -10228,7 +10228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
-  _buttonAudioClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
+  _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
 --- !u!1 &7501383178390112232
 GameObject:
   m_ObjectHideFlags: 0
@@ -10772,7 +10772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
-  _buttonAudioClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
+  _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
 --- !u!1 &8433952525321972629
 GameObject:
   m_ObjectHideFlags: 0
