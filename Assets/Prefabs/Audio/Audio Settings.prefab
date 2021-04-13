@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6888042542581050465}
   - component: {fileID: 6888042542581050478}
   m_Layer: 0
-  m_Name: Audio Controller
+  m_Name: Audio Settings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,5 +45,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _musicSlider: {fileID: 0}
   _soundsSlider: {fileID: 0}
-  _musicAudioSource: {fileID: 0}
   _optionsPanel: {fileID: 0}

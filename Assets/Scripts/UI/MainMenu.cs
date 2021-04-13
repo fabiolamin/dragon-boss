@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
-    private AudioController _audioController;
+    private AudioSettings _audioController;
     private HeroSelection _heroSelection;
     [SerializeField] private GameObject _storePanel, _optionsPanel, _creditsPanel;
     [SerializeField] private GameObject _spellStore, _heroesStore;
@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
-        _audioController = FindObjectOfType<AudioController>();
+        _audioController = FindObjectOfType<AudioSettings>();
         _heroSelection = FindObjectOfType<HeroSelection>();
         _storePanel.SetActive(false);
         _optionsPanel.SetActive(false);
