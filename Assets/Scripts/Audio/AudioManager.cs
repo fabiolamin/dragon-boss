@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -25,32 +24,31 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
-        if (_instance != null && _instance != this)
-        {
-            Destroy(gameObject);
-        }
+        _instance = this;
 
-        else
-        {
-            _instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-
-        SetMusic();
+        InitializeAudio();
     }
 
-    private void SetMusic()
+    private void InitializeAudio()
     {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        _musicSource.volume = PlayerPrefs.GetFloat("Music");
+        _soundSource.volume = PlayerPrefs.GetFloat("Sound");
 
-        if (currentSceneIndex == 0)
-        {
-            PlayMusic(_musicThemeClip);
-        }
+        PlayMusic(_musicThemeClip, true);
     }
 
-    public void PlayMusic(AudioClip audioClip)
+    public void UpdateVolume(float musicVolume, float soundVolume)
     {
+        _musicSource.volume = musicVolume;
+        _soundSource.volume = soundVolume;
+
+        PlayerPrefs.SetFloat("Music", musicVolume);
+        PlayerPrefs.SetFloat("Sound", soundVolume);
+    }
+
+    public void PlayMusic(AudioClip audioClip, bool isLooping)
+    {
+        _musicSource.loop = isLooping;
         _musicSource.clip = audioClip;
         _musicSource.Play();
     }
@@ -59,16 +57,5 @@ public class AudioManager : MonoBehaviour
     {
         _soundSource.clip = audioClip;
         _soundSource.Play();
-    }
-
-    public void UpdateVolume(float musicVolume, float soundVolume)
-    {
-        _musicSource.volume = musicVolume;
-        _soundSource.volume = soundVolume;
-    }
-
-    public void StopMusic()
-    {
-        _musicSource.Stop();
     }
 }

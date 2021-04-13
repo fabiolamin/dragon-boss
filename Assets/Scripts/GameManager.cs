@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
         if (PlayerPrefs.GetInt("FirstPlay") == 0)
         {
             PlayerPrefs.SetFloat("Music", 1);
-            PlayerPrefs.SetFloat("Sounds", 1);
+            PlayerPrefs.SetFloat("Sound", 1);
             PlayerPrefs.SetInt("Hero", 1);
             PlayerPrefs.SetInt("FirstPlay", 1);
             PlayerPrefs.SetInt("Coins", 1000);

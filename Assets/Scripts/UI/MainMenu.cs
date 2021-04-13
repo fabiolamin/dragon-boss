@@ -2,17 +2,16 @@ using UnityEngine;
 using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
-    private AudioSettings _audioController;
     private HeroSelection _heroSelection;
     [SerializeField] private GameObject _storePanel, _optionsPanel, _creditsPanel;
     [SerializeField] private GameObject _spellStore, _heroesStore;
     [SerializeField] private GameObject _playerCoinsDisplay;
     [SerializeField] private Text _highScoreDisplay;
     [SerializeField] private GameObject _backButton;
+    [SerializeField] private Slider _musicSlider, _soundsSlider;
 
     private void Start()
     {
-        _audioController = FindObjectOfType<AudioSettings>();
         _heroSelection = FindObjectOfType<HeroSelection>();
         _storePanel.SetActive(false);
         _optionsPanel.SetActive(false);
@@ -22,6 +21,22 @@ public class MainMenu : MonoBehaviour
         _playerCoinsDisplay.SetActive(false);
         _highScoreDisplay.text = PlayerPrefs.GetInt("HighScore").ToString();
         _backButton.SetActive(false);
+
+        SetAudioOptions();
+    }
+
+    private void Update()
+    {
+        if (_optionsPanel.activeSelf)
+        {
+            AudioManager.Instance.UpdateVolume(_musicSlider.value, _soundsSlider.value);
+        }
+    }
+
+    private void SetAudioOptions()
+    {
+        _musicSlider.value = PlayerPrefs.GetFloat("Music");
+        _soundsSlider.value = PlayerPrefs.GetFloat("Sound");
     }
 
     public void ActivateOptionsPanel()
@@ -52,7 +67,6 @@ public class MainMenu : MonoBehaviour
         _creditsPanel.SetActive(false);
         _playerCoinsDisplay.SetActive(false);
         _backButton.SetActive(false);
-        _audioController.UpdateAudioVolume();
         _heroSelection.ShowSelectedHero();
     }
 
