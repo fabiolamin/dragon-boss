@@ -50,3 +50,4 @@ MonoBehaviour:
   _scoreDisplay: {fileID: 0}
   _highScoreDisplay: {fileID: 0}
   _totalCoins: {fileID: 0}
+  _gameOverClip: {fileID: 8300000, guid: ca34ebea458bc264db051d7c7b50bf63, type: 3}

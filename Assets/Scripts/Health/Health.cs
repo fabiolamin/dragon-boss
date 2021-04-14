@@ -4,10 +4,13 @@ using System.Collections;
 public abstract class Health : MonoBehaviour
 {
     protected Animator animator;
+
+    [SerializeField] protected SoundPlayer soundPlayer;
     [SerializeField] protected float _currentHealth;
     [SerializeField] protected float health = 3f;
     [SerializeField] protected float _delayDeathTrigger = 0.5f;
     [SerializeField] protected ParticleSystem damageVFX;
+    [SerializeField] protected AudioClip _damageClip;
     public bool IsAlive { get; private set; } = true;
 
     private void Awake()
@@ -20,6 +23,7 @@ public abstract class Health : MonoBehaviour
     {
         if (IsAlive)
         {
+            soundPlayer.PlaySound(_damageClip);
             damageVFX.Play();
             SetDamageAnimation();
             Spell spell = other.gameObject.GetComponent<Spell>();

@@ -6,6 +6,8 @@ public class PlayerCollider : MonoBehaviour
     private PlayerInfo _playerInfo;
 
     [SerializeField] private ParticleSystem _pickUpItemVFX;
+    [SerializeField] private AudioClip _pickUpClip;
+    [SerializeField] private SoundPlayer _soundPlayer;
 
     private void Awake()
     {
@@ -21,20 +23,26 @@ public class PlayerCollider : MonoBehaviour
                 _playerHealth.GetDamage(other);
                 break;
             case "Life":
-                _pickUpItemVFX.Play();
+                PlayEffects();
                 _playerHealth.UpdateCurrentHealth(1f);
                 break;
             case "Coin":
-                _pickUpItemVFX.Play();
+                PlayEffects();
                 _playerInfo.SaveCoins(other);
                 break;
             case "Spell Item":
-                _pickUpItemVFX.Play();
+                PlayEffects();
                 SpellItem spellItem = other.GetComponent<SpellItem>();
                 _playerInfo.UpdateAmountOfSpells(spellItem.SpellInfo.SpellName, 1);
                 break;
         }
 
         other.gameObject.SetActive(false);
+    }
+
+    private void PlayEffects()
+    {
+        _pickUpItemVFX.Play();
+        _soundPlayer.PlaySound(_pickUpClip);
     }
 }

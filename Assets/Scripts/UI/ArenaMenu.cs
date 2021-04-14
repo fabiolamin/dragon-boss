@@ -11,6 +11,7 @@ public class ArenaMenu : MonoBehaviour
     private DragonController _dragonController;
     private bool _isDelaying = false;
     private float _delayAux;
+
     [SerializeField] private GameObject _pauseMenu;
     [SerializeField] private float _delayToResume = 4f;
     [SerializeField] private Text _delayResumeDisplay;
@@ -18,6 +19,9 @@ public class ArenaMenu : MonoBehaviour
     [SerializeField] private Text _scoreDisplay;
     [SerializeField] private Text _highScoreDisplay;
     [SerializeField] private Text _totalCoins;
+    [SerializeField] private SceneLoader _sceneLoader;
+
+    [SerializeField] private AudioClip _gameOverClip;
 
     private void Awake()
     {
@@ -83,6 +87,7 @@ public class ArenaMenu : MonoBehaviour
 
     public void ActivateGameOverPanel()
     {
+        MusicPlayer.Instance.PlayGameOverMusic();
         SetGameInfo();
         Time.timeScale = 0;
         _gameOverPanel.SetActive(true);
@@ -101,7 +106,14 @@ public class ArenaMenu : MonoBehaviour
 
     public void Restart()
     {
+        MusicPlayer.Instance.PlayMainMusic();
         Time.timeScale = 1;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        _sceneLoader.LoadScene(1);
+    }
+
+    public void GoMainMenu()
+    {
+        MusicPlayer.Instance.PlayMainMusic();
+        _sceneLoader.LoadScene(0);
     }
 }

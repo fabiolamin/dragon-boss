@@ -6,9 +6,11 @@ public class PlayerMovement : MonoBehaviour
     private PlayerAttack _playerAttack;
     private Transform _waypoint;
     private HeroController _heroController;
-   
+
     [SerializeField] private float _speed = 10f;
     [SerializeField] private float _movementTime = 0.6f;
+    [SerializeField] private AudioClip _movementClip;
+    [SerializeField] private SoundPlayer _soundPlayer;
 
     private void Start()
     {
@@ -31,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
             if (hit.collider.CompareTag("Waypoint"))
             {
                 _waypoint = hit.transform;
+                _soundPlayer.PlaySound(_movementClip);
                 StartCoroutine(SetMovementAnimation());
             }
         }

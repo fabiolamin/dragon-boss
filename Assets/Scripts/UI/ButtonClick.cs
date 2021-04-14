@@ -6,6 +6,7 @@ public class ButtonClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     [SerializeField] private float amountToIncrease = 0.2f;
     [SerializeField] private AudioClip _buttonAudioClip;
+    [SerializeField] private SoundPlayer _soundPlayer;
     public void OnPointerDown(PointerEventData eventData)
     {
         if (!SceneLoader.IsLoading)
@@ -13,7 +14,7 @@ public class ButtonClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             transform.localScale +=
         new Vector3(amountToIncrease, amountToIncrease, amountToIncrease);
 
-            AudioSource.PlayClipAtPoint(_buttonAudioClip, Camera.main.transform.position, PlayerPrefs.GetFloat("Sounds"));
+            _soundPlayer.PlaySound(_buttonAudioClip);
         }
     }
 

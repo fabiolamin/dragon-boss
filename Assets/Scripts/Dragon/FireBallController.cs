@@ -3,7 +3,7 @@ using UnityEngine;
 public class FireBallController : MonoBehaviour
 {
     [SerializeField] private FireBallEmitter[] _fireBallEmitters;
-
+    
     public void IncreaseFireBallsSpeed(float amount)
     {
         foreach (var fireBallEmitter in _fireBallEmitters)

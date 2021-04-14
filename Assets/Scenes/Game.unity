@@ -1682,7 +1682,7 @@ PrefabInstance:
     - target: {fileID: 470067490, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1121953039}
+      objectReference: {fileID: 8779503539535636118}
     - target: {fileID: 502171004, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2032,6 +2032,10 @@ PrefabInstance:
       propertyPath: _totalCoins
       value: 
       objectReference: {fileID: 4578667602968970242}
+    - target: {fileID: 637671947779399959, guid: 98a95123d5b0b71419eb064324fd49f3, type: 3}
+      propertyPath: _sceneLoader
+      value: 
+      objectReference: {fileID: 1121953039}
     - target: {fileID: 637671947779399959, guid: 98a95123d5b0b71419eb064324fd49f3, type: 3}
       propertyPath: _scoreDisplay
       value: 

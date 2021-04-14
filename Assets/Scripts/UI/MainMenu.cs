@@ -2,17 +2,16 @@ using UnityEngine;
 using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
-    private AudioController _audioController;
     private HeroSelection _heroSelection;
     [SerializeField] private GameObject _storePanel, _optionsPanel, _creditsPanel;
     [SerializeField] private GameObject _spellStore, _heroesStore;
     [SerializeField] private GameObject _playerCoinsDisplay;
     [SerializeField] private Text _highScoreDisplay;
     [SerializeField] private GameObject _backButton;
+    [SerializeField] private Slider _musicSlider, _soundsSlider;
 
     private void Start()
     {
-        _audioController = FindObjectOfType<AudioController>();
         _heroSelection = FindObjectOfType<HeroSelection>();
         _storePanel.SetActive(false);
         _optionsPanel.SetActive(false);
@@ -52,7 +51,6 @@ public class MainMenu : MonoBehaviour
         _creditsPanel.SetActive(false);
         _playerCoinsDisplay.SetActive(false);
         _backButton.SetActive(false);
-        _audioController.UpdateAudioVolume();
         _heroSelection.ShowSelectedHero();
     }
 
