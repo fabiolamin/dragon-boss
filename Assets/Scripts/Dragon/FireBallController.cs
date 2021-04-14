@@ -3,6 +3,8 @@ using UnityEngine;
 public class FireBallController : MonoBehaviour
 {
     [SerializeField] private FireBallEmitter[] _fireBallEmitters;
+    [SerializeField] private AudioClip _dragonAttackClip;
+    [SerializeField] private SoundPlayer _soundPlayer;
 
     public void IncreaseFireBallsSpeed(float amount)
     {
@@ -37,5 +39,10 @@ public class FireBallController : MonoBehaviour
         {
             fireBallEmitter.SpellRecycling.DeactivateSpells();
         }
+    }
+
+    public void PlayDragonAttackSound()
+    {
+        _soundPlayer.PlaySound(_dragonAttackClip);
     }
 }

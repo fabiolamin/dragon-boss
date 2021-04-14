@@ -48,3 +48,5 @@ MonoBehaviour:
   _currentDragonDisplay: {fileID: 0}
   _speedIncrementPerArena: 0.5
   _healthIncrementPerArena: 5
+  _dragonSoundDelay: 5
+  _dragonAudioClip: {fileID: 8300000, guid: 9a06a9028941b4e4ab67e1dbd812e8a4, type: 3}

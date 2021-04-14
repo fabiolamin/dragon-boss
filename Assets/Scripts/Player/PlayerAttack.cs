@@ -5,6 +5,8 @@ public class PlayerAttack : MonoBehaviour
     private HeroController _heroController;
 
     [SerializeField] private SpellRecycling _spellRecycling;
+    [SerializeField] private AudioClip _spellClip;
+    [SerializeField] protected SoundPlayer _soundPlayer;
 
     public SpellName SpellName { get; set; }
     public bool CanAttack { get; set; } = true;
@@ -22,6 +24,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if (CanCastSpell())
         {
+            //_soundPlayer.PlaySound(_spellClip);
             transform.forward = new Vector3(0f, 0f, 1f);
             _heroController.HeroAnimator.SetTrigger("Attack");
 

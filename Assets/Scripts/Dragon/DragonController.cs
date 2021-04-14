@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,6 +8,7 @@ public class DragonController : MonoBehaviour
     [SerializeField] private Text _currentDragonDisplay;
     [SerializeField] private float _speedIncrementPerArena = 0.5f;
     [SerializeField] private float _healthIncrementPerArena = 50f;
+    [SerializeField] private float _dragonSoundDelay = 5f;
 
     public delegate void DragonDeath();
     public static event DragonDeath DragonDeathHandler;

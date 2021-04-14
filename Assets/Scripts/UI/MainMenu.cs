@@ -21,22 +21,6 @@ public class MainMenu : MonoBehaviour
         _playerCoinsDisplay.SetActive(false);
         _highScoreDisplay.text = PlayerPrefs.GetInt("HighScore").ToString();
         _backButton.SetActive(false);
-
-        SetAudioOptions();
-    }
-
-    private void Update()
-    {
-        if (_optionsPanel.activeSelf)
-        {
-            AudioManager.Instance.UpdateVolume(_musicSlider.value, _soundsSlider.value);
-        }
-    }
-
-    private void SetAudioOptions()
-    {
-        _musicSlider.value = PlayerPrefs.GetFloat("Music");
-        _soundsSlider.value = PlayerPrefs.GetFloat("Sound");
     }
 
     public void ActivateOptionsPanel()

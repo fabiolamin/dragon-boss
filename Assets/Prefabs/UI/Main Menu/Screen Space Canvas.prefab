@@ -400,6 +400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
   _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
+  _soundPlayer: {fileID: 6515420711692853639}
 --- !u!1 &317052428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1901,6 +1902,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
   _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
+  _soundPlayer: {fileID: 6515420711692853639}
 --- !u!1 &913740719
 GameObject:
   m_ObjectHideFlags: 0
@@ -2478,6 +2480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
   _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
+  _soundPlayer: {fileID: 6515420711692853639}
 --- !u!1 &1128214307
 GameObject:
   m_ObjectHideFlags: 0
@@ -3349,6 +3352,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
   _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
+  _soundPlayer: {fileID: 6515420711692853639}
 --- !u!1 &1369863501
 GameObject:
   m_ObjectHideFlags: 0
@@ -3859,6 +3863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
   _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
+  _soundPlayer: {fileID: 6515420711692853639}
 --- !u!1 &1470860701
 GameObject:
   m_ObjectHideFlags: 0
@@ -4292,6 +4297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
   _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
+  _soundPlayer: {fileID: 6515420711692853639}
 --- !u!1 &1549008120
 GameObject:
   m_ObjectHideFlags: 0
@@ -4440,6 +4446,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
   _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
+  _soundPlayer: {fileID: 6515420711692853639}
 --- !u!1 &1550146908
 GameObject:
   m_ObjectHideFlags: 0
@@ -4866,6 +4873,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
   _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
+  _soundPlayer: {fileID: 6515420711692853639}
 --- !u!1 &1716201189
 GameObject:
   m_ObjectHideFlags: 0
@@ -5002,6 +5010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
   _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
+  _soundPlayer: {fileID: 6515420711692853639}
 --- !u!1 &1718769584
 GameObject:
   m_ObjectHideFlags: 0
@@ -5507,6 +5516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
   _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
+  _soundPlayer: {fileID: 6515420711692853639}
 --- !u!1 &1881066666
 GameObject:
   m_ObjectHideFlags: 0
@@ -5892,6 +5902,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
   _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
+  _soundPlayer: {fileID: 6515420711692853639}
 --- !u!1 &2060370328
 GameObject:
   m_ObjectHideFlags: 0
@@ -6190,6 +6201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
   _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
+  _soundPlayer: {fileID: 6515420711692853639}
 --- !u!1 &169318755502544692
 GameObject:
   m_ObjectHideFlags: 0
@@ -6575,6 +6587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
   _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
+  _soundPlayer: {fileID: 6515420711692853639}
 --- !u!1 &1244538500869181061
 GameObject:
   m_ObjectHideFlags: 0
@@ -7699,6 +7712,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
   _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
+  _soundPlayer: {fileID: 6515420711692853639}
 --- !u!1 &3022597692871201178
 GameObject:
   m_ObjectHideFlags: 0
@@ -8519,6 +8533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
   _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
+  _soundPlayer: {fileID: 6515420711692853639}
 --- !u!1 &4544101255657101641
 GameObject:
   m_ObjectHideFlags: 0
@@ -8952,6 +8967,7 @@ GameObject:
   - component: {fileID: 5313347997363717247}
   - component: {fileID: 5313347997363717244}
   - component: {fileID: 5313347997363717245}
+  - component: {fileID: 4349325209745914019}
   m_Layer: 5
   m_Name: Screen Space Canvas
   m_TagString: Untagged
@@ -8982,6 +8998,7 @@ RectTransform:
   - {fileID: 7485116113748752254}
   - {fileID: 7279581802666195637}
   - {fileID: 1536926585}
+  - {fileID: 5884800396869407339}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9051,6 +9068,21 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &4349325209745914019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5313347997363717242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c7de798b296cc45bf32e452895896b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _musicSlider: {fileID: 1037139110}
+  _soundsSlider: {fileID: 1177231776}
+  _optionsPanel: {fileID: 7007968313455537613}
 --- !u!1 &5334419313492120043
 GameObject:
   m_ObjectHideFlags: 0
@@ -10229,6 +10261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
   _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
+  _soundPlayer: {fileID: 6515420711692853639}
 --- !u!1 &7501383178390112232
 GameObject:
   m_ObjectHideFlags: 0
@@ -10773,6 +10806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToIncrease: 0.2
   _buttonAudioClip: {fileID: 8300000, guid: af6edf002b4fa444b874e6ef217c68f3, type: 3}
+  _soundPlayer: {fileID: 6515420711692853639}
 --- !u!1 &8433952525321972629
 GameObject:
   m_ObjectHideFlags: 0
@@ -11108,3 +11142,80 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1001 &1583812567227764538
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5313347997363717246}
+    m_Modifications:
+    - target: {fileID: 4922953273504406864, guid: 8e1ba90d6bbfbd6469ccb5bdd1612489, type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922953273504406865, guid: 8e1ba90d6bbfbd6469ccb5bdd1612489, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922953273504406865, guid: 8e1ba90d6bbfbd6469ccb5bdd1612489, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922953273504406865, guid: 8e1ba90d6bbfbd6469ccb5bdd1612489, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922953273504406865, guid: 8e1ba90d6bbfbd6469ccb5bdd1612489, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922953273504406865, guid: 8e1ba90d6bbfbd6469ccb5bdd1612489, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922953273504406865, guid: 8e1ba90d6bbfbd6469ccb5bdd1612489, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922953273504406865, guid: 8e1ba90d6bbfbd6469ccb5bdd1612489, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922953273504406865, guid: 8e1ba90d6bbfbd6469ccb5bdd1612489, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922953273504406865, guid: 8e1ba90d6bbfbd6469ccb5bdd1612489, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922953273504406865, guid: 8e1ba90d6bbfbd6469ccb5bdd1612489, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922953273504406865, guid: 8e1ba90d6bbfbd6469ccb5bdd1612489, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922953273504406866, guid: 8e1ba90d6bbfbd6469ccb5bdd1612489, type: 3}
+      propertyPath: m_Name
+      value: Sound Player
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8e1ba90d6bbfbd6469ccb5bdd1612489, type: 3}
+--- !u!4 &5884800396869407339 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4922953273504406865, guid: 8e1ba90d6bbfbd6469ccb5bdd1612489, type: 3}
+  m_PrefabInstance: {fileID: 1583812567227764538}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6515420711692853639 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5733568028709613245, guid: 8e1ba90d6bbfbd6469ccb5bdd1612489, type: 3}
+  m_PrefabInstance: {fileID: 1583812567227764538}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2adfd7c2502086498f785150303301e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
