@@ -761,13 +761,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2568788597177969212}
+  - {fileID: 2013393022729703152}
   - {fileID: 1326517770}
   - {fileID: 174362994}
   - {fileID: 464157726}
   - {fileID: 1643542580}
   - {fileID: 1244059084}
   - {fileID: 684666451}
-  - {fileID: 2013393022729703152}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3132,7 +3132,7 @@ Transform:
   - {fileID: 664537016216918359}
   - {fileID: 8280109515266792394}
   m_Father: {fileID: 1358645666}
-  m_RootOrder: 7
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2013393022729703153
 GameObject:
@@ -5388,10 +5388,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1191705078}
-    - target: {fileID: 4349325209745914019, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
-      propertyPath: _maxMusicVolume
-      value: 0.4
-      objectReference: {fileID: 0}
     - target: {fileID: 4428768684821552094, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -5483,6 +5479,10 @@ PrefabInstance:
     - target: {fileID: 5313347997363717246, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6905603702037761861, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 7548607835752466893, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
