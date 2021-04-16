@@ -12,6 +12,7 @@ public class ArenaMenu : MonoBehaviour
     private bool _isDelaying = false;
     private float _delayAux;
 
+    [SerializeField] private GameObject _pauseButton;
     [SerializeField] private GameObject _pauseMenu;
     [SerializeField] private float _delayToResume = 4f;
     [SerializeField] private Text _delayResumeDisplay;
@@ -30,6 +31,7 @@ public class ArenaMenu : MonoBehaviour
         _playerInfo = FindObjectOfType<PlayerInfo>();
         _playerHealth = FindObjectOfType<PlayerHealth>();
         _dragonController = FindObjectOfType<DragonController>();
+        _pauseButton.SetActive(true);
         _pauseMenu.SetActive(false);
         _delayResumeDisplay.gameObject.SetActive(false);
         _gameOverPanel.SetActive(false);
@@ -58,6 +60,7 @@ public class ArenaMenu : MonoBehaviour
     private void FinishDelay()
     {
         Time.timeScale = 1;
+        _pauseButton.SetActive(true);
         _delayResumeDisplay.gameObject.SetActive(false);
         _isDelaying = false;
         _delayToResume = _delayAux;
@@ -68,6 +71,7 @@ public class ArenaMenu : MonoBehaviour
         if (!SceneLoader.IsLoading)
         {
             Time.timeScale = 0;
+            _pauseButton.SetActive(false);
             _pauseMenu.SetActive(true);
         }
     }

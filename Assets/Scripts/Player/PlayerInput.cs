@@ -25,7 +25,7 @@ public class PlayerInput : MonoBehaviour
 
     private void Update()
     {
-        if (_playerHealth.IsAlive && !_playerHealth.WasHit)
+        if (_playerHealth.IsHealthy())
             CheckInput();
     }
 

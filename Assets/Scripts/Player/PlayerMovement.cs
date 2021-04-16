@@ -4,6 +4,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private PlayerInput _playerInput;
     private PlayerAttack _playerAttack;
+    private PlayerHealth _playerHealth;
     private Transform _waypoint;
     private HeroController _heroController;
 
@@ -16,16 +17,20 @@ public class PlayerMovement : MonoBehaviour
     {
         _playerInput = GetComponent<PlayerInput>();
         _playerAttack = GetComponent<PlayerAttack>();
+        _playerHealth = GetComponent<PlayerHealth>();
         _heroController = GetComponent<HeroController>();
     }
 
     private void Update()
     {
-        CheckRaycast();
-        MoveToWaypoint();
+        if (_playerHealth.IsHealthy())
+        {
+            CheckMovement();
+            Move();
+        }
     }
 
-    private void CheckRaycast()
+    private void CheckMovement()
     {
         RaycastHit hit;
         if (Physics.Raycast(transform.position, _playerInput.SwipeDirection, out hit, 5f))
@@ -39,16 +44,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private IEnumerator SetMovementAnimation()
-    {
-        _playerAttack.CanAttack = false;
-        transform.forward = _playerInput.SwipeDirection;
-        _heroController.HeroAnimator.SetTrigger("Move");
-        yield return new WaitForSeconds(_movementTime);
-        _playerAttack.CanAttack = true;
-    }
-
-    private void MoveToWaypoint()
+    private void Move()
     {
         if (_waypoint != null)
         {
@@ -57,5 +53,14 @@ public class PlayerMovement : MonoBehaviour
                 transform.position.y,
                 _waypoint.position.z), _speed * Time.deltaTime);
         }
+    }
+
+    private IEnumerator SetMovementAnimation()
+    {
+        _playerAttack.CanAttack = false;
+        transform.forward = _playerInput.SwipeDirection;
+        _heroController.HeroAnimator.SetTrigger("Move");
+        yield return new WaitForSeconds(_movementTime);
+        _playerAttack.CanAttack = true;
     }
 }

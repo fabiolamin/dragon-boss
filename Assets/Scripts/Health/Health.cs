@@ -19,6 +19,11 @@ public abstract class Health : MonoBehaviour
         UpdateHealthDisplay();
     }
 
+    private void Update()
+    {
+        animator.SetBool("IsAlive", IsAlive);
+    }
+
     public void GetDamage(Collider other)
     {
         if (IsAlive)
@@ -46,7 +51,6 @@ public abstract class Health : MonoBehaviour
         if (_currentHealth <= 0)
         {
             IsAlive = false;
-            animator.SetTrigger("Death");
             StartCoroutine(DelayDeathTrigger());
         }
     }

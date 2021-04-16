@@ -50,4 +50,9 @@ public class PlayerHealth : Health
         yield return new WaitForSeconds(_delayFinishDamage);
         WasHit = false;
     }
+
+    public bool IsHealthy()
+    {
+        return IsAlive && !WasHit;
+    }
 }
