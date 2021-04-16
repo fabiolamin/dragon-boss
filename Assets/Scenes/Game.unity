@@ -888,6 +888,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4157097507393142612, guid: 4e1c5c167c7704a4488ad232fd1e7611, type: 3}
   m_PrefabInstance: {fileID: 1323156441}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1343385317 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1934339895, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
+  m_PrefabInstance: {fileID: 4578667602968970240}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1428889118
 GameObject:
   m_ObjectHideFlags: 0
@@ -2462,6 +2467,10 @@ PrefabInstance:
       propertyPath: _totalCoins
       value: 
       objectReference: {fileID: 4578667602968970242}
+    - target: {fileID: 637671947779399959, guid: 98a95123d5b0b71419eb064324fd49f3, type: 3}
+      propertyPath: _pauseButton
+      value: 
+      objectReference: {fileID: 1343385317}
     - target: {fileID: 637671947779399959, guid: 98a95123d5b0b71419eb064324fd49f3, type: 3}
       propertyPath: _sceneLoader
       value: 

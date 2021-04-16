@@ -43,6 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88a0a8a8720156742a34d5e93516b077, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _pauseButton: {fileID: 0}
   _pauseMenu: {fileID: 0}
   _delayToResume: 4
   _delayResumeDisplay: {fileID: 0}
@@ -50,4 +51,5 @@ MonoBehaviour:
   _scoreDisplay: {fileID: 0}
   _highScoreDisplay: {fileID: 0}
   _totalCoins: {fileID: 0}
+  _sceneLoader: {fileID: 0}
   _gameOverClip: {fileID: 8300000, guid: ca34ebea458bc264db051d7c7b50bf63, type: 3}
