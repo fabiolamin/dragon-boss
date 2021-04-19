@@ -673,6 +673,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Life Spawner
       objectReference: {fileID: 0}
+    - target: {fileID: 4157097507393142611, guid: 4e1c5c167c7704a4488ad232fd1e7611, type: 3}
+      propertyPath: _spawnVFXPrefab
+      value: 
+      objectReference: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
     - target: {fileID: 4157097507393142612, guid: 4e1c5c167c7704a4488ad232fd1e7611, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1080,6 +1084,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin Spawner
       objectReference: {fileID: 0}
+    - target: {fileID: 688307755087390123, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
+      propertyPath: _spawnVFXPrefab
+      value: 
+      objectReference: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
 --- !u!4 &1902351166246461176 stripped
@@ -1773,6 +1781,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1428889119}
     m_Modifications:
+    - target: {fileID: 984664439660787204, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
+      propertyPath: _spawnVFXPrefab
+      value: 
+      objectReference: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
     - target: {fileID: 984664439660787205, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
       propertyPath: m_Name
       value: Spell Item Spawner

@@ -25,18 +25,18 @@ public class PlayerCollider : MonoBehaviour
             case "Life":
                 PlayEffects();
                 _playerHealth.UpdateCurrentHealth(1f);
-                other.GetComponent<Item>().GetReadyToSpawn();
+                other.GetComponent<Item>().ItemSpawner.StartSpawn();
                 break;
             case "Coin":
                 PlayEffects();
                 _playerInfo.SaveCoins(other);
-                other.GetComponent<Item>().GetReadyToSpawn();
+                other.GetComponent<Item>().ItemSpawner.StartSpawn();
                 break;
             case "Spell Item":
                 PlayEffects();
                 SpellItem spellItem = other.GetComponent<SpellItem>();
                 _playerInfo.UpdateAmountOfSpells(spellItem.SpellInfo.SpellName, 1);
-                other.GetComponent<Item>().GetReadyToSpawn();
+                other.GetComponent<Item>().ItemSpawner.StartSpawn();
                 break;
         }
 

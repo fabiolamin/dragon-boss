@@ -5,25 +5,37 @@ using System.Linq;
 public class ItemSpawner : MonoBehaviour
 {
     private Item _item;
-    private SpawnLocation[] _spawnLocations;
+    private SpawnPosition[] _spawnPositions;
     private Coroutine _spawnCoroutine;
 
     [SerializeField] private float _spawnInterval = 1f;
     [SerializeField] private float _minDelay = 3f;
     [SerializeField] private float _maxDelay = 4f;
 
-    public SpawnLocation CurrentSpawnLocation { get; set; }
+    public SpawnPosition CurrentSpawnPosition { get; set; }
 
     private void Awake()
     {
         _item = transform.GetChild(0).GetComponent<Item>();
-        _spawnLocations = FindObjectsOfType<SpawnLocation>();
+        _spawnPositions = FindObjectsOfType<SpawnPosition>();
+
+        StartSpawn();
     }
 
     public void StartSpawn()
     {
-        StopSpawn();
+        _item.gameObject.SetActive(false);
+        ResetSpawn();
         StartCoroutine(SetSpawnInterval());
+    }
+
+    private void ResetSpawn()
+    {
+        if (_spawnCoroutine != null && CurrentSpawnPosition != null)
+        {
+            CurrentSpawnPosition.IsEmpty = true;
+            StopCoroutine(_spawnCoroutine);
+        }
     }
 
     public IEnumerator SetSpawnInterval()
@@ -34,28 +46,25 @@ public class ItemSpawner : MonoBehaviour
 
     private IEnumerator SpawnItem()
     {
-        CurrentSpawnLocation = GetAvailableSpawnLocation();
-        _item.MoveToLocation();
+        SetItemSpawnPosition();
         float delay = Random.Range(_minDelay, _maxDelay);
         yield return new WaitForSeconds(delay);
-        CurrentSpawnLocation.PlaySpawnVFX();
-        _item.GetReadyToSpawn();
+        CurrentSpawnPosition.PlaySpawnVFX();
+        StartSpawn();
     }
 
-    private SpawnLocation GetAvailableSpawnLocation()
+    private void SetItemSpawnPosition()
     {
-        var availableSpawnLocations = _spawnLocations.Where(s => s.IsEmpty());
+        CurrentSpawnPosition = GetAvailableSpawnPosition();
+        CurrentSpawnPosition.PlaySpawnVFX();
+        CurrentSpawnPosition.IsEmpty = false;
+        _item.SetNewPosition(CurrentSpawnPosition.GetPosition());
+    }
+
+    private SpawnPosition GetAvailableSpawnPosition()
+    {
+        var availableSpawnLocations = _spawnPositions.Where(s => s.IsEmpty);
         int random = Random.Range(0, availableSpawnLocations.Count());
         return availableSpawnLocations.ElementAt(random);
-    }
-
-    public void StopSpawn()
-    {
-        if(_spawnCoroutine != null && CurrentSpawnLocation != null)
-        {
-            CurrentSpawnLocation.RemoveItem();
-            CurrentSpawnLocation = null;
-            StopCoroutine(_spawnCoroutine);
-        }
     }
 }

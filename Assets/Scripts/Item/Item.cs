@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    private ItemSpawner _itemSpawner;
     [SerializeField] private float _rotationSpeed = 10f;
+
+    public ItemSpawner ItemSpawner { get; private set; }
 
     private void Awake()
     {
-        _itemSpawner = transform.parent.GetComponent<ItemSpawner>();
-        GetReadyToSpawn();
+        ItemSpawner = transform.parent.GetComponent<ItemSpawner>();
     }
 
     private void Update()
@@ -16,30 +16,17 @@ public class Item : MonoBehaviour
         Rotate();
     }
 
-    public void GetReadyToSpawn()
-    {            
-        _itemSpawner.StartSpawn();
-        gameObject.SetActive(false);
-    }
-
     private void Rotate()
     {
         transform.Rotate(0f, _rotationSpeed * Time.deltaTime, 0f);
     }
 
-    public void MoveToLocation()
+    public void SetNewPosition(Vector3 position)
     {
         gameObject.SetActive(true);
 
-        SpawnLocation spawnLocation = _itemSpawner.CurrentSpawnLocation;
+        Vector3 newPosition = new Vector3(position.x, transform.position.y, position.z);
 
-        transform.position = new Vector3(spawnLocation.transform.position.x,
-        transform.position.y,
-       spawnLocation.transform.position.z);
-    }
-
-    public void SetSpawnLocation(SpawnLocation spawnLocation)
-    {
-        _itemSpawner.CurrentSpawnLocation = spawnLocation;
+        transform.position = newPosition;
     }
 }
