@@ -1876,7 +1876,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5027248897959522208}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: ActivateStorePanel
         m_Mode: 1
@@ -3326,7 +3326,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5027248897959522208}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: ActivateOptionsPanel
         m_Mode: 1
@@ -3837,7 +3837,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5027248899150976618}
         m_TargetAssemblyTypeName: HeroSelection, Assembly-CSharp
         m_MethodName: SelectHero
         m_Mode: 1
@@ -4271,7 +4271,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5027248897959522208}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: ActivateMainMenu
         m_Mode: 1
@@ -6175,7 +6175,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 609836777215640176}
         m_TargetAssemblyTypeName: HeroPurchasing, Assembly-CSharp
         m_MethodName: PurchaseHero
         m_Mode: 1
@@ -6561,7 +6561,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5027248897959522208}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: ActivateHeroesStore
         m_Mode: 1
@@ -7412,7 +7412,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.40058115, y: 0.754}
   m_AnchorMax: {x: 0.40058115, y: 0.754}
-  m_AnchoredPosition: {x: -0.0000038146973, y: 4.64859}
+  m_AnchoredPosition: {x: 0, y: 4.6485596}
   m_SizeDelta: {x: 70.827, y: 70.825}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3965594613458597980
@@ -7767,7 +7767,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5027248899150976618}
         m_TargetAssemblyTypeName: HeroSelection, Assembly-CSharp
         m_MethodName: ShowHero
         m_Mode: 3
@@ -8588,7 +8588,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5027248897959522208}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: ActivateSpellStore
         m_Mode: 1
@@ -9049,8 +9049,9 @@ GameObject:
   - component: {fileID: 5313347997363717244}
   - component: {fileID: 5313347997363717245}
   - component: {fileID: 4349325209745914019}
+  - component: {fileID: 5027248897959522208}
   m_Layer: 5
-  m_Name: Screen Space Canvas
+  m_Name: Main Menu Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9080,6 +9081,7 @@ RectTransform:
   - {fileID: 7279581802666195637}
   - {fileID: 1536926585}
   - {fileID: 5884800396869407339}
+  - {fileID: 5027248899150976617}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9166,6 +9168,28 @@ MonoBehaviour:
   _optionsPanel: {fileID: 7007968313455537613}
   _maxMusicVolume: 0.4
   _maxSoundVolume: 0.8
+--- !u!114 &5027248897959522208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5313347997363717242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df2914bcfe43d3f4db31fd51499e5d3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _storePanel: {fileID: 483113322}
+  _optionsPanel: {fileID: 7007968313455537613}
+  _creditsPanel: {fileID: 6802831730006763741}
+  _spellStore: {fileID: 1881066666}
+  _heroesStore: {fileID: 1779300953}
+  _playerCoinsDisplay: {fileID: 558851075}
+  _highScoreDisplay: {fileID: 1905417484961836151}
+  _backButton: {fileID: 1536926584}
+  _musicSlider: {fileID: 1037139110}
+  _soundsSlider: {fileID: 1177231776}
 --- !u!1 &5334419313492120043
 GameObject:
   m_ObjectHideFlags: 0
@@ -10483,7 +10507,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5027248897959522208}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: ActivateCreditsPanel
         m_Mode: 1
@@ -11028,7 +11052,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5027248899150976618}
         m_TargetAssemblyTypeName: HeroSelection, Assembly-CSharp
         m_MethodName: ShowHero
         m_Mode: 3
@@ -11349,7 +11373,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.49100003, y: 0.762}
   m_AnchorMax: {x: 0.49100003, y: 0.762}
-  m_AnchoredPosition: {x: 28, y: -5.1908875}
+  m_AnchoredPosition: {x: 28, y: -5.190918}
   m_SizeDelta: {x: 182.8333, y: 56.905}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6753931221484171654
@@ -11465,5 +11489,137 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c2adfd7c2502086498f785150303301e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &6438850432973519166
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5313347997363717246}
+    m_Modifications:
+    - target: {fileID: 2062371991769296724, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+      propertyPath: _buyButton
+      value: 
+      objectReference: {fileID: 123147366193543556}
+    - target: {fileID: 2062371991769296724, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+      propertyPath: _selectButton
+      value: 
+      objectReference: {fileID: 1422669020}
+    - target: {fileID: 2062371991769296724, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+      propertyPath: _heroNameDisplay
+      value: 
+      objectReference: {fileID: 499156675}
+    - target: {fileID: 2062371991769296724, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+      propertyPath: _selectedDisplay
+      value: 
+      objectReference: {fileID: 1232714326}
+    - target: {fileID: 2062371991769296724, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+      propertyPath: _heroPriceDisplay
+      value: 
+      objectReference: {fileID: 4278713287929594528}
+    - target: {fileID: 2062371991769296724, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+      propertyPath: _playerCoinsDisplay
+      value: 
+      objectReference: {fileID: 558851077}
+    - target: {fileID: 2062371991769296724, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+      propertyPath: _notificationDisplay
+      value: 
+      objectReference: {fileID: 1470860701}
+    - target: {fileID: 2062371991769296724, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+      propertyPath: _storeHeroPlaceholder
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062371991769296724, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+      propertyPath: _selectedHeroPlaceholder
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062371991769296726, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+      propertyPath: m_Name
+      value: Hero Selection
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062371991769296727, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062371991769296727, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.44334975
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062371991769296727, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.44334975
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062371991769296727, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.44334975
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062371991769296727, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -249.38423
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062371991769296727, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -540
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062371991769296727, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062371991769296727, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062371991769296727, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062371991769296727, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062371991769296727, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062371991769296727, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062371991769296727, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062371991769296727, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+--- !u!4 &5027248899150976617 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2062371991769296727, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+  m_PrefabInstance: {fileID: 6438850432973519166}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5027248899150976618 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2062371991769296724, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+  m_PrefabInstance: {fileID: 6438850432973519166}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f28ab70d88dc52840b299bdcd34f993b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &609836777215640176 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5849603121661737806, guid: 5410a10bac9492c4bbd35fc1fa82ca1b, type: 3}
+  m_PrefabInstance: {fileID: 6438850432973519166}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2f22cf0b2166c340a92e8b3848ec8f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
