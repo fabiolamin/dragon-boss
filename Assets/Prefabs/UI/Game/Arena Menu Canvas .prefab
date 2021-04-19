@@ -201,7 +201,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 255557088328357664}
         m_TargetAssemblyTypeName: ArenaMenu, Assembly-CSharp
         m_MethodName: Restart
         m_Mode: 1
@@ -540,7 +540,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 255557088328357664}
         m_TargetAssemblyTypeName: ArenaMenu, Assembly-CSharp
         m_MethodName: GoMainMenu
         m_Mode: 1
@@ -1218,7 +1218,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 255557088328357664}
         m_TargetAssemblyTypeName: ArenaMenu, Assembly-CSharp
         m_MethodName: Pause
         m_Mode: 1
@@ -1732,8 +1732,9 @@ GameObject:
   - component: {fileID: 1816204398386292454}
   - component: {fileID: 1816204398386292453}
   - component: {fileID: 1816204398386292452}
+  - component: {fileID: 255557088328357664}
   m_Layer: 5
-  m_Name: 'Arena Canvas '
+  m_Name: 'Arena Menu Canvas '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1825,6 +1826,28 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &255557088328357664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816204398386292451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a0a8a8720156742a34d5e93516b077, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pauseButton: {fileID: 1934339895}
+  _pauseMenu: {fileID: 6941205670957210122}
+  _delayToResume: 4
+  _delayResumeDisplay: {fileID: 1949096584}
+  _gameOverPanel: {fileID: 30885191}
+  _scoreDisplay: {fileID: 2098771038}
+  _highScoreDisplay: {fileID: 4195578315373482453}
+  _totalCoins: {fileID: 5991350929976534562}
+  _sceneLoader: {fileID: 0}
+  _gameOverClip: {fileID: 8300000, guid: ca34ebea458bc264db051d7c7b50bf63, type: 3}
 --- !u!1 &1925648533378506887
 GameObject:
   m_ObjectHideFlags: 0
@@ -2117,7 +2140,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 255557088328357664}
         m_TargetAssemblyTypeName: ArenaMenu, Assembly-CSharp
         m_MethodName: ResumeGame
         m_Mode: 1
