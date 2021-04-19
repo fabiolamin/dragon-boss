@@ -277,8 +277,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spellRecycling: {fileID: 5097880853127634719}
-  _minDelay: 1
-  _maxDelay: 6
+  _minDelay: 0.5
+  _maxDelay: 8.5
 --- !u!114 &5097880853127634719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2203,8 +2203,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spellRecycling: {fileID: 736063384003946294}
-  _minDelay: 1
-  _maxDelay: 6
+  _minDelay: 0.5
+  _maxDelay: 8.5
 --- !u!114 &736063384003946294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2582,8 +2582,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spellRecycling: {fileID: 1252511362848795007}
-  _minDelay: 1
-  _maxDelay: 6
+  _minDelay: 0.5
+  _maxDelay: 8.5
 --- !u!114 &1252511362848795007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2741,8 +2741,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spellRecycling: {fileID: 6529262861735891325}
-  _minDelay: 1
-  _maxDelay: 6
+  _minDelay: 0.5
+  _maxDelay: 8.5
 --- !u!114 &6529262861735891325
 MonoBehaviour:
   m_ObjectHideFlags: 0

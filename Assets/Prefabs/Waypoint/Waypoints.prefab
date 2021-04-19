@@ -393,7 +393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnVFXPrefab: {fileID: 0}
+  _spawnVFXPrefab: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
 --- !u!1 &2013393021123273513
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,7 +597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnVFXPrefab: {fileID: 0}
+  _spawnVFXPrefab: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
 --- !u!1 &2013393021448998379
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,7 +706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnVFXPrefab: {fileID: 0}
+  _spawnVFXPrefab: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
 --- !u!1 &2013393021497074916
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,7 +815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnVFXPrefab: {fileID: 0}
+  _spawnVFXPrefab: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
 --- !u!1 &2013393021563516406
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,7 +1019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnVFXPrefab: {fileID: 0}
+  _spawnVFXPrefab: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
 --- !u!1 &2013393021933729835
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,7 +1128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnVFXPrefab: {fileID: 0}
+  _spawnVFXPrefab: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
 --- !u!1 &2013393022211594325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1390,7 +1390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnVFXPrefab: {fileID: 0}
+  _spawnVFXPrefab: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
 --- !u!1 &2013393022338394617
 GameObject:
   m_ObjectHideFlags: 0
@@ -1499,7 +1499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnVFXPrefab: {fileID: 0}
+  _spawnVFXPrefab: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
 --- !u!1 &2013393022351195450
 GameObject:
   m_ObjectHideFlags: 0
@@ -1608,7 +1608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnVFXPrefab: {fileID: 0}
+  _spawnVFXPrefab: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
 --- !u!1 &2013393022732780208
 GameObject:
   m_ObjectHideFlags: 0
@@ -1717,7 +1717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnVFXPrefab: {fileID: 0}
+  _spawnVFXPrefab: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
 --- !u!1 &2013393022843351509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1826,7 +1826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnVFXPrefab: {fileID: 0}
+  _spawnVFXPrefab: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
 --- !u!1 &2013393022933629291
 GameObject:
   m_ObjectHideFlags: 0
@@ -1935,7 +1935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnVFXPrefab: {fileID: 0}
+  _spawnVFXPrefab: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
 --- !u!1 &2347904558257818527
 GameObject:
   m_ObjectHideFlags: 0
@@ -1948,6 +1948,7 @@ GameObject:
   - component: {fileID: 6936384585752081443}
   - component: {fileID: 8644480407414966983}
   - component: {fileID: 4077566346383624609}
+  - component: {fileID: 272377021}
   m_Layer: 9
   m_Name: Waypoint 1 (16)
   m_TagString: Waypoint
@@ -2031,6 +2032,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 5.549767, z: 1}
   m_Center: {x: 0, y: 2.2748835, z: 0}
+--- !u!114 &272377021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2347904558257818527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawnVFXPrefab: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
 --- !u!1 &3186842365764720279
 GameObject:
   m_ObjectHideFlags: 0
@@ -2138,6 +2152,7 @@ GameObject:
   - component: {fileID: 9100744597403916425}
   - component: {fileID: 2749334967720939075}
   - component: {fileID: 4284708757666256030}
+  - component: {fileID: 2059516529}
   m_Layer: 9
   m_Name: Waypoint 1 (17)
   m_TagString: Waypoint
@@ -2221,6 +2236,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 5.549767, z: 1}
   m_Center: {x: 0, y: 2.2748835, z: 0}
+--- !u!114 &2059516529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3826896248071349386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawnVFXPrefab: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
 --- !u!1 &4939020467497253686
 GameObject:
   m_ObjectHideFlags: 0
@@ -2233,6 +2261,7 @@ GameObject:
   - component: {fileID: 9057583440926757805}
   - component: {fileID: 6792912822996657925}
   - component: {fileID: 4161042993530845487}
+  - component: {fileID: 709401960}
   m_Layer: 9
   m_Name: Waypoint 1 (19)
   m_TagString: Waypoint
@@ -2316,6 +2345,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 5.549767, z: 1}
   m_Center: {x: 0, y: 2.2748835, z: 0}
+--- !u!114 &709401960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4939020467497253686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawnVFXPrefab: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
 --- !u!1 &5744560968830266892
 GameObject:
   m_ObjectHideFlags: 0
@@ -2613,6 +2655,7 @@ GameObject:
   - component: {fileID: 4779492177035333023}
   - component: {fileID: 5617081828251172925}
   - component: {fileID: 7266487931038770870}
+  - component: {fileID: 1686080935}
   m_Layer: 9
   m_Name: Waypoint 1 (18)
   m_TagString: Waypoint
@@ -2696,6 +2739,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 5.549767, z: 1}
   m_Center: {x: 0, y: 2.2748835, z: 0}
+--- !u!114 &1686080935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8125069287209496634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e3be920c2fbda48add82cdac1fcfc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawnVFXPrefab: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
 --- !u!1 &8243386463027495484
 GameObject:
   m_ObjectHideFlags: 0
