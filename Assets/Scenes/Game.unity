@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fade Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2722304143620758817, guid: 527ad9a5d022f4a499c12877ce6ab579, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2722304143620758821, guid: 527ad9a5d022f4a499c12877ce6ab579, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -851,7 +855,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 696417220312906380, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 697592198699495674, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
       propertyPath: playerCoinsDisplay
@@ -980,22 +984,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 71804161049878460, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: _spawnVFXPrefab
-      value: 
-      objectReference: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
-    - target: {fileID: 1144566557221096183, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1144566557221096183, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1144566557221096183, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4
-      objectReference: {fileID: 0}
     - target: {fileID: 2013393022241840458, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1044,198 +1032,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waypoints
       objectReference: {fileID: 0}
-    - target: {fileID: 2125696336110898515, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2125696336110898515, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2125696336110898515, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2464477667799614678, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: _spawnVFXPrefab
-      value: 
-      objectReference: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
-    - target: {fileID: 2704067375936529375, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2704067375936529375, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2704067375936529375, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3234302444284726789, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3234302444284726789, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3234302444284726789, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296320043370885008, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: _spawnVFXPrefab
-      value: 
-      objectReference: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
-    - target: {fileID: 3407805104986801279, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3407805104986801279, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3407805104986801279, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3762158074673708641, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3762158074673708641, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3762158074673708641, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3991956382278968697, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: _spawnVFXPrefab
-      value: 
-      objectReference: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
-    - target: {fileID: 4407103218424989032, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: _spawnVFXPrefab
-      value: 
-      objectReference: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
-    - target: {fileID: 4476092186248980335, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4476092186248980335, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4476092186248980335, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4774028895314796199, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4774028895314796199, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4774028895314796199, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5701929990269792589, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5701929990269792589, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5701929990269792589, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5829757012064958594, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: _spawnVFXPrefab
-      value: 
-      objectReference: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
-    - target: {fileID: 6055683596197843601, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6055683596197843601, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6055683596197843601, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6055683596197843601, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6055683596197843601, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6055683596197843601, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6055683596197843601, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6346651001398887888, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6346651001398887888, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6346651001398887888, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6573158228023750008, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: _spawnVFXPrefab
-      value: 
-      objectReference: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
-    - target: {fileID: 6799985044110459528, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: _spawnVFXPrefab
-      value: 
-      objectReference: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
-    - target: {fileID: 6818746219693153206, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: _spawnVFXPrefab
-      value: 
-      objectReference: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
-    - target: {fileID: 6955284603380909515, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6955284603380909515, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6955284603380909515, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7369388660647415533, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: _spawnVFXPrefab
-      value: 
-      objectReference: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
-    - target: {fileID: 7432286869683946510, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: _spawnVFXPrefab
-      value: 
-      objectReference: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
-    - target: {fileID: 7730133322226938395, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
-      propertyPath: _spawnVFXPrefab
-      value: 
-      objectReference: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1484d046323e8a34b9e4475710ceb5de, type: 3}
 --- !u!1001 &2791886153214801187
