@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4159055027873726907}
   - component: {fileID: 4159055027873726905}
   - component: {fileID: 4159055027873726906}
-  - component: {fileID: 6803373484711228225}
   - component: {fileID: 5257766834134439003}
   m_Layer: 9
   m_Name: Spell Item 1
@@ -64,19 +63,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6803373484711228225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4159055027873726852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac5755f0c74d49e499ed9ef736189d1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rotationSpeed: 250
 --- !u!114 &5257766834134439003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,6 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f053ed0454e56444e8383574acec1e65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _rotationSpeed: 250
   _spellInfo: {fileID: 11400000, guid: 90242c842c574a44ab1a62ee31a64539, type: 2}
 --- !u!1001 &4159055027794248519
 PrefabInstance:
