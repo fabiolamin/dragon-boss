@@ -24,15 +24,21 @@ public abstract class Health : MonoBehaviour
         animator.SetBool("IsAlive", IsAlive);
     }
 
-    public void GetDamage(Collider other)
+    private void OnTriggerEnter(Collider other)
+    {
+        Spell spell = other.gameObject.GetComponent<Spell>();
+        GetDamage(spell.SpellInfo.Damage);
+        other.gameObject.SetActive(false);
+    }
+
+    public void GetDamage(float amount)
     {
         if (IsAlive)
         {
             soundPlayer.PlaySound(_damageClip);
             damageVFX.Play();
             SetDamageAnimation();
-            Spell spell = other.gameObject.GetComponent<Spell>();
-            UpdateCurrentHealth(-spell.SpellInfo.Damage);
+            UpdateCurrentHealth(-amount);
         }
     }
 
