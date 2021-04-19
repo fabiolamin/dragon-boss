@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 702071599726169444}
   - component: {fileID: 697592198699495655}
+  - component: {fileID: 290899383185546083}
   - component: {fileID: 697592198699495672}
   - component: {fileID: 697592198699495673}
   - component: {fileID: 697592198699495674}
@@ -57,6 +58,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8588105, y: 1.6723309, z: 0.3545624}
   m_Center: {x: -0.07059476, y: 0.9129367, z: -0.033616602}
+--- !u!114 &290899383185546083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696417220312906380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7609d8a7339811046a6b67dd338ab06f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bonusVFX: {fileID: 8749060319224263819}
+  _bonusClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
+  _soundPlayer: {fileID: 9017762276236075722}
 --- !u!114 &697592198699495672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,9 +163,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d8834d069cb107458926809b7b8bea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pickUpItemVFX: {fileID: 8749060319224263819}
-  _pickUpClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
-  _soundPlayer: {fileID: 9017762276236075722}
 --- !u!96 &8557580925427719870
 TrailRenderer:
   serializedVersion: 2
@@ -393,7 +406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7111943840704688791, guid: 81a37b89d19460641991dbb9ea895818, type: 3}
       propertyPath: m_Name
-      value: Pick Up VFX
+      value: Bonus VFX
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81a37b89d19460641991dbb9ea895818, type: 3}
@@ -460,7 +473,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4922953273504406866, guid: 8e1ba90d6bbfbd6469ccb5bdd1612489, type: 3}
       propertyPath: m_Name
-      value: Sound Player Pick Up
+      value: Sound Player Bonus
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e1ba90d6bbfbd6469ccb5bdd1612489, type: 3}

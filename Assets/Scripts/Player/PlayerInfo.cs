@@ -24,12 +24,11 @@ public class PlayerInfo : MonoBehaviour
         playerCoinsDisplay.text = Coins.ToString();
     }
 
-    public void SaveCoins(Collider other)
+    public void SaveCoins()
     {
         Coins++;
         PlayerPrefs.SetInt("Coins", Coins);
         UpdatePlayerCoinsDisplay();
-        other.gameObject.SetActive(false);
     }
 
     public void SaveHighScore()
