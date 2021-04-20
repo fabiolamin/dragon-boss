@@ -17,13 +17,13 @@ public class DragonHealth : Health
 
     protected override void UpdateHealthDisplay()
     {
-        _healthBarDisplay.fillAmount = _currentHealth / health;
+        _healthBarDisplay.fillAmount = _currentHealth / healthData.Health;
     }
 
     public void IncreaseHealth(float amount)
     {
-        health += amount;
-        _currentHealth = health;
+        healthData.Health += amount;
+        _currentHealth = healthData.Health;
         UpdateHealthDisplay();
     }
 

@@ -35,7 +35,7 @@ public class PlayerHealth : Health
 
     public void RecoverHealth()
     {
-        _currentHealth = health;
+        _currentHealth = healthData.Health;
         UpdateHealthDisplay();
     }
 

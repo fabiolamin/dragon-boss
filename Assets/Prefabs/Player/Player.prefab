@@ -126,10 +126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 466efb9876fe49240bf8b532378d3e6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthData: {fileID: 11400000, guid: efa2b3dc51c5c514c83a6624f420a33d, type: 2}
   soundPlayer: {fileID: 2542371030394019617}
-  _currentHealth: 0
-  health: 3
-  _delayDeathTrigger: 2
   damageVFX: {fileID: 5988996156096063407}
   _damageClip: {fileID: 8300000, guid: fd5c198ab7d167c46b5641d942f82c0b, type: 3}
   _healthDisplay: {fileID: 0}
