@@ -69,6 +69,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7609d8a7339811046a6b67dd338ab06f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerData: {fileID: 11400000, guid: 41bcc8154c272c741bef4bc500291583, type: 2}
   _bonusVFX: {fileID: 8749060319224263819}
   _bonusClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
   _soundPlayer: {fileID: 9017762276236075722}
@@ -84,8 +85,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16814c6f55d052044bc1868b1f746d2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 20
-  _movementTime: 0.6
   _movementClip: {fileID: 8300000, guid: 60ce34050a2120548a92ae92939564ee, type: 3}
   _soundPlayer: {fileID: 2542371030394019617}
 --- !u!114 &697592198699495673
@@ -134,7 +133,6 @@ MonoBehaviour:
   damageVFX: {fileID: 5988996156096063407}
   _damageClip: {fileID: 8300000, guid: fd5c198ab7d167c46b5641d942f82c0b, type: 3}
   _healthDisplay: {fileID: 0}
-  _delayFinishDamage: 0.5
 --- !u!114 &697592198699495676
 MonoBehaviour:
   m_ObjectHideFlags: 0

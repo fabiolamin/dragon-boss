@@ -4,10 +4,10 @@ using System.Collections;
 public class PlayerHealth : Health
 {
     private ArenaMenuGUI _arenaMenuGUI;
+    private Player _player;
     private PlayerInfo _playerInfo;
     private HeroController _heroController;
     [SerializeField] private Text _healthDisplay;
-    [SerializeField] private float _delayFinishDamage = 0.5f;
 
     public GameObject HealthDisplay { get { return _healthDisplay.gameObject; } }
     public bool WasHit { get; set; } = false;
@@ -15,6 +15,7 @@ public class PlayerHealth : Health
     private void Start()
     {
         _arenaMenuGUI = FindObjectOfType<ArenaMenuGUI>();
+        _player = GetComponent<Player>();
         _playerInfo = GetComponent<PlayerInfo>();
         _heroController = GetComponent<HeroController>();
         animator = _heroController.HeroAnimator;
@@ -47,7 +48,7 @@ public class PlayerHealth : Health
     {
         WasHit = true;
         animator.SetTrigger("Damage");
-        yield return new WaitForSeconds(_delayFinishDamage);
+        yield return new WaitForSeconds(_player.PlayerData.DelayFinishDamage);
         WasHit = false;
     }
 
