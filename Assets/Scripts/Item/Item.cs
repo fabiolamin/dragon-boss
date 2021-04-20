@@ -4,7 +4,7 @@ public abstract class Item : MonoBehaviour
 {
     private ItemSpawner _itemSpawner;
     [SerializeField] private float _rotationSpeed = 10f;
-    
+
 
     private void Awake()
     {
@@ -19,7 +19,11 @@ public abstract class Item : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Player player = other.gameObject.GetComponent<Player>();
-        PickUpItem(player);
+
+        if (player != null)
+        {
+            PickUpItem(player);
+        }
     }
 
     private void PickUpItem(Player player)
