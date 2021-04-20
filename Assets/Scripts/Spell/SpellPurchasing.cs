@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class SpellPurchasing : MonoBehaviour
 {
-    [SerializeField] private SpellInfo _spellInfo;
+    [SerializeField] private SpellData _spellData;
     [SerializeField] private Text _nameDisplay;
     [SerializeField] private Text _damageDisplay;
     [SerializeField] private Text _priceDisplay;
@@ -21,21 +21,21 @@ public class SpellPurchasing : MonoBehaviour
     private void UpdatePlayerInfoDisplay()
     {
         _playerCoinsDisplay.text = PlayerPrefs.GetInt("Coins").ToString();
-        _spellAmountDisplay.text = PlayerPrefs.GetInt(_spellInfo.SpellName.ToString()).ToString();
+        _spellAmountDisplay.text = PlayerPrefs.GetInt(_spellData.SpellName.ToString()).ToString();
     }
 
     private void SetOrderDisplay()
     {
-        _nameDisplay.text = _spellInfo.SpellName.ToString();
-        _damageDisplay.text = "Damage " + _spellInfo.Damage;
-        _priceDisplay.text = _spellInfo.Price.ToString();
+        _nameDisplay.text = _spellData.SpellName.ToString();
+        _damageDisplay.text = "Damage " + _spellData.Damage;
+        _priceDisplay.text = _spellData.Price.ToString();
     }
 
     private void PurchaseSpell()
     {
         int playerCoins = PlayerPrefs.GetInt("Coins");
 
-        if (playerCoins >= _spellInfo.Price)
+        if (playerCoins >= _spellData.Price)
         {
             AddSpell();
             UpdatePlayerCoins(playerCoins);
@@ -45,7 +45,7 @@ public class SpellPurchasing : MonoBehaviour
 
     private void AddSpell()
     {
-        string spellName = _spellInfo.SpellName.ToString();
+        string spellName = _spellData.SpellName.ToString();
         int spellAmount = PlayerPrefs.GetInt(spellName);
         spellAmount++;
         PlayerPrefs.SetInt(spellName, spellAmount);
@@ -53,7 +53,7 @@ public class SpellPurchasing : MonoBehaviour
 
     private void UpdatePlayerCoins(int playerCoins)
     {
-        playerCoins -= _spellInfo.Price;
+        playerCoins -= _spellData.Price;
         PlayerPrefs.SetInt("Coins", playerCoins);
     }
 }

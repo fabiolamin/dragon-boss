@@ -1,7 +1,7 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Spell Info", menuName = "Spell Info")]
-public class SpellInfo : ScriptableObject
+[CreateAssetMenu(fileName = "New Spell Data", menuName = "Spell Data")]
+public class SpellData : ScriptableObject
 {
     [SerializeField] private SpellName _spellName;
     [SerializeField] private float _damage = 1f;

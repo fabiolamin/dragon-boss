@@ -28,7 +28,7 @@ public class SpellRecycling : MonoBehaviour
     {
         foreach (var spell in SpellsInstantiated)
         {
-            if (!spell.gameObject.activeSelf && spell.SpellInfo.SpellName == spellName)
+            if (!spell.gameObject.activeSelf && spell.SpellData.SpellName == spellName)
             {
                 spell.gameObject.SetActive(true);
                 spell.transform.position = transform.position;

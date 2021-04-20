@@ -1199,6 +1199,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8760821585041212039, guid: a3bb2a20f17979d4c905c14751cf16d1, type: 3}
+      propertyPath: _spellData
+      value: 
+      objectReference: {fileID: 11400000, guid: 904cb87e8cb05804bb4cd823014c6a03, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3bb2a20f17979d4c905c14751cf16d1, type: 3}
 --- !u!4 &3418407200424789194 stripped
@@ -1712,6 +1716,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1517408155650388432, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
+      propertyPath: _spellData
+      value: 
+      objectReference: {fileID: 11400000, guid: 90242c842c574a44ab1a62ee31a64539, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
 --- !u!4 &7630338213750420507 stripped
@@ -1825,6 +1833,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6955751431562911717, guid: 22205ea460a23c24197a44f9cdca8974, type: 3}
+      propertyPath: _spellData
+      value: 
+      objectReference: {fileID: 11400000, guid: 9bf7dd4189c8a6349b844620ef5cb3c1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22205ea460a23c24197a44f9cdca8974, type: 3}
 --- !u!4 &9028696374480845631 stripped
@@ -1839,6 +1851,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5462525572920696082}
     m_Modifications:
+    - target: {fileID: 1813772239464314677, guid: e865416e8bcbb1746bcea6b868a0837c, type: 3}
+      propertyPath: _spellData
+      value: 
+      objectReference: {fileID: 11400000, guid: 945eeb2fbb9bd8242b84afd9dfe8c34a, type: 2}
     - target: {fileID: 4923395850453717205, guid: e865416e8bcbb1746bcea6b868a0837c, type: 3}
       propertyPath: m_Name
       value: Spell Item 2

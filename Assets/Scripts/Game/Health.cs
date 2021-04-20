@@ -27,7 +27,7 @@ public abstract class Health : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Spell spell = other.gameObject.GetComponent<Spell>();
-        GetDamage(spell.SpellInfo.Damage);
+        GetDamage(spell.SpellData.Damage);
         other.gameObject.SetActive(false);
     }
 
