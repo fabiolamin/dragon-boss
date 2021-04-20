@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Fire Ball Emitter Data", menuName = "Fire Ball Emitter Data")]
+[CreateAssetMenu(fileName = "Fire Ball Emitter Data", menuName = "New Fire Ball Emitter Data")]
 public class FireBallEmitterData : ScriptableObject
 {
     [SerializeField] private float _minDelay;

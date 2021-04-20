@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Hero Data", menuName = "Hero Data")]
+[CreateAssetMenu(fileName = "Hero Data", menuName = "New Hero Data")]
 public class HeroData : ScriptableObject
 {
     [SerializeField] private int _id;

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Item Spawner Data", menuName = "Item Spawner Data")]
+[CreateAssetMenu(fileName = "Item Spawner Data", menuName = "New Item Spawner Data")]
 public class ItemSpawnerData : ScriptableObject
 {
     [SerializeField] private float _spawnInterval;

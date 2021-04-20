@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Player Data", menuName = "Player Data")]
+[CreateAssetMenu(fileName = "Player Data", menuName = "New Player Data")]
 public class PlayerData : ScriptableObject
 {
     [SerializeField] private float _speed;

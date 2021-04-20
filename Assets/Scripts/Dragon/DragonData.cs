@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Dragon Data", menuName = "Dragon Data")]
+[CreateAssetMenu(fileName = "Dragon Data", menuName = "New Dragon Data")]
 public class DragonData : ScriptableObject
 {
     [SerializeField] private float _speedIncrementPerArena = 0.5f;

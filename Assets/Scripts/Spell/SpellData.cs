@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Spell Data", menuName = "Spell Data")]
+[CreateAssetMenu(fileName = "Spell Data", menuName = "New Spell Data")]
 public class SpellData : ScriptableObject
 {
     [SerializeField] private SpellName _spellName;
