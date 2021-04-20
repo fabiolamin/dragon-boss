@@ -35,21 +35,21 @@ public class HeroPurchasing : MonoBehaviour
 
     private void SaveHero(int id)
     {
-        string heroesDataJson = PlayerPrefs.GetString("Heroes");
-        var heroesData = JsonUtility.FromJson<HeroesData>(heroesDataJson);
-        heroesData.HeroesId.Add(id);
-        heroesDataJson = JsonUtility.ToJson(heroesData);
-        PlayerPrefs.SetString("Heroes", heroesDataJson);
+        string heroesData = PlayerPrefs.GetString("Heroes");
+        var heroList = JsonUtility.FromJson<HeroList>(heroesData);
+        heroList.HeroesId.Add(id);
+        heroesData = JsonUtility.ToJson(heroList);
+        PlayerPrefs.SetString("Heroes", heroesData);
     }
 
     public bool IsHeroAlreadyPurchased(int id)
     {
-        string heroesDataJson = PlayerPrefs.GetString("Heroes");
-        var heroesData = JsonUtility.FromJson<HeroesData>(heroesDataJson);
+        string heroesData = PlayerPrefs.GetString("Heroes");
+        var heroList = JsonUtility.FromJson<HeroList>(heroesData);
 
-        if (heroesData.HeroesId.Count > 0)
+        if (heroList.HeroesId.Count > 0)
         {
-            foreach (var heroId in heroesData.HeroesId)
+            foreach (var heroId in heroList.HeroesId)
             {
                 if (id == heroId)
                 {

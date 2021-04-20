@@ -17,10 +17,10 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("FirstPlay", 1);
             PlayerPrefs.SetInt("Coins", 1000);
 
-            HeroesData heroesData = new HeroesData();
-            heroesData.HeroesId = new List<int>() { 1 };
-            string heroesIdJson = JsonUtility.ToJson(heroesData);
-            PlayerPrefs.SetString("Heroes", heroesIdJson);
+            HeroList heroList = new HeroList();
+            heroList.HeroesId = new List<int>() { 1 };
+            string heroesData = JsonUtility.ToJson(heroList);
+            PlayerPrefs.SetString("Heroes", heroesData);
         }
     }
 }
