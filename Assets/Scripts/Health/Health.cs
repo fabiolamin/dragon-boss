@@ -4,18 +4,17 @@ using System.Collections;
 public abstract class Health : MonoBehaviour
 {
     protected Animator animator;
+    protected float _currentHealth;
 
+    [SerializeField] protected HealthData healthData;
     [SerializeField] protected SoundPlayer soundPlayer;
-    [SerializeField] protected float _currentHealth;
-    [SerializeField] protected float health = 3f;
-    [SerializeField] protected float _delayDeathTrigger = 0.5f;
     [SerializeField] protected ParticleSystem damageVFX;
     [SerializeField] protected AudioClip _damageClip;
     public bool IsAlive { get; private set; } = true;
 
     private void Awake()
     {
-        _currentHealth = health;
+        _currentHealth = healthData.Health;
         UpdateHealthDisplay();
     }
 
@@ -24,15 +23,25 @@ public abstract class Health : MonoBehaviour
         animator.SetBool("IsAlive", IsAlive);
     }
 
-    public void GetDamage(Collider other)
+    private void OnTriggerEnter(Collider other)
+    {
+        Spell spell = other.gameObject.GetComponent<Spell>();
+
+        if (spell != null)
+        {
+            GetDamage(spell.SpellData.Damage);
+            other.gameObject.SetActive(false);
+        }
+    }
+
+    public void GetDamage(float amount)
     {
         if (IsAlive)
         {
             soundPlayer.PlaySound(_damageClip);
             damageVFX.Play();
             SetDamageAnimation();
-            Spell spell = other.gameObject.GetComponent<Spell>();
-            UpdateCurrentHealth(-spell.SpellInfo.Damage);
+            UpdateCurrentHealth(-amount);
         }
     }
 
@@ -40,7 +49,7 @@ public abstract class Health : MonoBehaviour
     {
         if (!SceneLoader.IsLoading && IsAlive)
         {
-            _currentHealth = Mathf.Clamp(_currentHealth + amount, 0, health);
+            _currentHealth = Mathf.Clamp(_currentHealth + amount, 0, healthData.Health);
             UpdateHealthDisplay();
             CheckHealth();
         }
@@ -57,7 +66,7 @@ public abstract class Health : MonoBehaviour
 
     private IEnumerator DelayDeathTrigger()
     {
-        yield return new WaitForSeconds(_delayDeathTrigger);
+        yield return new WaitForSeconds(healthData.DelayDeathTrigger);
         SetDeath();
     }
 

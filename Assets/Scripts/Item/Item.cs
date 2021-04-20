@@ -1,19 +1,36 @@
 using UnityEngine;
 
-public class Item : MonoBehaviour
+public abstract class Item : MonoBehaviour
 {
+    private ItemSpawner _itemSpawner;
     [SerializeField] private float _rotationSpeed = 10f;
 
-    public ItemSpawner ItemSpawner { get; private set; }
 
     private void Awake()
     {
-        ItemSpawner = transform.parent.GetComponent<ItemSpawner>();
+        _itemSpawner = transform.parent.GetComponent<ItemSpawner>();
     }
 
     private void Update()
     {
         Rotate();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Player player = other.gameObject.GetComponent<Player>();
+
+        if (player != null)
+        {
+            PickUpItem(player);
+        }
+    }
+
+    private void PickUpItem(Player player)
+    {
+        player.PlayBonusEffects();
+        SetBonus(player);
+        _itemSpawner.StartSpawn();
     }
 
     private void Rotate()
@@ -26,7 +43,8 @@ public class Item : MonoBehaviour
         gameObject.SetActive(true);
 
         Vector3 newPosition = new Vector3(position.x, transform.position.y, position.z);
-
         transform.position = newPosition;
     }
+
+    protected abstract void SetBonus(Player player);
 }

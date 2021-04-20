@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8758684741095439982}
   - component: {fileID: 8051283836949299677}
   - component: {fileID: 981370824234464958}
-  - component: {fileID: 1970861541661423998}
+  - component: {fileID: 6920786817635645650}
   m_Layer: 9
   m_Name: Life
   m_TagString: Life
@@ -63,7 +63,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1970861541661423998
+--- !u!114 &6920786817635645650
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -72,10 +72,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8758684741095439983}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac5755f0c74d49e499ed9ef736189d1b, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ce26a479a62d534191250fb2804bd0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationSpeed: 250
+  _lifeBonus: 1
 --- !u!1001 &8758684740582850673
 PrefabInstance:
   m_ObjectHideFlags: 0

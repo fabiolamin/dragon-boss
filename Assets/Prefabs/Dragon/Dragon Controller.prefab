@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6127758909303390195}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -47,15 +47,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2e17c5e8b97dfd4a8b0e66c2a4a6fb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dragonData: {fileID: 11400000, guid: 6227da7efcd49b84eb3e1606aabdf4e0, type: 2}
   _dragons:
   - {fileID: 2095213413985754361}
   - {fileID: 1802140953980504863}
   - {fileID: 1802140953296816470}
   - {fileID: 1802140953159192033}
   _currentDragonDisplay: {fileID: 0}
-  _speedIncrementPerArena: 0.5
-  _healthIncrementPerArena: 5
-  _dragonSoundDelay: 5
 --- !u!1001 &5844511896833767829
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -115,6 +113,18 @@ PrefabInstance:
       propertyPath: _spellsParent
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3391797226819121476, guid: a2818499979ab5a4fabf5ec43c5dc6c3, type: 3}
+      propertyPath: _fireBallEmitterData
+      value: 
+      objectReference: {fileID: 11400000, guid: 6bee4098d7e0f354eb8727397df1c55e, type: 2}
+    - target: {fileID: 3464533543960946371, guid: a2818499979ab5a4fabf5ec43c5dc6c3, type: 3}
+      propertyPath: _fireBallEmitterData
+      value: 
+      objectReference: {fileID: 11400000, guid: 6bee4098d7e0f354eb8727397df1c55e, type: 2}
+    - target: {fileID: 3820048737918563273, guid: a2818499979ab5a4fabf5ec43c5dc6c3, type: 3}
+      propertyPath: _fireBallEmitterData
+      value: 
+      objectReference: {fileID: 11400000, guid: 6bee4098d7e0f354eb8727397df1c55e, type: 2}
     - target: {fileID: 5097880853127634719, guid: a2818499979ab5a4fabf5ec43c5dc6c3, type: 3}
       propertyPath: _spellsParent
       value: 
@@ -123,6 +133,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dragon
       objectReference: {fileID: 0}
+    - target: {fileID: 5630517677406693449, guid: a2818499979ab5a4fabf5ec43c5dc6c3, type: 3}
+      propertyPath: _fireBallEmitterData
+      value: 
+      objectReference: {fileID: 11400000, guid: 6bee4098d7e0f354eb8727397df1c55e, type: 2}
     - target: {fileID: 6529262861735891325, guid: a2818499979ab5a4fabf5ec43c5dc6c3, type: 3}
       propertyPath: _spellsParent
       value: 

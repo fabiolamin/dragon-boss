@@ -24,7 +24,6 @@ public class PlayerAttack : MonoBehaviour
     {
         if (CanCastSpell())
         {
-            //_soundPlayer.PlaySound(_spellClip);
             transform.forward = new Vector3(0f, 0f, 1f);
             _heroController.HeroAnimator.SetTrigger("Attack");
 

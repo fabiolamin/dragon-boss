@@ -28,7 +28,7 @@ public class HeroSelection : MonoBehaviour
 
     private void SpawnHeroes()
     {
-        var orderedHeroes = _heroesPrefab.OrderBy(h => h.Price).ToList();
+        var orderedHeroes = _heroesPrefab.OrderBy(h => h.HeroData.Price).ToList();
 
         foreach (var heroPrefab in orderedHeroes)
         {
@@ -42,7 +42,7 @@ public class HeroSelection : MonoBehaviour
     public void ShowSelectedHero()
     {
         Heroes.ForEach(h => h.gameObject.SetActive(false));
-        Hero selectedHero = Heroes.Single(h => h.Id == PlayerPrefs.GetInt("Hero"));
+        Hero selectedHero = Heroes.Single(h => h.HeroData.Id == PlayerPrefs.GetInt("Hero"));
         SetHeroTransform(selectedHero, _selectedHeroPlaceholder);
     }
 
@@ -65,9 +65,9 @@ public class HeroSelection : MonoBehaviour
 
     private void SetUpHeroDisplay(Hero hero)
     {
-        _heroNameDisplay.text = hero.Name;
+        _heroNameDisplay.text = hero.HeroData.Name;
 
-        if (_heroPurchasing.IsHeroAlreadyPurchased(hero.Id))
+        if (_heroPurchasing.IsHeroAlreadyPurchased(hero.HeroData.Id))
         {
             ShowPurchasedHero(hero);
         }
@@ -75,7 +75,7 @@ public class HeroSelection : MonoBehaviour
         {
             _buyButton.SetActive(true);
             _heroPriceDisplay.gameObject.SetActive(true);
-            _heroPriceDisplay.text = hero.Price.ToString();
+            _heroPriceDisplay.text = hero.HeroData.Price.ToString();
         }
     }
 
@@ -85,7 +85,7 @@ public class HeroSelection : MonoBehaviour
         _buyButton.SetActive(false);
         _heroPriceDisplay.gameObject.SetActive(false);
 
-        if (hero.Id == PlayerPrefs.GetInt("Hero"))
+        if (hero.HeroData.Id == PlayerPrefs.GetInt("Hero"))
         {
             _selectButton.SetActive(false);
             _selectedDisplay.SetActive(true);
@@ -95,7 +95,7 @@ public class HeroSelection : MonoBehaviour
     public void SelectHero()
     {
         Hero hero = Heroes.Single(h => h.gameObject.activeSelf);
-        PlayerPrefs.SetInt("Hero", hero.Id);
+        PlayerPrefs.SetInt("Hero", hero.HeroData.Id);
         _selectButton.SetActive(false);
         _selectedDisplay.SetActive(true);
     }

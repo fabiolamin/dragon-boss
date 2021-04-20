@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f19074b399b733a488982f9827e73853, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spellInfo: {fileID: 11400000, guid: 945eeb2fbb9bd8242b84afd9dfe8c34a, type: 2}
+  _spellData: {fileID: 11400000, guid: 945eeb2fbb9bd8242b84afd9dfe8c34a, type: 2}
   _speed: 30
   _maxSpeed: 20
 --- !u!1001 &7133447364572638442

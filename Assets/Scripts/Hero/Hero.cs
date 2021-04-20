@@ -2,11 +2,7 @@ using UnityEngine;
 
 public class Hero : MonoBehaviour
 {
-    [SerializeField] private int _id;
-    [SerializeField] private string _name;
-    [SerializeField] private int _price;
+    [SerializeField] private HeroData _heroData;
 
-    public int Id { get { return _id; } }
-    public string Name { get { return _name; } }
-    public int Price { get { return _price; } }
+    public HeroData HeroData { get { return _heroData; } }
 }

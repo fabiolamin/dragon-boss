@@ -276,9 +276,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28d451a9856f5ca4f8a4ba7665c180cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _fireBallEmitterData: {fileID: 11400000, guid: 6bee4098d7e0f354eb8727397df1c55e, type: 2}
   _spellRecycling: {fileID: 5097880853127634719}
-  _minDelay: 0.5
-  _maxDelay: 8.5
 --- !u!114 &5097880853127634719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1552,7 +1551,6 @@ GameObject:
   - component: {fileID: 4725420555667048649}
   - component: {fileID: 5046408241798039936}
   - component: {fileID: 8217768265254610298}
-  - component: {fileID: 3766582417862770879}
   - component: {fileID: 5324434478525616901}
   - component: {fileID: 2269508551971300896}
   m_Layer: 7
@@ -1627,10 +1625,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b740831670c4742a52e7e0085ab20a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthData: {fileID: 11400000, guid: 7ef7d398533d139448abbfc942056e4b, type: 2}
   soundPlayer: {fileID: 4298053736374055435}
-  _currentHealth: 0
-  health: 10
-  _delayDeathTrigger: 1.4
   damageVFX: {fileID: 7005347055404784994}
   _damageClip: {fileID: 8300000, guid: 4c9562e8b102c9f449397f46f0c3c481, type: 3}
   _healthBarDisplay: {fileID: 5931077382476864493}
@@ -1651,18 +1647,6 @@ MonoBehaviour:
   - {fileID: 3820048737918563273}
   - {fileID: 3464533543960946371}
   - {fileID: 5630517677406693449}
---- !u!114 &3766582417862770879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5478718990904927596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6a8a7592e1cdb04d9ebe423add7f0a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5324434478525616901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2202,9 +2186,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28d451a9856f5ca4f8a4ba7665c180cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _fireBallEmitterData: {fileID: 11400000, guid: 6bee4098d7e0f354eb8727397df1c55e, type: 2}
   _spellRecycling: {fileID: 736063384003946294}
-  _minDelay: 0.5
-  _maxDelay: 8.5
 --- !u!114 &736063384003946294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2581,9 +2564,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28d451a9856f5ca4f8a4ba7665c180cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _fireBallEmitterData: {fileID: 11400000, guid: 6bee4098d7e0f354eb8727397df1c55e, type: 2}
   _spellRecycling: {fileID: 1252511362848795007}
-  _minDelay: 0.5
-  _maxDelay: 8.5
 --- !u!114 &1252511362848795007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2740,9 +2722,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28d451a9856f5ca4f8a4ba7665c180cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _fireBallEmitterData: {fileID: 11400000, guid: 6bee4098d7e0f354eb8727397df1c55e, type: 2}
   _spellRecycling: {fileID: 6529262861735891325}
-  _minDelay: 0.5
-  _maxDelay: 8.5
 --- !u!114 &6529262861735891325
 MonoBehaviour:
   m_ObjectHideFlags: 0

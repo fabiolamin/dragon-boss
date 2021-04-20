@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 702071599726169444}
   - component: {fileID: 697592198699495655}
+  - component: {fileID: 290899383185546083}
   - component: {fileID: 697592198699495672}
   - component: {fileID: 697592198699495673}
   - component: {fileID: 697592198699495674}
   - component: {fileID: 697592198699495675}
   - component: {fileID: 697592198699495676}
-  - component: {fileID: 7793988030726769978}
   - component: {fileID: 8557580925427719870}
   - component: {fileID: 7795791191290657758}
   m_Layer: 6
@@ -57,6 +57,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8588105, y: 1.6723309, z: 0.3545624}
   m_Center: {x: -0.07059476, y: 0.9129367, z: -0.033616602}
+--- !u!114 &290899383185546083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696417220312906380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7609d8a7339811046a6b67dd338ab06f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerData: {fileID: 11400000, guid: 41bcc8154c272c741bef4bc500291583, type: 2}
+  _bonusVFX: {fileID: 8749060319224263819}
+  _bonusClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
+  _soundPlayer: {fileID: 9017762276236075722}
 --- !u!114 &697592198699495672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,8 +85,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16814c6f55d052044bc1868b1f746d2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 20
-  _movementTime: 0.6
   _movementClip: {fileID: 8300000, guid: 60ce34050a2120548a92ae92939564ee, type: 3}
   _soundPlayer: {fileID: 2542371030394019617}
 --- !u!114 &697592198699495673
@@ -112,14 +126,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 466efb9876fe49240bf8b532378d3e6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthData: {fileID: 11400000, guid: efa2b3dc51c5c514c83a6624f420a33d, type: 2}
   soundPlayer: {fileID: 2542371030394019617}
-  _currentHealth: 0
-  health: 3
-  _delayDeathTrigger: 2
   damageVFX: {fileID: 5988996156096063407}
   _damageClip: {fileID: 8300000, guid: fd5c198ab7d167c46b5641d942f82c0b, type: 3}
   _healthDisplay: {fileID: 0}
-  _delayFinishDamage: 0.5
 --- !u!114 &697592198699495676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,21 +146,6 @@ MonoBehaviour:
   _spellRecycling: {fileID: 697592199893397360}
   _spellClip: {fileID: 8300000, guid: e40b74b352f0dd041b7896da89525419, type: 3}
   _soundPlayer: {fileID: 2542371030394019617}
---- !u!114 &7793988030726769978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 696417220312906380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d8834d069cb107458926809b7b8bea2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _pickUpItemVFX: {fileID: 8749060319224263819}
-  _pickUpClip: {fileID: 8300000, guid: 1fd59f57d63dab449baae2d1c1ef94cc, type: 3}
-  _soundPlayer: {fileID: 9017762276236075722}
 --- !u!96 &8557580925427719870
 TrailRenderer:
   serializedVersion: 2
@@ -393,7 +389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7111943840704688791, guid: 81a37b89d19460641991dbb9ea895818, type: 3}
       propertyPath: m_Name
-      value: Pick Up VFX
+      value: Bonus VFX
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81a37b89d19460641991dbb9ea895818, type: 3}
@@ -460,7 +456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4922953273504406866, guid: 8e1ba90d6bbfbd6469ccb5bdd1612489, type: 3}
       propertyPath: m_Name
-      value: Sound Player Pick Up
+      value: Sound Player Bonus
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e1ba90d6bbfbd6469ccb5bdd1612489, type: 3}

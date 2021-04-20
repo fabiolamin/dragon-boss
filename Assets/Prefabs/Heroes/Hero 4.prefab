@@ -754,9 +754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e9a97c2bbcc0a459b382bf398aae23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: 4
-  _name: Krea
-  _price: 500
+  _heroData: {fileID: 11400000, guid: 637357b7792902449b5ce045ae1987a2, type: 2}
 --- !u!1 &8276835468920887079
 GameObject:
   m_ObjectHideFlags: 0

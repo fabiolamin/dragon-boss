@@ -1,14 +1,11 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DragonController : MonoBehaviour
 {
+    [SerializeField] private DragonData _dragonData;
     [SerializeField] private GameObject[] _dragons;
     [SerializeField] private Text _currentDragonDisplay;
-    [SerializeField] private float _speedIncrementPerArena = 0.5f;
-    [SerializeField] private float _healthIncrementPerArena = 50f;
-    [SerializeField] private float _dragonSoundDelay = 5f;
 
     public delegate void DragonDeath();
     public static event DragonDeath DragonDeathHandler;
@@ -68,8 +65,8 @@ public class DragonController : MonoBehaviour
     {
         foreach (var dragon in _dragons)
         {
-            dragon.GetComponent<FireBallController>().IncreaseFireBallsSpeed(_speedIncrementPerArena);
-            dragon.GetComponent<DragonHealth>().IncreaseHealth(_healthIncrementPerArena);
+            dragon.GetComponent<FireBallController>().IncreaseFireBallsSpeed(_dragonData.SpeedIncrementPerArena);
+            dragon.GetComponent<DragonHealth>().IncreaseHealth(_dragonData.HealthIncrementPerArena);
         }
     }
 
