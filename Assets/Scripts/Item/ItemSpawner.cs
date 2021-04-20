@@ -8,9 +8,7 @@ public class ItemSpawner : MonoBehaviour
     private SpawnPosition[] _spawnPositions;
     private Coroutine _spawnCoroutine;
 
-    [SerializeField] private float _spawnInterval = 1f;
-    [SerializeField] private float _minDelay = 3f;
-    [SerializeField] private float _maxDelay = 4f;
+    [SerializeField] private ItemSpawnerData _itemSpawnerData;
 
     public SpawnPosition CurrentSpawnPosition { get; set; }
 
@@ -40,14 +38,14 @@ public class ItemSpawner : MonoBehaviour
 
     public IEnumerator SetSpawnInterval()
     {
-        yield return new WaitForSeconds(_spawnInterval);
+        yield return new WaitForSeconds(_itemSpawnerData.SpawnInterval);
         _spawnCoroutine = StartCoroutine(SpawnItem());
     }
 
     private IEnumerator SpawnItem()
     {
         SetItemSpawnPosition();
-        float delay = Random.Range(_minDelay, _maxDelay);
+        float delay = Random.Range(_itemSpawnerData.MinDelay, _itemSpawnerData.MaxDelay);
         yield return new WaitForSeconds(delay);
         CurrentSpawnPosition.PlaySpawnVFX();
         StartSpawn();

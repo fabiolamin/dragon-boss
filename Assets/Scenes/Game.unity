@@ -353,10 +353,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1428889119}
     m_Modifications:
-    - target: {fileID: 2122997703, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -10.59
-      objectReference: {fileID: 0}
     - target: {fileID: 688307755087390116, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -406,9 +402,9 @@ PrefabInstance:
       value: Coin Spawner (1)
       objectReference: {fileID: 0}
     - target: {fileID: 688307755087390123, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
-      propertyPath: _spawnInterval
-      value: 4
-      objectReference: {fileID: 0}
+      propertyPath: _itemSpawnerData
+      value: 
+      objectReference: {fileID: 11400000, guid: 379771f2f83f26f47abf92d86dcf10d9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
 --- !u!4 &945901168 stripped
@@ -510,10 +506,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Life Spawner
       objectReference: {fileID: 0}
-    - target: {fileID: 4157097507393142611, guid: 4e1c5c167c7704a4488ad232fd1e7611, type: 3}
-      propertyPath: _spawnVFXPrefab
-      value: 
-      objectReference: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
     - target: {fileID: 4157097507393142612, guid: 4e1c5c167c7704a4488ad232fd1e7611, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -643,10 +635,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1428889119}
     m_Modifications:
-    - target: {fileID: 2122997703, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -10.59
-      objectReference: {fileID: 0}
     - target: {fileID: 688307755087390116, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -695,10 +683,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin Spawner (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 688307755087390123, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
-      propertyPath: _spawnInterval
-      value: 8
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
 --- !u!4 &1672464315 stripped
@@ -713,10 +697,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1428889119}
     m_Modifications:
-    - target: {fileID: 2122997703, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -10.59
-      objectReference: {fileID: 0}
     - target: {fileID: 688307755087390116, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -766,9 +746,9 @@ PrefabInstance:
       value: Coin Spawner (2)
       objectReference: {fileID: 0}
     - target: {fileID: 688307755087390123, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
-      propertyPath: _spawnInterval
-      value: 6
-      objectReference: {fileID: 0}
+      propertyPath: _itemSpawnerData
+      value: 
+      objectReference: {fileID: 11400000, guid: fa595425a73e10e49b8d0a74eca3c8b0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
 --- !u!4 &1835577907 stripped
@@ -967,6 +947,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin Spawner
       objectReference: {fileID: 0}
+    - target: {fileID: 688307755087390123, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
+      propertyPath: _itemSpawnerData
+      value: 
+      objectReference: {fileID: 11400000, guid: c333a0388e846c243bef5aac9200982f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c992d3d993cae07489f7bf5ae46f646a, type: 3}
 --- !u!4 &1902351166246461176 stripped
@@ -1482,9 +1466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93a5c85bf3fe2584085cec64e816e9bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnInterval: 15
-  _minDelay: 3
-  _maxDelay: 5
+  _itemSpawnerData: {fileID: 11400000, guid: 3720ade2d58ce91409ec33734dbf9d15, type: 2}
 --- !u!1001 &6127758910762634231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1654,9 +1636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93a5c85bf3fe2584085cec64e816e9bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnInterval: 17
-  _minDelay: 3
-  _maxDelay: 5
+  _itemSpawnerData: {fileID: 11400000, guid: 62c6616fbd44b87458c5f1a595753430, type: 2}
 --- !u!1001 &7227805964280136208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1664,10 +1644,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1428889119}
     m_Modifications:
-    - target: {fileID: 984664439660787204, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
-      propertyPath: _spawnVFXPrefab
-      value: 
-      objectReference: {fileID: 6942273816689405744, guid: c67961c3817bc2d4dafa4046d33add71, type: 3}
     - target: {fileID: 984664439660787205, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
       propertyPath: m_Name
       value: Spell Item Spawner
@@ -1716,10 +1692,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1517408155650388432, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
-      propertyPath: _spellData
-      value: 
-      objectReference: {fileID: 11400000, guid: 90242c842c574a44ab1a62ee31a64539, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec37e00af2a61e24cb13bc172c9f9fde, type: 3}
 --- !u!4 &7630338213750420507 stripped
@@ -1739,9 +1711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93a5c85bf3fe2584085cec64e816e9bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnInterval: 19
-  _minDelay: 3
-  _maxDelay: 5
+  _itemSpawnerData: {fileID: 11400000, guid: 7bcbe7d196effa340a57f77d292880d3, type: 2}
 --- !u!1 &7727240179230701863
 GameObject:
   m_ObjectHideFlags: 0
