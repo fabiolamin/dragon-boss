@@ -1206,9 +1206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e9a97c2bbcc0a459b382bf398aae23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: 3
-  _name: Gregory
-  _price: 300
+  _heroData: {fileID: 11400000, guid: f4ba959a2de453243b0ed2eced5cbb23, type: 2}
 --- !u!1 &1397274988121145052
 GameObject:
   m_ObjectHideFlags: 0

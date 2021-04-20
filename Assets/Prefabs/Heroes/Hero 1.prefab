@@ -2631,9 +2631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e9a97c2bbcc0a459b382bf398aae23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: 1
-  _name: Hadrian
-  _price: 0
+  _heroData: {fileID: 11400000, guid: d06b0f05f8f7fc94fac7965a769daad8, type: 2}
 --- !u!1 &373446894401116037
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ public class HeroPurchasing : MonoBehaviour
         Hero selectedHero = _heroSelection.Heroes.Single(h => h.gameObject.activeSelf);
         int playerCoinsAmount = PlayerPrefs.GetInt("Coins");
 
-        if (playerCoinsAmount >= selectedHero.Price)
+        if (playerCoinsAmount >= selectedHero.HeroData.Price)
         {
             CompletePurchasing(selectedHero, playerCoinsAmount);
         }
@@ -27,8 +27,8 @@ public class HeroPurchasing : MonoBehaviour
 
     private void CompletePurchasing(Hero selectedHero, int playerCoinsAmount)
     {
-        SaveHero(selectedHero.Id);
-        playerCoinsAmount = Mathf.Clamp(playerCoinsAmount - selectedHero.Price, 0, PlayerPrefs.GetInt("Coins"));
+        SaveHero(selectedHero.HeroData.Id);
+        playerCoinsAmount = Mathf.Clamp(playerCoinsAmount - selectedHero.HeroData.Price, 0, PlayerPrefs.GetInt("Coins"));
         PlayerPrefs.SetInt("Coins", playerCoinsAmount);
         _heroSelection.UpdateHeroDisplayAfterPurchasing(playerCoinsAmount);
     }
