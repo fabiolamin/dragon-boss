@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Dragon
   m_EditorClassIdentifier: 
   _speedIncrementPerArena: 0.5
-  _healthIncrementPerArena: 5
+  _healthIncrementPerArena: 2.5

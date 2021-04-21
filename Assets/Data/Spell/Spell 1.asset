@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Spell 1
   m_EditorClassIdentifier: 
   _spellName: 8
-  _damage: 10
-  _price: 20
+  _damage: 5
+  _price: 10
   _speed: 30
   _maxSpeed: 30
