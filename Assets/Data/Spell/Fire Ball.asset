@@ -16,4 +16,4 @@ MonoBehaviour:
   _damage: 1
   _price: 0
   _speed: 10
-  _maxSpeed: 20
+  _maxSpeed: 25
