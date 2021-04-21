@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75ef65bec6c4ee41b5cd5ee5767a344, type: 3}
   m_Name: Life Spawner
   m_EditorClassIdentifier: 
-  _spawnInterval: 5
-  _minDelay: 2
-  _maxDelay: 4
+  _spawnInterval: 15
+  _minDelay: 3
+  _maxDelay: 5
