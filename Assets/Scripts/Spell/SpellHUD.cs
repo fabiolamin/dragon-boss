@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 public class SpellHUD : MonoBehaviour, IPointerDownHandler
 {
     private PlayerAttack _playerAttack;
-    [SerializeField] private SpellName _spellName;
+    [SerializeField] private SpellData _spellData;
     [SerializeField] private Text _spellAmountDisplay;
     [SerializeField] private GameObject _block;
 
@@ -18,13 +18,13 @@ public class SpellHUD : MonoBehaviour, IPointerDownHandler
 
     public void UpdateDisplay()
     {
-        int amount = PlayerPrefs.GetInt(_spellName.ToString());
+        int amount = PlayerPrefs.GetInt(_spellData.SpellName.ToString());
         _spellAmountDisplay.text = amount.ToString();
         _block.SetActive(amount == 0);
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        _playerAttack.SpellName = _spellName;
+        _playerAttack.SpellName = _spellData.SpellName;
     }
 }
