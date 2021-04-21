@@ -271,6 +271,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -116.7
       objectReference: {fileID: 0}
+    - target: {fileID: 3743570836514112485, guid: a537d04b2e77d5b4ebf3a8ea62950eb3, type: 3}
+      propertyPath: m_Intensity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3743570836514112486, guid: a537d04b2e77d5b4ebf3a8ea62950eb3, type: 3}
       propertyPath: m_Name
       value: Directional Light
