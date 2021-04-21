@@ -5,5 +5,9 @@ public enum SpellName
     Spell1,
     Spell2,
     Spell3,
-    Spell4
+    Spell4,
+    Sozeg,
+    Olur,
+    Uely,
+    Kruk
 }
