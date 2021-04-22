@@ -30,12 +30,12 @@ public class PlayerHealth : Health
 
     protected override void UpdateHealthDisplay()
     {
-        _healthDisplay.text = _currentHealth.ToString();
+        _healthDisplay.text = currentHealth.ToString();
     }
 
     public void RecoverHealth()
     {
-        _currentHealth = healthData.Health;
+        currentHealth = healthData.Health;
         UpdateHealthDisplay();
     }
 
