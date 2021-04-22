@@ -14,6 +14,12 @@ public class SceneLoader : MonoBehaviour
         IsLoading = false;
     }
 
+    public void RestartScene()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        LoadScene(currentSceneIndex);
+    }
+
     public void LoadScene(int index)
     {
         IsLoading = true;
