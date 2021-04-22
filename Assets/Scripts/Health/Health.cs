@@ -4,7 +4,8 @@ using System.Collections;
 public abstract class Health : MonoBehaviour
 {
     protected Animator animator;
-    protected float _currentHealth;
+    protected float maxHealth;
+    protected float currentHealth;
 
     [SerializeField] protected HealthData healthData;
     [SerializeField] protected SoundPlayer soundPlayer;
@@ -14,7 +15,8 @@ public abstract class Health : MonoBehaviour
 
     private void Awake()
     {
-        _currentHealth = healthData.Health;
+        maxHealth = healthData.Health;
+        currentHealth = healthData.Health;
         UpdateHealthDisplay();
     }
 
@@ -49,7 +51,7 @@ public abstract class Health : MonoBehaviour
     {
         if (!SceneLoader.IsLoading && IsAlive)
         {
-            _currentHealth = Mathf.Clamp(_currentHealth + amount, 0, healthData.Health);
+            currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
             UpdateHealthDisplay();
             CheckHealth();
         }
@@ -57,7 +59,7 @@ public abstract class Health : MonoBehaviour
 
     private void CheckHealth()
     {
-        if (_currentHealth <= 0)
+        if (currentHealth <= 0)
         {
             IsAlive = false;
             StartCoroutine(DelayDeathTrigger());
