@@ -9,6 +9,9 @@ public class PlayerHealth : Health
     private HeroController _heroController;
     [SerializeField] private Text _healthDisplay;
 
+    public delegate void PlayerDeath();
+    public event PlayerDeath PlayerDeathHandler;
+
     public GameObject HealthDisplay { get { return _healthDisplay.gameObject; } }
     public bool WasHit { get; set; } = false;
 
@@ -24,7 +27,7 @@ public class PlayerHealth : Health
     protected override void SetDeath()
     {
         _playerInfo.SaveHighScore();
-        _arenaMenuGUI.ActivateGameOverPanel();
+        PlayerDeathHandler?.Invoke();
         gameObject.SetActive(false);
     }
 
