@@ -1847,7 +1847,6 @@ MonoBehaviour:
   _highScoreDisplay: {fileID: 4195578315373482453}
   _totalCoins: {fileID: 5991350929976534562}
   _sceneLoader: {fileID: 0}
-  _gameOverClip: {fileID: 8300000, guid: ca34ebea458bc264db051d7c7b50bf63, type: 3}
 --- !u!1 &1925648533378506887
 GameObject:
   m_ObjectHideFlags: 0
@@ -2207,7 +2206,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.52639955}
   m_AnchorMax: {x: 0.5, y: 0.52639955}
-  m_AnchoredPosition: {x: -0.0000030994, y: -0.000015258789}
+  m_AnchoredPosition: {x: -0.0000030994, y: 0}
   m_SizeDelta: {x: 389.37, y: 522.6261}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1442521862304065451
