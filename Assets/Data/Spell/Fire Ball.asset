@@ -15,5 +15,5 @@ MonoBehaviour:
   _spellName: 0
   _damage: 1
   _price: 0
-  _speed: 10
+  _speed: 7.5
   _maxSpeed: 25
