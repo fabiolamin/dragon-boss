@@ -3,12 +3,7 @@ using UnityEngine;
 
 public class HeroPurchasing : MonoBehaviour
 {
-    private HeroSelection _heroSelection;
-
-    private void Start()
-    {
-        _heroSelection = GetComponent<HeroSelection>();
-    }
+    [SerializeField] private HeroSelection _heroSelection;
 
     public void PurchaseHero()
     {
