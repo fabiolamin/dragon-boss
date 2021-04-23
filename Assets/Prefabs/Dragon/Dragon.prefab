@@ -1628,6 +1628,7 @@ MonoBehaviour:
   soundPlayer: {fileID: 4298053736374055435}
   damageVFX: {fileID: 7005347055404784994}
   _damageClip: {fileID: 8300000, guid: 4c9562e8b102c9f449397f46f0c3c481, type: 3}
+  _dragonManager: {fileID: 0}
   _healthBarDisplay: {fileID: 5931077382476864493}
 --- !u!114 &8217768265254610298
 MonoBehaviour:
@@ -1659,7 +1660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dragonData: {fileID: 11400000, guid: 6227da7efcd49b84eb3e1606aabdf4e0, type: 2}
-  _fireBallController: {fileID: 8217768265254610298}
+  _fireBallManager: {fileID: 8217768265254610298}
   _dragonHealth: {fileID: 5046408241798039936}
   _dragonAttackClip: {fileID: 8300000, guid: 9a06a9028941b4e4ab67e1dbd812e8a4, type: 3}
   _soundPlayer: {fileID: 4298053736374055435}

@@ -3,7 +3,7 @@ using UnityEngine;
 public class Dragon : MonoBehaviour
 {
     [SerializeField] private DragonData _dragonData;
-    [SerializeField] private FireBallController _fireBallController;
+    [SerializeField] private FireBallManager _fireBallManager;
     [SerializeField] private DragonHealth _dragonHealth;
     [SerializeField] private AudioClip _dragonAttackClip;
     [SerializeField] private SoundPlayer _soundPlayer;
@@ -11,7 +11,7 @@ public class Dragon : MonoBehaviour
 
     public void InitializeFireBall()
     {
-        _fireBallController.SetFireBalls();
+        _fireBallManager.SetFireBalls();
         gameObject.SetActive(false);
     }
 
@@ -22,7 +22,7 @@ public class Dragon : MonoBehaviour
 
     public void IncreaseDifficulty()
     {
-        _fireBallController.IncreaseFireBallsSpeed(_dragonData.SpeedIncrementPerArena);
+        _fireBallManager.IncreaseFireBallsSpeed(_dragonData.SpeedIncrementPerArena);
         _dragonHealth.IncreaseHealth(_dragonData.HealthIncrementPerArena);
     }
 
@@ -30,6 +30,6 @@ public class Dragon : MonoBehaviour
     {
         gameObject.SetActive(true);
         _spawnVFX.Play();
-        _fireBallController.EmitFireBalls();
+        _fireBallManager.EmitFireBalls();
     }
 }
