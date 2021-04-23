@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class ButtonClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
@@ -9,21 +8,21 @@ public class ButtonClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     [SerializeField] private SoundPlayer _soundPlayer;
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (!SceneLoader.IsLoading)
-        {
-            transform.localScale +=
-        new Vector3(amountToIncrease, amountToIncrease, amountToIncrease);
-
-            _soundPlayer.PlaySound(_buttonAudioClip);
-        }
+        UpdateButtonSize(amountToIncrease);
+        _soundPlayer.PlaySound(_buttonAudioClip);
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        UpdateButtonSize(-amountToIncrease);
+    }
+
+    private void UpdateButtonSize(float amount)
+    {
         if (!SceneLoader.IsLoading)
         {
-            transform.localScale -=
-        new Vector3(amountToIncrease, amountToIncrease, amountToIncrease);
+            transform.localScale +=
+        new Vector3(amount, amount, amount);
         }
     }
 }
