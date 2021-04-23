@@ -2,14 +2,8 @@ using UnityEngine;
 
 public abstract class Item : MonoBehaviour
 {
-    private ItemSpawner _itemSpawner;
+    [SerializeField] private ItemSpawner _itemSpawner;
     [SerializeField] private float _rotationSpeed = 10f;
-
-
-    private void Awake()
-    {
-        _itemSpawner = transform.parent.GetComponent<ItemSpawner>();
-    }
 
     private void Update()
     {
