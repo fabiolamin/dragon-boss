@@ -33,6 +33,8 @@ public class ArenaMenuGUI : MonoBehaviour
         _delayResumeDisplay.gameObject.SetActive(false);
         _gameOverPanel.SetActive(false);
         _delayAux = _delayToResume;
+
+        _playerHealth.PlayerDeathHandler += ActivateGameOverPanel;
     }
 
     private void Update()
@@ -109,7 +111,7 @@ public class ArenaMenuGUI : MonoBehaviour
     {
         MusicPlayer.Instance.PlayMainMusic();
         Time.timeScale = 1;
-        _sceneLoader.LoadScene(1);
+        _sceneLoader.RestartScene();
     }
 
     public void GoMainMenu()
