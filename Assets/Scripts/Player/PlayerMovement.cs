@@ -2,24 +2,15 @@ using System.Collections;
 using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
-    private Player _player;
-    private PlayerInput _playerInput;
-    private PlayerAttack _playerAttack;
-    private PlayerHealth _playerHealth;
     private Transform _waypoint;
-    private HeroController _heroController;
 
+    [SerializeField] private Player _player;
+    [SerializeField] private PlayerInput _playerInput;
+    [SerializeField] private PlayerAttack _playerAttack;
+    [SerializeField] private PlayerHealth _playerHealth;
+    [SerializeField] private HeroController _heroController;
     [SerializeField] private AudioClip _movementClip;
     [SerializeField] private SoundPlayer _soundPlayer;
-
-    private void Start()
-    {
-        _player = GetComponent<Player>();
-        _playerInput = GetComponent<PlayerInput>();
-        _playerAttack = GetComponent<PlayerAttack>();
-        _playerHealth = GetComponent<PlayerHealth>();
-        _heroController = GetComponent<HeroController>();
-    }
 
     private void Update()
     {

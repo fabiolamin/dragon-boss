@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    private PlayerAttack _playerAttack;
-    private PlayerHealth _playerHealth;
     private Vector2 _firstTouchPosition;
     private Vector2 _lastTouchPosition;
     private float _swipeDistance;
     private float _tapDistance;
     private bool _hasTouched = false;
 
+    [SerializeField] private PlayerAttack _playerAttack;
+    [SerializeField] private PlayerHealth _playerHealth;
     [SerializeField] private float _minOfScreen = 15;
     [SerializeField] private float _minValueTap = 0.5f;
 
@@ -17,8 +17,6 @@ public class PlayerInput : MonoBehaviour
 
     private void Awake()
     {
-        _playerAttack = GetComponent<PlayerAttack>();
-        _playerHealth = GetComponent<PlayerHealth>();
         _swipeDistance = Screen.height * _minOfScreen / 100;
         _tapDistance = Screen.height * _minValueTap / 100;
     }

@@ -4,17 +4,14 @@ using System.Linq;
 
 public class PlayerInfo : MonoBehaviour
 {
-    private SpellHUD[] _spellHUDs;
-    private DragonManager _dragonController;
-
+    [SerializeField] private SpellHUD[] _spellHUDs;
+    [SerializeField] private DragonManager _dragonManager;
     [SerializeField] private Text playerCoinsDisplay;
     public int Coins { get; private set; }
     public GameObject PlayerCoinsDisplay { get { return playerCoinsDisplay.gameObject; } }
 
     private void Awake()
     {
-        _spellHUDs = FindObjectsOfType<SpellHUD>();
-        _dragonController = FindObjectOfType<DragonManager>();
         Coins = PlayerPrefs.GetInt("Coins");
         UpdatePlayerCoinsDisplay();
     }
@@ -33,7 +30,7 @@ public class PlayerInfo : MonoBehaviour
 
     public void SaveHighScore()
     {
-        int wonArenas = _dragonController.CurrentDragon - 1;
+        int wonArenas = _dragonManager.CurrentDragon - 1;
 
         if ((wonArenas) > PlayerPrefs.GetInt("HighScore"))
             PlayerPrefs.SetInt("HighScore", wonArenas);

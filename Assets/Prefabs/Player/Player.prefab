@@ -85,6 +85,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16814c6f55d052044bc1868b1f746d2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _player: {fileID: 290899383185546083}
+  _playerInput: {fileID: 697592198699495673}
+  _playerAttack: {fileID: 697592198699495676}
+  _playerHealth: {fileID: 697592198699495675}
+  _heroController: {fileID: 7795791191290657758}
   _movementClip: {fileID: 8300000, guid: 60ce34050a2120548a92ae92939564ee, type: 3}
   _soundPlayer: {fileID: 2542371030394019617}
 --- !u!114 &697592198699495673
@@ -99,6 +104,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25ff70f519ee8bc458bcf5ffcbb470f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerAttack: {fileID: 697592198699495676}
+  _playerHealth: {fileID: 697592198699495675}
   _minOfScreen: 1
   _minValueTap: 0.5
 --- !u!114 &697592198699495674
@@ -113,6 +120,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c18586ba8374c74e84b251b8fcd0834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _spellHUDs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _dragonManager: {fileID: 0}
   playerCoinsDisplay: {fileID: 0}
 --- !u!114 &697592198699495675
 MonoBehaviour:
@@ -130,6 +143,10 @@ MonoBehaviour:
   soundPlayer: {fileID: 2542371030394019617}
   damageVFX: {fileID: 5988996156096063407}
   _damageClip: {fileID: 8300000, guid: fd5c198ab7d167c46b5641d942f82c0b, type: 3}
+  _arenaMenuGUI: {fileID: 0}
+  _player: {fileID: 290899383185546083}
+  _playerInfo: {fileID: 697592198699495674}
+  _heroController: {fileID: 7795791191290657758}
   _dragonManager: {fileID: 0}
   _healthDisplay: {fileID: 0}
 --- !u!114 &697592198699495676
@@ -144,10 +161,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3756015ebfdf5bb479f7d03e6ec17a82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerInfo: {fileID: 697592198699495674}
+  _heroController: {fileID: 7795791191290657758}
   _dragonManager: {fileID: 0}
   _spellRecycling: {fileID: 697592199893397360}
-  _spellClip: {fileID: 8300000, guid: e40b74b352f0dd041b7896da89525419, type: 3}
-  _soundPlayer: {fileID: 2542371030394019617}
 --- !u!96 &8557580925427719870
 TrailRenderer:
   serializedVersion: 2

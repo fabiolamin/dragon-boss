@@ -31,7 +31,7 @@ public class ArenaMenuGUI : MonoBehaviour
         _gameOverPanel.SetActive(false);
         _delayAux = _delayToResume;
 
-        _playerHealth.PlayerDeathHandler += ActivateGameOverPanel;
+        _playerHealth.PlayerDeath += ActivateGameOverPanel;
     }
 
     private void Update()

@@ -123,6 +123,28 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &55591858 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1204283987, guid: 7e816b3c1a564b64ca2f873b56260638, type: 3}
+  m_PrefabInstance: {fileID: 2791886153214801187}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44d98f0b7ff365646b58973904ba12ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &74754737 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1395200353, guid: 7e816b3c1a564b64ca2f873b56260638, type: 3}
+  m_PrefabInstance: {fileID: 2791886153214801187}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44d98f0b7ff365646b58973904ba12ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &145061130
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -247,6 +269,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c2e17c5e8b97dfd4a8b0e66c2a4a6fb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &496947833 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 255557088328357664, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
+  m_PrefabInstance: {fileID: 4578667602968970240}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a0a8a8720156742a34d5e93516b077, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &664462194
@@ -601,6 +634,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 049341a029e360f408867aa168265419, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1190715351 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1717226960, guid: 7e816b3c1a564b64ca2f873b56260638, type: 3}
+  m_PrefabInstance: {fileID: 2791886153214801187}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44d98f0b7ff365646b58973904ba12ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1204407192 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2791886154167418555, guid: 7e816b3c1a564b64ca2f873b56260638, type: 3}
@@ -745,6 +789,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1648034034 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1587272494, guid: 7e816b3c1a564b64ca2f873b56260638, type: 3}
+  m_PrefabInstance: {fileID: 2791886153214801187}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44d98f0b7ff365646b58973904ba12ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1672464314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -949,9 +1004,33 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 697592198699495674, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
+      propertyPath: _dragonManager
+      value: 
+      objectReference: {fileID: 293477193}
+    - target: {fileID: 697592198699495674, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
       propertyPath: playerCoinsDisplay
       value: 
       objectReference: {fileID: 2791886153214801188}
+    - target: {fileID: 697592198699495674, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
+      propertyPath: _spellHUDs.Array.data[0]
+      value: 
+      objectReference: {fileID: 74754737}
+    - target: {fileID: 697592198699495674, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
+      propertyPath: _spellHUDs.Array.data[1]
+      value: 
+      objectReference: {fileID: 1190715351}
+    - target: {fileID: 697592198699495674, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
+      propertyPath: _spellHUDs.Array.data[2]
+      value: 
+      objectReference: {fileID: 55591858}
+    - target: {fileID: 697592198699495674, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
+      propertyPath: _spellHUDs.Array.data[3]
+      value: 
+      objectReference: {fileID: 1648034034}
+    - target: {fileID: 697592198699495675, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
+      propertyPath: _arenaMenuGUI
+      value: 
+      objectReference: {fileID: 496947833}
     - target: {fileID: 697592198699495675, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
       propertyPath: _dragonManager
       value: 
