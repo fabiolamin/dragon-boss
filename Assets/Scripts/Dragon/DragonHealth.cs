@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class DragonHealth : Health
 {
+    [SerializeField] private DragonManager _dragonManager;
     [SerializeField] private Image _healthBarDisplay;
 
     private void Start()
@@ -12,7 +13,7 @@ public class DragonHealth : Health
     protected override void SetDeath()
     {
         gameObject.SetActive(false);
-        DragonController.OnDragonDeath();
+        _dragonManager.OnDragonDeath();
     }
 
     protected override void UpdateHealthDisplay()

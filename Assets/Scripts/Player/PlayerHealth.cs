@@ -7,6 +7,8 @@ public class PlayerHealth : Health
     private Player _player;
     private PlayerInfo _playerInfo;
     private HeroController _heroController;
+
+    [SerializeField] private DragonManager _dragonManager;
     [SerializeField] private Text _healthDisplay;
 
     public delegate void PlayerDeath();
@@ -22,7 +24,7 @@ public class PlayerHealth : Health
         _playerInfo = GetComponent<PlayerInfo>();
         _heroController = GetComponent<HeroController>();
         animator = _heroController.HeroAnimator;
-        DragonController.DragonDeathHandler += RecoverHealth;
+        _dragonManager.DragonDeath += RecoverHealth;
     }
     protected override void SetDeath()
     {

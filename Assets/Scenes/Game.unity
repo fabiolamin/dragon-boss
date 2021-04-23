@@ -238,6 +238,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2722304143620758821, guid: 527ad9a5d022f4a499c12877ce6ab579, type: 3}
   m_PrefabInstance: {fileID: 145061130}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &293477193 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6127758909303390193, guid: bf0633f994f84e9408f244d0a22d0efc, type: 3}
+  m_PrefabInstance: {fileID: 6127758910762634231}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2e17c5e8b97dfd4a8b0e66c2a4a6fb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &664462194
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,18 +948,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 696417220312906380, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 697592198699495674, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
       propertyPath: playerCoinsDisplay
       value: 
       objectReference: {fileID: 2791886153214801188}
     - target: {fileID: 697592198699495675, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
+      propertyPath: _dragonManager
+      value: 
+      objectReference: {fileID: 293477193}
+    - target: {fileID: 697592198699495675, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
       propertyPath: _healthDisplay
       value: 
       objectReference: {fileID: 1204407192}
+    - target: {fileID: 697592198699495676, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
+      propertyPath: _dragonManager
+      value: 
+      objectReference: {fileID: 293477193}
     - target: {fileID: 697592199893397360, guid: 385c6d4c779eba344842ebdd9af31d56, type: 3}
       propertyPath: _spellsParent
       value: 
@@ -1675,7 +1690,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6127758909303390195, guid: bf0633f994f84e9408f244d0a22d0efc, type: 3}
       propertyPath: m_Name
-      value: Dragon Controller
+      value: Dragon Manager
       objectReference: {fileID: 0}
     - target: {fileID: 6569877906722922147, guid: bf0633f994f84e9408f244d0a22d0efc, type: 3}
       propertyPath: _spellsParent

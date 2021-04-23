@@ -130,6 +130,7 @@ MonoBehaviour:
   soundPlayer: {fileID: 2542371030394019617}
   damageVFX: {fileID: 5988996156096063407}
   _damageClip: {fileID: 8300000, guid: fd5c198ab7d167c46b5641d942f82c0b, type: 3}
+  _dragonManager: {fileID: 0}
   _healthDisplay: {fileID: 0}
 --- !u!114 &697592198699495676
 MonoBehaviour:
@@ -143,6 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3756015ebfdf5bb479f7d03e6ec17a82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dragonManager: {fileID: 0}
   _spellRecycling: {fileID: 697592199893397360}
   _spellClip: {fileID: 8300000, guid: e40b74b352f0dd041b7896da89525419, type: 3}
   _soundPlayer: {fileID: 2542371030394019617}

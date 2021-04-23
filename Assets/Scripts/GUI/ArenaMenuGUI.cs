@@ -7,7 +7,7 @@ public class ArenaMenuGUI : MonoBehaviour
     private SpellHUD[] _spellHUDs;
     private PlayerInfo _playerInfo;
     private PlayerHealth _playerHealth;
-    private DragonController _dragonController;
+    private DragonManager _dragonController;
     private bool _isDelaying = false;
     private float _delayAux;
 
@@ -27,7 +27,7 @@ public class ArenaMenuGUI : MonoBehaviour
         _spellHUDs = FindObjectsOfType<SpellHUD>();
         _playerInfo = FindObjectOfType<PlayerInfo>();
         _playerHealth = FindObjectOfType<PlayerHealth>();
-        _dragonController = FindObjectOfType<DragonController>();
+        _dragonController = FindObjectOfType<DragonManager>();
         _pauseButton.SetActive(true);
         _pauseMenu.SetActive(false);
         _delayResumeDisplay.gameObject.SetActive(false);

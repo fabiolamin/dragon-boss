@@ -5,7 +5,7 @@ using System.Linq;
 public class PlayerInfo : MonoBehaviour
 {
     private SpellHUD[] _spellHUDs;
-    private DragonController _dragonController;
+    private DragonManager _dragonController;
 
     [SerializeField] private Text playerCoinsDisplay;
     public int Coins { get; private set; }
@@ -14,7 +14,7 @@ public class PlayerInfo : MonoBehaviour
     private void Awake()
     {
         _spellHUDs = FindObjectsOfType<SpellHUD>();
-        _dragonController = FindObjectOfType<DragonController>();
+        _dragonController = FindObjectOfType<DragonManager>();
         Coins = PlayerPrefs.GetInt("Coins");
         UpdatePlayerCoinsDisplay();
     }

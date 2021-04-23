@@ -4,6 +4,7 @@ public class PlayerAttack : MonoBehaviour
     private PlayerInfo _playerInfo;
     private HeroController _heroController;
 
+    [SerializeField] private DragonManager _dragonManager;
     [SerializeField] private SpellRecycling _spellRecycling;
     [SerializeField] private AudioClip _spellClip;
     [SerializeField] protected SoundPlayer _soundPlayer;
@@ -17,7 +18,7 @@ public class PlayerAttack : MonoBehaviour
         _heroController = GetComponent<HeroController>();
         _spellRecycling.InstantiateSpells();
         SpellName = SpellName.Default;
-        DragonController.DragonDeathHandler += _spellRecycling.DeactivateSpells;
+        _dragonManager.DragonDeath += _spellRecycling.DeactivateSpells;
     }
 
     public void CastSpell()
