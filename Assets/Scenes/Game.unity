@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2722304141573250552, guid: 527ad9a5d022f4a499c12877ce6ab579, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1.8640289
+      value: -1.8640137
       objectReference: {fileID: 0}
     - target: {fileID: 2722304143620758817, guid: 527ad9a5d022f4a499c12877ce6ab579, type: 3}
       propertyPath: m_Name
@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2722304143620758817, guid: 527ad9a5d022f4a499c12877ce6ab579, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2722304143620758821, guid: 527ad9a5d022f4a499c12877ce6ab579, type: 3}
       propertyPath: m_Pivot.x
@@ -346,6 +346,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1960079707}
     m_Modifications:
+    - target: {fileID: 25754344409459218, guid: f0fd8f1d572d0e644af6340a84898be0, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 242053339489699818, guid: f0fd8f1d572d0e644af6340a84898be0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270090036199995728, guid: f0fd8f1d572d0e644af6340a84898be0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 143.0788
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270090036199995728, guid: f0fd8f1d572d0e644af6340a84898be0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -4.2975
+      objectReference: {fileID: 0}
     - target: {fileID: 1295342489533709154, guid: f0fd8f1d572d0e644af6340a84898be0, type: 3}
       propertyPath: m_Name
       value: 'Tutorial Canvas '
@@ -432,6 +448,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1295342489533709158, guid: f0fd8f1d572d0e644af6340a84898be0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3983221164332410166, guid: f0fd8f1d572d0e644af6340a84898be0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3983221164456207200, guid: f0fd8f1d572d0e644af6340a84898be0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3983221164507315749, guid: f0fd8f1d572d0e644af6340a84898be0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3983221164693385576, guid: f0fd8f1d572d0e644af6340a84898be0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3983221164699512505, guid: f0fd8f1d572d0e644af6340a84898be0, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 67
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574163095253900240, guid: f0fd8f1d572d0e644af6340a84898be0, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
