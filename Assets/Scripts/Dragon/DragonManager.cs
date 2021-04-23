@@ -15,11 +15,20 @@ public class DragonManager : MonoBehaviour
 
     private void Start()
     {
+        InitializeDragonsFireBall();
         SpawnRandomDragon();
         UpdateCurrentDragonDisplay();
         DragonDeath += NextDragon;
         DragonDeath += IncreaseDragonDifficulty;
         DragonDeath += SpawnRandomDragon;
+    }
+
+    private void InitializeDragonsFireBall()
+    {
+        foreach (Dragon dragon in _dragons)
+        {
+            dragon.InitializeFireBall();
+        }
     }
 
     private void UpdateCurrentDragonDisplay()
@@ -41,7 +50,7 @@ public class DragonManager : MonoBehaviour
 
     private void IncreaseDragonDifficulty()
     {
-        foreach (var dragon in _dragons)
+        foreach (Dragon dragon in _dragons)
         {
             dragon.IncreaseDifficulty();
         }

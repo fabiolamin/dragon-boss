@@ -9,7 +9,7 @@ public class Dragon : MonoBehaviour
     [SerializeField] private SoundPlayer _soundPlayer;
     [SerializeField] private ParticleSystem _spawnVFX;
 
-    private void Awake()
+    public void InitializeFireBall()
     {
         _fireBallController.SetFireBalls();
         gameObject.SetActive(false);
