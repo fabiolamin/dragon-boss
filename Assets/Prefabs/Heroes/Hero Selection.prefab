@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f28ab70d88dc52840b299bdcd34f993b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _heroPurchasing: {fileID: 5849603121661737806}
   _heroesPrefab:
   - {fileID: 3926647734050794478, guid: b6bbab99d097a3a488909bfad2f349c6, type: 3}
   - {fileID: 5110578145187410278, guid: 683883bf731413a488b49dfce586b32c, type: 3}
@@ -73,3 +74,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2f22cf0b2166c340a92e8b3848ec8f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _heroSelection: {fileID: 2062371991769296724}

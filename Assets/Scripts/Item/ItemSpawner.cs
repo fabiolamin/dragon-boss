@@ -4,19 +4,17 @@ using System.Linq;
 
 public class ItemSpawner : MonoBehaviour
 {
-    private Item _item;
-    private SpawnPosition[] _spawnPositions;
     private Coroutine _spawnCoroutine;
+    private SpawnPosition[] _spawnPositions;
 
+    [SerializeField] private Item _item;
     [SerializeField] private ItemSpawnerData _itemSpawnerData;
 
     public SpawnPosition CurrentSpawnPosition { get; set; }
 
     private void Awake()
     {
-        _item = transform.GetChild(0).GetComponent<Item>();
         _spawnPositions = FindObjectsOfType<SpawnPosition>();
-
         StartSpawn();
     }
 

@@ -9180,6 +9180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df2914bcfe43d3f4db31fd51499e5d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _heroSelection: {fileID: 5027248899150976618}
   _storePanel: {fileID: 483113322}
   _optionsPanel: {fileID: 7007968313455537613}
   _creditsPanel: {fileID: 6802831730006763741}

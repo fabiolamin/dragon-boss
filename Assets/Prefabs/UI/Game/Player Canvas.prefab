@@ -677,6 +677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d98f0b7ff365646b58973904ba12ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerAttack: {fileID: 0}
   _spellData: {fileID: 11400000, guid: 9bf7dd4189c8a6349b844620ef5cb3c1, type: 2}
   _spellAmountDisplay: {fileID: 709324889}
   _block: {fileID: 854359897}
@@ -787,6 +788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d98f0b7ff365646b58973904ba12ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerAttack: {fileID: 0}
   _spellData: {fileID: 11400000, guid: 90242c842c574a44ab1a62ee31a64539, type: 2}
   _spellAmountDisplay: {fileID: 1898702324}
   _block: {fileID: 878258773}
@@ -897,6 +899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d98f0b7ff365646b58973904ba12ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerAttack: {fileID: 0}
   _spellData: {fileID: 11400000, guid: 904cb87e8cb05804bb4cd823014c6a03, type: 2}
   _spellAmountDisplay: {fileID: 679361217}
   _block: {fileID: 292236504}
@@ -1007,6 +1010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d98f0b7ff365646b58973904ba12ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerAttack: {fileID: 0}
   _spellData: {fileID: 11400000, guid: 945eeb2fbb9bd8242b84afd9dfe8c34a, type: 2}
   _spellAmountDisplay: {fileID: 1003168494}
   _block: {fileID: 177486568}

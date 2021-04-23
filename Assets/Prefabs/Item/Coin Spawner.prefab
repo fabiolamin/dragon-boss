@@ -44,7 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93a5c85bf3fe2584085cec64e816e9bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemSpawnerData: {fileID: 11400000, guid: e781b641f2fea1049aacfad479ed49fa, type: 2}
+  _item: {fileID: 2122997704}
+  _spawnPositions: []
+  _itemSpawnerData: {fileID: 11400000, guid: c333a0388e846c243bef5aac9200982f, type: 2}
 --- !u!1001 &8159381881399805367
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -100,6 +102,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin
       objectReference: {fileID: 0}
+    - target: {fileID: 8159381881290381951, guid: 35e17a8c44259e84aa6fd608732b194b, type: 3}
+      propertyPath: _itemSpawner
+      value: 
+      objectReference: {fileID: 688307755087390123}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35e17a8c44259e84aa6fd608732b194b, type: 3}
 --- !u!4 &2122997703 stripped
@@ -107,3 +113,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8159381881290381936, guid: 35e17a8c44259e84aa6fd608732b194b, type: 3}
   m_PrefabInstance: {fileID: 8159381881399805367}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2122997704 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8159381881290381951, guid: 35e17a8c44259e84aa6fd608732b194b, type: 3}
+  m_PrefabInstance: {fileID: 8159381881399805367}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4a2e73d3ee6d7249942efc21376efe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -430,6 +430,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 69990019469860589, guid: 4cf579898439e5345bd9d37e75dd0b40, type: 3}
+      propertyPath: _dragonData
+      value: 
+      objectReference: {fileID: 11400000, guid: 6227da7efcd49b84eb3e1606aabdf4e0, type: 2}
     - target: {fileID: 3575690223282998872, guid: 4cf579898439e5345bd9d37e75dd0b40, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -594,6 +598,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5313347997363717246, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
   m_PrefabInstance: {fileID: 5027248897959522204}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5027248897959522206 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4349325209745914019, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
+  m_PrefabInstance: {fileID: 5027248897959522204}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c7de798b296cc45bf32e452895896b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7529665510639314705
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -649,6 +664,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7529665509278197635, guid: 8b4b451b397e7ac4fabb1499bb399c9f, type: 3}
+      propertyPath: _audioOptions
+      value: 
+      objectReference: {fileID: 5027248897959522206}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b4b451b397e7ac4fabb1499bb399c9f, type: 3}
 --- !u!1001 &8107931556962995942

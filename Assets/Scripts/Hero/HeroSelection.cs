@@ -6,8 +6,9 @@ using System.Collections;
 
 public class HeroSelection : MonoBehaviour
 {
-    private HeroPurchasing _heroPurchasing;
     private int _heroesIndex = 0;
+
+    [SerializeField] private HeroPurchasing _heroPurchasing;
     [SerializeField] private Hero[] _heroesPrefab;
     [SerializeField] private Transform _storeHeroPlaceholder;
     [SerializeField] private Transform _selectedHeroPlaceholder;
@@ -21,7 +22,6 @@ public class HeroSelection : MonoBehaviour
 
     private void Start()
     {
-        _heroPurchasing = GetComponent<HeroPurchasing>();
         SpawnHeroes();
         ShowSelectedHero();
     }

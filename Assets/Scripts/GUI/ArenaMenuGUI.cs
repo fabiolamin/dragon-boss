@@ -4,12 +4,13 @@ using System.Linq;
 
 public class ArenaMenuGUI : MonoBehaviour
 {
-    private SpellHUD[] _spellHUDs;
-    private PlayerInfo _playerInfo;
-    private PlayerHealth _playerHealth;
-    private DragonController _dragonController;
+    
     private bool _isDelaying = false;
     private float _delayAux;
+
+    [SerializeField] private PlayerInfo _playerInfo;
+    [SerializeField] private PlayerHealth _playerHealth;
+    [SerializeField] private DragonManager _dragonManager;
 
     [SerializeField] private GameObject _pauseButton;
     [SerializeField] private GameObject _pauseMenu;
@@ -24,17 +25,13 @@ public class ArenaMenuGUI : MonoBehaviour
     private void Awake()
     {
         Time.timeScale = 1;
-        _spellHUDs = FindObjectsOfType<SpellHUD>();
-        _playerInfo = FindObjectOfType<PlayerInfo>();
-        _playerHealth = FindObjectOfType<PlayerHealth>();
-        _dragonController = FindObjectOfType<DragonController>();
         _pauseButton.SetActive(true);
         _pauseMenu.SetActive(false);
         _delayResumeDisplay.gameObject.SetActive(false);
         _gameOverPanel.SetActive(false);
         _delayAux = _delayToResume;
 
-        _playerHealth.PlayerDeathHandler += ActivateGameOverPanel;
+        _playerHealth.PlayerDeath += ActivateGameOverPanel;
     }
 
     private void Update()
@@ -94,15 +91,11 @@ public class ArenaMenuGUI : MonoBehaviour
         SetGameInfo();
         Time.timeScale = 0;
         _gameOverPanel.SetActive(true);
-        _dragonController.CurrentDragonDisplay.SetActive(false);
-        _playerInfo.PlayerCoinsDisplay.SetActive(false);
-        _playerHealth.HealthDisplay.SetActive(false);
-        _spellHUDs.ToList().ForEach(s => s.gameObject.SetActive(false));
     }
 
     private void SetGameInfo()
     {
-        _scoreDisplay.text = (_dragonController.CurrentDragon - 1).ToString();
+        _scoreDisplay.text = (_dragonManager.CurrentDragon - 1).ToString();
         _highScoreDisplay.text = PlayerPrefs.GetInt("HighScore").ToString();
         _totalCoins.text = _playerInfo.Coins.ToString();
     }

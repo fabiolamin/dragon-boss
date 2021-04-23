@@ -3,31 +3,29 @@ using UnityEngine.UI;
 using System.Collections;
 public class PlayerHealth : Health
 {
-    private ArenaMenuGUI _arenaMenuGUI;
-    private Player _player;
-    private PlayerInfo _playerInfo;
-    private HeroController _heroController;
+    [SerializeField] private ArenaMenuGUI _arenaMenuGUI;
+    [SerializeField] private Player _player;
+    [SerializeField] private PlayerInfo _playerInfo;
+    [SerializeField] private HeroController _heroController;
+    [SerializeField] private DragonManager _dragonManager;
     [SerializeField] private Text _healthDisplay;
 
-    public delegate void PlayerDeath();
-    public event PlayerDeath PlayerDeathHandler;
+    public delegate void PlayerDeathHandler();
+    public event PlayerDeathHandler PlayerDeath;
 
     public GameObject HealthDisplay { get { return _healthDisplay.gameObject; } }
     public bool WasHit { get; set; } = false;
 
     private void Start()
     {
-        _arenaMenuGUI = FindObjectOfType<ArenaMenuGUI>();
-        _player = GetComponent<Player>();
-        _playerInfo = GetComponent<PlayerInfo>();
-        _heroController = GetComponent<HeroController>();
         animator = _heroController.HeroAnimator;
-        DragonController.DragonDeathHandler += RecoverHealth;
+        _dragonManager.DragonDeath += RecoverHealth;
     }
+
     protected override void SetDeath()
     {
         _playerInfo.SaveHighScore();
-        PlayerDeathHandler?.Invoke();
+        PlayerDeath?.Invoke();
         gameObject.SetActive(false);
     }
 

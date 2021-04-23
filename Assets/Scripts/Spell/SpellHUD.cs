@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 
 public class SpellHUD : MonoBehaviour, IPointerDownHandler
 {
-    private PlayerAttack _playerAttack;
+    [SerializeField] private PlayerAttack _playerAttack;
     [SerializeField] private SpellData _spellData;
     [SerializeField] private Text _spellAmountDisplay;
     [SerializeField] private GameObject _block;
@@ -12,7 +12,6 @@ public class SpellHUD : MonoBehaviour, IPointerDownHandler
     private void Awake()
     {
         _block.SetActive(true);
-        _playerAttack = FindObjectOfType<PlayerAttack>();
         UpdateDisplay();
     }
 

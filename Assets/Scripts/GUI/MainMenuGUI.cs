@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class MainMenuGUI : MonoBehaviour
 {
-    private HeroSelection _heroSelection;
+    [SerializeField] private HeroSelection _heroSelection;
     [SerializeField] private GameObject _storePanel, _optionsPanel, _creditsPanel;
     [SerializeField] private GameObject _spellStore, _heroesStore;
     [SerializeField] private GameObject _playerCoinsDisplay;
@@ -12,7 +12,6 @@ public class MainMenuGUI : MonoBehaviour
 
     private void Start()
     {
-        _heroSelection = FindObjectOfType<HeroSelection>();
         _storePanel.SetActive(false);
         _optionsPanel.SetActive(false);
         _creditsPanel.SetActive(false);
