@@ -430,6 +430,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 69990019469860589, guid: 4cf579898439e5345bd9d37e75dd0b40, type: 3}
+      propertyPath: _dragonData
+      value: 
+      objectReference: {fileID: 11400000, guid: 6227da7efcd49b84eb3e1606aabdf4e0, type: 2}
     - target: {fileID: 3575690223282998872, guid: 4cf579898439e5345bd9d37e75dd0b40, type: 3}
       propertyPath: m_RootOrder
       value: 4

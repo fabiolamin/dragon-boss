@@ -1838,6 +1838,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88a0a8a8720156742a34d5e93516b077, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerInfo: {fileID: 0}
+  _playerHealth: {fileID: 0}
+  _dragonManager: {fileID: 0}
   _pauseButton: {fileID: 1934339895}
   _pauseMenu: {fileID: 6941205670957210122}
   _delayToResume: 4
