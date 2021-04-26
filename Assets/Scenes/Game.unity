@@ -152,17 +152,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1960079707}
     m_Modifications:
-    - target: {fileID: 2722304141573250552, guid: 527ad9a5d022f4a499c12877ce6ab579, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -1.8640289
-      objectReference: {fileID: 0}
     - target: {fileID: 2722304143620758817, guid: 527ad9a5d022f4a499c12877ce6ab579, type: 3}
       propertyPath: m_Name
       value: Fade Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 2722304143620758817, guid: 527ad9a5d022f4a499c12877ce6ab579, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2722304143620758821, guid: 527ad9a5d022f4a499c12877ce6ab579, type: 3}
       propertyPath: m_Pivot.x
