@@ -123,10 +123,43 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &174362994 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 517176951180322177, guid: 4cf579898439e5345bd9d37e75dd0b40, type: 3}
-  m_PrefabInstance: {fileID: 3575690224084551674}
+--- !u!114 &235304402 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4278713287929594528, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
+  m_PrefabInstance: {fileID: 5027248897959522204}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &272226317 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 558851077, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
+  m_PrefabInstance: {fileID: 5027248897959522204}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &274386300 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 499156675, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
+  m_PrefabInstance: {fileID: 5027248897959522204}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &311393160 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1232714326, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
+  m_PrefabInstance: {fileID: 5027248897959522204}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &350657691
 GameObject:
@@ -226,10 +259,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1326517770 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 517176950894145524, guid: 4cf579898439e5345bd9d37e75dd0b40, type: 3}
-  m_PrefabInstance: {fileID: 3575690224084551674}
+--- !u!1 &619197416 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1422669020, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
+  m_PrefabInstance: {fileID: 5027248897959522204}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1476115757 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1470860701, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
+  m_PrefabInstance: {fileID: 5027248897959522204}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1509647478 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 123147366193543556, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
+  m_PrefabInstance: {fileID: 5027248897959522204}
   m_PrefabAsset: {fileID: 0}
 --- !u!108 &1909895346 stripped
 Light:
@@ -430,6 +473,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3242700815692422156, guid: 4cf579898439e5345bd9d37e75dd0b40, type: 3}
+      propertyPath: _buyButton
+      value: 
+      objectReference: {fileID: 1509647478}
+    - target: {fileID: 3242700815692422156, guid: 4cf579898439e5345bd9d37e75dd0b40, type: 3}
+      propertyPath: _selectButton
+      value: 
+      objectReference: {fileID: 619197416}
+    - target: {fileID: 3242700815692422156, guid: 4cf579898439e5345bd9d37e75dd0b40, type: 3}
+      propertyPath: _heroNameDisplay
+      value: 
+      objectReference: {fileID: 274386300}
+    - target: {fileID: 3242700815692422156, guid: 4cf579898439e5345bd9d37e75dd0b40, type: 3}
+      propertyPath: _selectedDisplay
+      value: 
+      objectReference: {fileID: 311393160}
+    - target: {fileID: 3242700815692422156, guid: 4cf579898439e5345bd9d37e75dd0b40, type: 3}
+      propertyPath: _heroPriceDisplay
+      value: 
+      objectReference: {fileID: 235304402}
+    - target: {fileID: 3242700815692422156, guid: 4cf579898439e5345bd9d37e75dd0b40, type: 3}
+      propertyPath: _playerCoinsDisplay
+      value: 
+      objectReference: {fileID: 272226317}
+    - target: {fileID: 3242700815692422156, guid: 4cf579898439e5345bd9d37e75dd0b40, type: 3}
+      propertyPath: _notificationDisplay
+      value: 
+      objectReference: {fileID: 1476115757}
     - target: {fileID: 3575690223282998872, guid: 4cf579898439e5345bd9d37e75dd0b40, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -491,14 +562,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2019126658399506763}
-    - target: {fileID: 5027248899150976618, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
-      propertyPath: _storeHeroPlaceholder
-      value: 
-      objectReference: {fileID: 174362994}
-    - target: {fileID: 5027248899150976618, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
-      propertyPath: _selectedHeroPlaceholder
-      value: 
-      objectReference: {fileID: 1326517770}
     - target: {fileID: 5313347997363717242, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
       propertyPath: m_Name
       value: Main Menu Canvas
