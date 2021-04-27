@@ -551,6 +551,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cf579898439e5345bd9d37e75dd0b40, type: 3}
+--- !u!114 &3575690224084551675 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6967790297157797910, guid: 4cf579898439e5345bd9d37e75dd0b40, type: 3}
+  m_PrefabInstance: {fileID: 3575690224084551674}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2f22cf0b2166c340a92e8b3848ec8f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3575690224084551676 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3242700815692422156, guid: 4cf579898439e5345bd9d37e75dd0b40, type: 3}
+  m_PrefabInstance: {fileID: 3575690224084551674}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f28ab70d88dc52840b299bdcd34f993b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5027248897959522204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -558,10 +580,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 350657692}
     m_Modifications:
+    - target: {fileID: 1422669022, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3575690224084551676}
     - target: {fileID: 1549008122, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2019126658399506763}
+    - target: {fileID: 2909615398395534979, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3575690224084551676}
+    - target: {fileID: 3492576602584583515, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3575690224084551676}
+    - target: {fileID: 5027248897959522208, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
+      propertyPath: _heroSelection
+      value: 
+      objectReference: {fileID: 3575690224084551676}
     - target: {fileID: 5313347997363717242, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
       propertyPath: m_Name
       value: Main Menu Canvas
@@ -650,6 +688,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9092637933223939716, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3575690224084551675}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
 --- !u!224 &5027248897959522205 stripped
