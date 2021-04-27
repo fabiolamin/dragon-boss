@@ -146,7 +146,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.DefaultCompany.project
+    Android: com.FbioLamin.DragonBoss
   buildNumber:
     Standalone: 0
     iPhone: 0

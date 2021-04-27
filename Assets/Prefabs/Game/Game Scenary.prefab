@@ -169,6 +169,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Castle Layout
       objectReference: {fileID: 0}
+    - target: {fileID: 8860395278576282736, guid: 4904e63f327bc5b478215b87dcffb691, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8860395278576282739, guid: 4904e63f327bc5b478215b87dcffb691, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -272,8 +276,16 @@ PrefabInstance:
       value: -116.7
       objectReference: {fileID: 0}
     - target: {fileID: 3743570836514112485, guid: a537d04b2e77d5b4ebf3a8ea62950eb3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.76862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 3743570836514112485, guid: a537d04b2e77d5b4ebf3a8ea62950eb3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 3743570836514112485, guid: a537d04b2e77d5b4ebf3a8ea62950eb3, type: 3}
       propertyPath: m_Intensity
-      value: 1
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 3743570836514112486, guid: a537d04b2e77d5b4ebf3a8ea62950eb3, type: 3}
       propertyPath: m_Name
