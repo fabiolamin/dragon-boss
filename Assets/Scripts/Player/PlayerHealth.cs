@@ -36,8 +36,11 @@ public class PlayerHealth : Health
 
     public void RecoverHealth()
     {
-        currentHealth = healthData.Health;
-        UpdateHealthDisplay();
+        if (IsAlive)
+        {
+            currentHealth = healthData.Health;
+            UpdateHealthDisplay();
+        }
     }
 
     protected override void SetDamageAnimation()
