@@ -7,6 +7,7 @@ public class MainMenuGUI : MonoBehaviour
     [SerializeField] private GameObject _spellStore, _heroesStore;
     [SerializeField] private GameObject _playerCoinsDisplay;
     [SerializeField] private Text _highScoreDisplay;
+    [SerializeField] private Text _versionDisplay;
     [SerializeField] private GameObject _backButton;
     [SerializeField] private Slider _musicSlider, _soundsSlider;
 
@@ -18,8 +19,10 @@ public class MainMenuGUI : MonoBehaviour
         _spellStore.SetActive(true);
         _heroesStore.SetActive(false);
         _playerCoinsDisplay.SetActive(false);
-        _highScoreDisplay.text = PlayerPrefs.GetInt("HighScore").ToString();
         _backButton.SetActive(false);
+
+        _highScoreDisplay.text = PlayerPrefs.GetInt("HighScore").ToString();
+        _versionDisplay.text = "V " + Application.version;
     }
 
     public void ActivateOptionsPanel()
