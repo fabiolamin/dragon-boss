@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 
 public class Tutorial : MonoBehaviour
@@ -6,6 +7,7 @@ public class Tutorial : MonoBehaviour
     private int tipIndex = 0;
 
     [SerializeField] private GameObject[] _tutorialTips;
+    [SerializeField] private GameObject[] _arenaHUD;
     [SerializeField] private GameObject _button;
     [SerializeField] private float _tipInterval;
 
@@ -26,6 +28,7 @@ public class Tutorial : MonoBehaviour
     private void ActivateTip(bool isActive)
     {
         _tutorialTips[tipIndex].SetActive(isActive);
+        _arenaHUD.ToList().ForEach(a => a.SetActive(!isActive));
         _button.SetActive(isActive);
         Time.timeScale = isActive ? 0 : 1;
     }
