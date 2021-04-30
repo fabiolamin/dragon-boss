@@ -22,7 +22,7 @@ public class PlayerHealth : Health
         _dragonManager.DragonDeath += RecoverHealth;
     }
 
-    protected override void SetDeath()
+    public override void SetDeath()
     {
         _playerInfo.SaveHighScore();
         PlayerDeath?.Invoke();
@@ -36,8 +36,11 @@ public class PlayerHealth : Health
 
     public void RecoverHealth()
     {
-        currentHealth = healthData.Health;
-        UpdateHealthDisplay();
+        if (IsAlive)
+        {
+            currentHealth = healthData.Health;
+            UpdateHealthDisplay();
+        }
     }
 
     protected override void SetDamageAnimation()

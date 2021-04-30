@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 
 public abstract class Health : MonoBehaviour
 {
@@ -18,11 +17,6 @@ public abstract class Health : MonoBehaviour
         maxHealth = healthData.Health;
         currentHealth = healthData.Health;
         UpdateHealthDisplay();
-    }
-
-    private void Update()
-    {
-        animator.SetBool("IsAlive", IsAlive);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -62,14 +56,8 @@ public abstract class Health : MonoBehaviour
         if (currentHealth <= 0)
         {
             IsAlive = false;
-            StartCoroutine(DelayDeathTrigger());
+            animator.SetBool("IsAlive", IsAlive);
         }
-    }
-
-    private IEnumerator DelayDeathTrigger()
-    {
-        yield return new WaitForSeconds(healthData.DelayDeathTrigger);
-        SetDeath();
     }
 
     private void OnEnable()
@@ -77,7 +65,7 @@ public abstract class Health : MonoBehaviour
         IsAlive = true;
     }
 
-    protected abstract void SetDeath();
+    public abstract void SetDeath();
     protected abstract void UpdateHealthDisplay();
     protected abstract void SetDamageAnimation();
 }

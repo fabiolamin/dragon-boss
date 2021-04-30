@@ -10,7 +10,7 @@ public class DragonHealth : Health
         animator = GetComponent<Animator>();
     }
 
-    protected override void SetDeath()
+    public override void SetDeath()
     {
         gameObject.SetActive(false);
         _dragonManager.OnDragonDeath();
