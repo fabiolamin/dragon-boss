@@ -32,6 +32,8 @@ public class PlayerAttack : MonoBehaviour
             {
                 _spellRecycling.ActivateSpell(SpellName.Default);
             }
+
+            SpellName = SpellName.Default;
         }
     }
 

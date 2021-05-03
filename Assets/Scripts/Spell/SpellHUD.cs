@@ -24,6 +24,11 @@ public class SpellHUD : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        SelectSpellToCast();
+    }
+
+    private void SelectSpellToCast()
+    {
         _playerAttack.SpellName = _spellData.SpellName;
     }
 }
