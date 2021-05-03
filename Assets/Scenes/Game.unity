@@ -154,7 +154,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2722304141573250552, guid: 527ad9a5d022f4a499c12877ce6ab579, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1.8640289
+      value: -1.8640137
       objectReference: {fileID: 0}
     - target: {fileID: 2722304143620758817, guid: 527ad9a5d022f4a499c12877ce6ab579, type: 3}
       propertyPath: m_Name
@@ -276,12 +276,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 255557088328357664, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
   m_PrefabInstance: {fileID: 4578667602968970240}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 521675521}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 88a0a8a8720156742a34d5e93516b077, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &521675521 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1816204398386292451, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
+  m_PrefabInstance: {fileID: 4578667602968970240}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &664462194
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,6 +483,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1295342489533709161, guid: f0fd8f1d572d0e644af6340a84898be0, type: 3}
+      propertyPath: _arenaHUD.Array.data[0]
+      value: 
+      objectReference: {fileID: 521675521}
+    - target: {fileID: 1295342489533709161, guid: f0fd8f1d572d0e644af6340a84898be0, type: 3}
+      propertyPath: _arenaHUD.Array.data[1]
+      value: 
+      objectReference: {fileID: 936273792}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0fd8f1d572d0e644af6340a84898be0, type: 3}
 --- !u!224 &814427324 stripped
@@ -496,6 +509,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &936273792 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2791886153759847664, guid: 7e816b3c1a564b64ca2f873b56260638, type: 3}
+  m_PrefabInstance: {fileID: 2791886153214801187}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &945901167
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1272,6 +1290,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2791886153759847664, guid: 7e816b3c1a564b64ca2f873b56260638, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2791886153759847668, guid: 7e816b3c1a564b64ca2f873b56260638, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1542,6 +1564,10 @@ PrefabInstance:
     - target: {fileID: 1816204398386292451, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
       propertyPath: m_Name
       value: 'Arena Menu Canvas '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816204398386292451, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1816204398386292455, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
       propertyPath: m_Pivot.x
