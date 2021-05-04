@@ -20,11 +20,11 @@ public class PlayerHealth : Health
     {
         animator = _heroController.HeroAnimator;
         _dragonManager.DragonDeath += RecoverHealth;
+        PlayerDeath += _playerInfo.Save;
     }
 
     public override void SetDeath()
     {
-        _playerInfo.SaveHighScore();
         PlayerDeath?.Invoke();
         gameObject.SetActive(false);
     }
