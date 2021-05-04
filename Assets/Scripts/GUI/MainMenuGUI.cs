@@ -13,14 +13,6 @@ public class MainMenuGUI : MonoBehaviour
 
     private void Start()
     {
-        _storePanel.SetActive(false);
-        _optionsPanel.SetActive(false);
-        _creditsPanel.SetActive(false);
-        _spellStore.SetActive(true);
-        _heroesStore.SetActive(false);
-        _playerCoinsDisplay.SetActive(false);
-        _backButton.SetActive(false);
-
         _highScoreDisplay.text = PlayerPrefs.GetInt("HighScore").ToString();
         _versionDisplay.text = "V " + Application.version;
     }
