@@ -14,7 +14,7 @@ public class MainMenuGUI : MonoBehaviour
     private void Start()
     {
         _highScoreDisplay.text = PlayerPrefs.GetInt("HighScore").ToString();
-        _versionDisplay.text = "V " + Application.version;
+        _versionDisplay.text = "Version " + Application.version;
     }
 
     public void ActivateOptionsPanel()
