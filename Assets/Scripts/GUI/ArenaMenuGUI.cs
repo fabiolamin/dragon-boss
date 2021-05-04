@@ -4,7 +4,7 @@ using System.Linq;
 
 public class ArenaMenuGUI : MonoBehaviour
 {
-    
+
     private bool _isDelaying = false;
     private float _delayAux;
 
@@ -17,6 +17,7 @@ public class ArenaMenuGUI : MonoBehaviour
     [SerializeField] private float _delayToResume = 4f;
     [SerializeField] private Text _delayResumeDisplay;
     [SerializeField] private GameObject _gameOverPanel;
+    [SerializeField] private GameObject _exitWarningPanel;
     [SerializeField] private Text _scoreDisplay;
     [SerializeField] private Text _highScoreDisplay;
     [SerializeField] private Text _totalCoins;
@@ -25,12 +26,7 @@ public class ArenaMenuGUI : MonoBehaviour
     private void Awake()
     {
         Time.timeScale = 1;
-        _pauseButton.SetActive(true);
-        _pauseMenu.SetActive(false);
-        _delayResumeDisplay.gameObject.SetActive(false);
-        _gameOverPanel.SetActive(false);
         _delayAux = _delayToResume;
-
         _playerHealth.PlayerDeath += ActivateGameOverPanel;
     }
 
@@ -67,6 +63,7 @@ public class ArenaMenuGUI : MonoBehaviour
         if (!SceneLoader.IsLoading)
         {
             Time.timeScale = 0;
+            _exitWarningPanel.SetActive(false);
             _pauseButton.SetActive(false);
             _pauseMenu.SetActive(true);
         }
@@ -109,7 +106,17 @@ public class ArenaMenuGUI : MonoBehaviour
 
     public void GoMainMenu()
     {
-        MusicPlayer.Instance.PlayMainMusic();
+        if (_gameOverPanel.activeSelf)
+        {
+            MusicPlayer.Instance.PlayMainMusic();
+        }
+
         _sceneLoader.LoadScene(0);
+    }
+
+    public void ActivateExitWarningPanel()
+    {
+        _pauseMenu.SetActive(false);
+        _exitWarningPanel.SetActive(true);
     }
 }

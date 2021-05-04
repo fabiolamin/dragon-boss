@@ -24,7 +24,7 @@ public class PlayerHealth : Health
 
     public override void SetDeath()
     {
-        _playerInfo.SaveHighScore();
+        _playerInfo.Save();
         PlayerDeath?.Invoke();
         gameObject.SetActive(false);
     }

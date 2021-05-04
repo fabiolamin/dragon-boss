@@ -154,7 +154,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2722304141573250552, guid: 527ad9a5d022f4a499c12877ce6ab579, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1.8640137
+      value: -1.8640289
       objectReference: {fileID: 0}
     - target: {fileID: 2722304143620758817, guid: 527ad9a5d022f4a499c12877ce6ab579, type: 3}
       propertyPath: m_Name
@@ -1541,10 +1541,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1960079707}
     m_Modifications:
-    - target: {fileID: 502171004, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1121953039}
     - target: {fileID: 255557088328357664, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
       propertyPath: _playerInfo
       value: 
@@ -1564,10 +1560,6 @@ PrefabInstance:
     - target: {fileID: 1816204398386292451, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
       propertyPath: m_Name
       value: 'Arena Menu Canvas '
-      objectReference: {fileID: 0}
-    - target: {fileID: 1816204398386292451, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1816204398386292455, guid: 0a6636e1b49eabe4ca95b9b20c32ee83, type: 3}
       propertyPath: m_Pivot.x

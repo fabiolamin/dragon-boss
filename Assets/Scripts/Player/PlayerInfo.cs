@@ -21,19 +21,19 @@ public class PlayerInfo : MonoBehaviour
         playerCoinsDisplay.text = Coins.ToString();
     }
 
-    public void SaveCoins()
+    public void Save()
     {
-        Coins++;
         PlayerPrefs.SetInt("Coins", Coins);
-        UpdatePlayerCoinsDisplay();
-    }
 
-    public void SaveHighScore()
-    {
         int wonArenas = _dragonManager.CurrentDragon - 1;
-
         if ((wonArenas) > PlayerPrefs.GetInt("HighScore"))
             PlayerPrefs.SetInt("HighScore", wonArenas);
+    }
+
+    public void AddCoin()
+    {
+        Coins++;
+        UpdatePlayerCoinsDisplay();
     }
 
     public int GetAmountOfSpells(SpellName spellName)
