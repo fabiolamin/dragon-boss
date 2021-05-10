@@ -111,7 +111,7 @@ public class ArenaMenuGUI : MonoBehaviour
             MusicPlayer.Instance.PlayMainMusic();
         }
 
-        _sceneLoader.LoadScene(1);
+        _sceneLoader.LoadScene(0);
     }
 
     public void ActivateExitWarningPanel()
