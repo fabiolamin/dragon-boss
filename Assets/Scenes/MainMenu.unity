@@ -637,6 +637,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 350657692}
     m_Modifications:
+    - target: {fileID: 712073195, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1055951826, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1422669022, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -645,6 +653,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2019126658399506763}
+    - target: {fileID: 2060370329, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2087879974, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 372197471174967968, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -19.236084
+      objectReference: {fileID: 0}
     - target: {fileID: 2909615398395534979, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -653,6 +673,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 3575690224084551676}
+    - target: {fileID: 4846036144663021736, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.33313
+      objectReference: {fileID: 0}
     - target: {fileID: 5027248897959522208, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
       propertyPath: _heroSelection
       value: 
