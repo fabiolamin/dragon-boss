@@ -11,7 +11,7 @@ public class SpellPurchasing : MonoBehaviour
     [SerializeField] private Button _purchasingButton;
     [SerializeField] private Text _playerCoinsDisplay;
 
-    private void Awake()
+    private void Start()
     {
         UpdatePlayerInfoDisplay();
         SetOrderDisplay();
@@ -20,8 +20,8 @@ public class SpellPurchasing : MonoBehaviour
 
     private void UpdatePlayerInfoDisplay()
     {
-        _playerCoinsDisplay.text = PlayerPrefs.GetInt("Coins").ToString();
-        _spellAmountDisplay.text = PlayerPrefs.GetInt(_spellData.SpellName.ToString()).ToString();
+        _playerCoinsDisplay.text = GameDataController.Instance.GameData.Coins.ToString();
+        _spellAmountDisplay.text = GameDataController.Instance.GetSpellAmount(_spellData.Id).ToString();
     }
 
     private void SetOrderDisplay()
@@ -33,27 +33,13 @@ public class SpellPurchasing : MonoBehaviour
 
     private void PurchaseSpell()
     {
-        int playerCoins = PlayerPrefs.GetInt("Coins");
+        int playerCoins = GameDataController.Instance.GameData.Coins;
 
         if (playerCoins >= _spellData.Price)
         {
-            AddSpell();
-            UpdatePlayerCoins(playerCoins);
+            GameDataController.Instance.SaveSpellAmount(_spellData.Id, 1);
+            GameDataController.Instance.SaveCoins(playerCoins - _spellData.Price);
             UpdatePlayerInfoDisplay();
         }
-    }
-
-    private void AddSpell()
-    {
-        string spellName = _spellData.SpellName.ToString();
-        int spellAmount = PlayerPrefs.GetInt(spellName);
-        spellAmount++;
-        PlayerPrefs.SetInt(spellName, spellAmount);
-    }
-
-    private void UpdatePlayerCoins(int playerCoins)
-    {
-        playerCoins -= _spellData.Price;
-        PlayerPrefs.SetInt("Coins", playerCoins);
     }
 }

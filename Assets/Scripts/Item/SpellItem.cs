@@ -7,6 +7,6 @@ public class SpellItem : Item
     protected override void SetBonus(Player player)
     {
         PlayerInfo playerInfo = player.GetComponent<PlayerInfo>();
-        playerInfo.UpdateAmountOfSpells(_spellData.SpellName, 1);
+        playerInfo.UpdateAmountOfSpells(_spellData.Id, 1);
     }
 }

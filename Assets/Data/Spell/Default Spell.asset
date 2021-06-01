@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b169a386d86cd534f856665c5a839a87, type: 3}
   m_Name: Default Spell
   m_EditorClassIdentifier: 
+  _id: 5
   _spellName: 0
   _damage: 1
   _price: 0

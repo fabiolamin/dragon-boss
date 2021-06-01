@@ -165,6 +165,7 @@ MonoBehaviour:
   _heroController: {fileID: 7795791191290657758}
   _dragonManager: {fileID: 0}
   _spellRecycling: {fileID: 697592199893397360}
+  _defaultSpellData: {fileID: 11400000, guid: 5b4de598bfec3454ea606cb097c56b87, type: 2}
 --- !u!96 &8557580925427719870
 TrailRenderer:
   serializedVersion: 2

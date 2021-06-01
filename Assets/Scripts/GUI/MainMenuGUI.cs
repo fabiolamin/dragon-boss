@@ -2,19 +2,21 @@ using UnityEngine;
 using UnityEngine.UI;
 public class MainMenuGUI : MonoBehaviour
 {
+    [SerializeField] private PlayGamesService _playGamesService;
     [SerializeField] private HeroSelection _heroSelection;
-    [SerializeField] private GameObject _storePanel, _optionsPanel, _creditsPanel;
+    [SerializeField] private GameObject _storePanel, _optionsPanel, _creditsPanel, _warningPanel;
     [SerializeField] private GameObject _spellStore, _heroesStore;
     [SerializeField] private GameObject _playerCoinsDisplay;
     [SerializeField] private Text _highScoreDisplay;
     [SerializeField] private Text _versionDisplay;
+    [SerializeField] private Text _warningDisplay;
     [SerializeField] private GameObject _backButton;
-    [SerializeField] private Slider _musicSlider, _soundsSlider;
 
     private void Start()
     {
-        _highScoreDisplay.text = PlayerPrefs.GetInt("HighScore").ToString();
         _versionDisplay.text = "Version " + Application.version;
+        _playGamesService.WarningAuthentication += ActivateWarningPanel;
+        _highScoreDisplay.text = GameDataController.Instance.GameData.HighScore.ToString();
     }
 
     public void ActivateOptionsPanel()
@@ -64,5 +66,16 @@ public class MainMenuGUI : MonoBehaviour
     {
         _optionsPanel.SetActive(false);
         _creditsPanel.SetActive(true);
+    }
+
+    public void ActivateWarningPanel(string text)
+    {
+        _warningPanel.SetActive(true);
+        _warningDisplay.text = text;
+    }
+
+    public void DeactivateWarningPanel()
+    {
+        _warningPanel.SetActive(false);
     }
 }

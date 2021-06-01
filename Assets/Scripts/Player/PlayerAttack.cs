@@ -5,14 +5,15 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private HeroController _heroController;
     [SerializeField] private DragonManager _dragonManager;
     [SerializeField] private SpellRecycling _spellRecycling;
+    [SerializeField] private SpellData _defaultSpellData;
 
-    public SpellName SpellName { get; set; }
+    public int SpellId { get; set; }
     public bool CanAttack { get; set; } = true;
 
     private void Start()
     {
         _spellRecycling.InstantiateSpells();
-        SpellName = SpellName.Default;
+        SpellId = _defaultSpellData.Id;
         _dragonManager.DragonDeath += _spellRecycling.DeactivateSpells;
     }
 
@@ -23,17 +24,17 @@ public class PlayerAttack : MonoBehaviour
             transform.forward = new Vector3(0f, 0f, 1f);
             _heroController.HeroAnimator.SetTrigger("Attack");
 
-            if (_playerInfo.GetAmountOfSpells(SpellName) > 0)
+            if (_playerInfo.GetAmountOfSpells(SpellId) > 0)
             {
-                _spellRecycling.ActivateSpell(SpellName);
-                _playerInfo.UpdateAmountOfSpells(SpellName, -1);
+                _spellRecycling.ActivateSpell(SpellId);
+                _playerInfo.UpdateAmountOfSpells(SpellId, -1);
             }
             else
             {
-                _spellRecycling.ActivateSpell(SpellName.Default);
+                _spellRecycling.ActivateSpell(_defaultSpellData.Id);
             }
 
-            SpellName = SpellName.Default;
+            SpellId = _defaultSpellData.Id;
         }
     }
 
