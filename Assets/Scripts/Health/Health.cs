@@ -56,7 +56,7 @@ public abstract class Health : MonoBehaviour
         if (currentHealth <= 0)
         {
             IsAlive = false;
-            animator.SetBool("IsAlive", IsAlive);
+            SetDeathAnimation();
         }
     }
 
@@ -68,4 +68,5 @@ public abstract class Health : MonoBehaviour
     public abstract void SetDeath();
     protected abstract void UpdateHealthDisplay();
     protected abstract void SetDamageAnimation();
+    protected abstract void SetDeathAnimation();
 }
