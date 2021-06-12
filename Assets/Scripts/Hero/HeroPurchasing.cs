@@ -1,9 +1,11 @@
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HeroPurchasing : MonoBehaviour
 {
     [SerializeField] private HeroSelection _heroSelection;
+    [SerializeField] private Text _playerCoinsDisplay;
 
     public void PurchaseHero()
     {
@@ -25,6 +27,7 @@ public class HeroPurchasing : MonoBehaviour
         SaveHero(selectedHero.HeroData.Id);
         GameDataController.Instance.SaveCoins(playerCoinsAmount - selectedHero.HeroData.Price);
         _heroSelection.UpdateHeroDisplayAfterPurchasing(playerCoinsAmount);
+        _playerCoinsDisplay.text = GameDataController.Instance.GameData.Coins.ToString();
     }
 
     private void SaveHero(int id)
