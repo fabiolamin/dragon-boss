@@ -1,10 +1,13 @@
 using UnityEngine;
 using Newtonsoft.Json;
 using System.Linq;
+using System;
 
 public class GameDataController : MonoBehaviour
 {
     private static GameDataController _instance;
+    private const string SAVE_NAME = "DRAGON_BOSS_";
+
     [SerializeField] private PlayGamesService _playGamesService;
 
     public static GameDataController Instance
@@ -34,18 +37,25 @@ public class GameDataController : MonoBehaviour
         {
             GameData = JsonConvert.DeserializeObject<GameData>(PlayerPrefs.GetString("GameData"));
         }
-
-        Debug.Log(PlayerPrefs.GetString("GameData"));
     }
 
     public void SaveGameData()
     {
-        _playGamesService.OpenSavedGame(true);
+        string fileName = SAVE_NAME +
+        DateTime.Now.Day +
+        DateTime.Now.Month +
+        DateTime.Now.Year +
+        DateTime.Now.Hour +
+        DateTime.Now.Minute +
+        DateTime.Now.Second +
+        DateTime.Now.Millisecond;
+
+        _playGamesService.OpenSavedGame(true, fileName);
     }
 
-    public void LoadGameData()
+    public void ShowSavedGames()
     {
-        _playGamesService.OpenSavedGame(false);
+        _playGamesService.ShowSelectUI();
     }
 
     public void SaveHighScore(int score)

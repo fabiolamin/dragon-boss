@@ -4,19 +4,22 @@ public class MainMenuGUI : MonoBehaviour
 {
     [SerializeField] private PlayGamesService _playGamesService;
     [SerializeField] private HeroSelection _heroSelection;
-    [SerializeField] private GameObject _storePanel, _optionsPanel, _creditsPanel, _warningPanel;
+    [SerializeField] private GameObject _storePanel, _optionsPanel, _creditsPanel, _warningPanel, _playGamesPanel;
     [SerializeField] private GameObject _spellStore, _heroesStore;
     [SerializeField] private GameObject _playerCoinsDisplay;
     [SerializeField] private Text _highScoreDisplay;
     [SerializeField] private Text _versionDisplay;
     [SerializeField] private Text _warningDisplay;
     [SerializeField] private GameObject _backButton;
+    [SerializeField] private GameObject _signInButton;
+    [SerializeField] private GameObject _playGamesSignInNotification;
 
     private void Start()
     {
         _versionDisplay.text = "Version " + Application.version;
-        _playGamesService.WarningAuthentication += ActivateWarningPanel;
+        _playGamesService.WarningMessage += ActivateWarningPanel;
         _highScoreDisplay.text = GameDataController.Instance.GameData.HighScore.ToString();
+
     }
 
     public void ActivateOptionsPanel()
@@ -45,6 +48,7 @@ public class MainMenuGUI : MonoBehaviour
         _storePanel.SetActive(false);
         _optionsPanel.SetActive(false);
         _creditsPanel.SetActive(false);
+        _playGamesPanel.SetActive(false);
         _playerCoinsDisplay.SetActive(false);
         _backButton.SetActive(false);
         _heroSelection.ShowSelectedHero();
@@ -66,6 +70,14 @@ public class MainMenuGUI : MonoBehaviour
     {
         _optionsPanel.SetActive(false);
         _creditsPanel.SetActive(true);
+    }
+
+    public void ActivatePlayGamesPanel()
+    {
+        _optionsPanel.SetActive(false);
+        _playGamesPanel.SetActive(true);
+        _signInButton.SetActive(!Social.localUser.authenticated);
+        _playGamesSignInNotification.SetActive(Social.localUser.authenticated);
     }
 
     public void ActivateWarningPanel(string text)

@@ -5,20 +5,14 @@ using GooglePlayGames.BasicApi.SavedGame;
 using Newtonsoft.Json;
 using System.Text;
 using UnityEngine.SceneManagement;
+using System;
 
 public class PlayGamesService : MonoBehaviour
 {
     private bool isSavingToCloud = false;
-    private const string SAVE_NAME = "DRAGON_BOSS";
 
-    public delegate void WarningAuthenticationHandler(string text);
-    public event WarningAuthenticationHandler WarningAuthentication;
-
-    public delegate string SavedGameUpdateHandler();
-    public event SavedGameUpdateHandler SavedGameUpdate;
-
-    public delegate void SavedGameReadHandler(string data);
-    public event SavedGameReadHandler SavedGameRead;
+    public delegate void WarningMessageHandler(string text);
+    public event WarningMessageHandler WarningMessage;
 
     private void Awake()
     {
@@ -46,24 +40,20 @@ public class PlayGamesService : MonoBehaviour
             {
                 if (result == SignInStatus.Success)
                 {
-                    WarningAuthentication?.Invoke("You are connected!");
+                    SceneManager.LoadScene(0);
                 }
 
                 else
                 {
-                    WarningAuthentication?.Invoke("An error has occurred, please check your network connection and try again later.");
+                    NotifyWarningMessage("An error has occurred, please check your network connection and try again later.");
                 }
             });
-        }
-        else
-        {
-            WarningAuthentication?.Invoke("You are already connected!");
         }
     }
 
     public void SaveHighScore(int score)
     {
-        if(Social.localUser.authenticated)
+        if (Social.localUser.authenticated)
         {
             Social.ReportScore(score, GPGSIds.leaderboard_max_dragons_defeated, success => { });
         }
@@ -79,20 +69,27 @@ public class PlayGamesService : MonoBehaviour
         }
         else
         {
-            WarningAuthentication?.Invoke("Please, connect to Play Games to see the leaderboard.");
+            NotifyWarningMessage("Please, connect to Play Games to see the leaderboards.");
         }
     }
 
-    public void OpenSavedGame(bool isSaving)
+    public void OpenSavedGame(bool isSaving, string fileName)
     {
-        if(Social.localUser.authenticated)
+        if (Social.localUser.authenticated)
         {
             isSavingToCloud = isSaving;
 
             ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
 
-            savedGameClient.OpenWithAutomaticConflictResolution(SAVE_NAME, DataSource.ReadCacheOrNetwork,
+            savedGameClient.OpenWithAutomaticConflictResolution(fileName, DataSource.ReadCacheOrNetwork,
                 ConflictResolutionStrategy.UseLongestPlaytime, OnSavedGameOpened);
+        }
+        else
+        {
+            if (!isSaving)
+            {
+                NotifyWarningMessage("Please, connect to Play Games to load the saved game.");
+            }
         }
     }
 
@@ -109,12 +106,19 @@ public class PlayGamesService : MonoBehaviour
                 LoadGameData(meta);
             }
         }
+        else
+        {
+            NotifyWarningMessage("An error has occurred, please try again later.");
+        }
     }
 
     private void SaveGame(ISavedGameMetadata game, byte[] savedData)
     {
         ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
         SavedGameMetadataUpdate.Builder builder = new SavedGameMetadataUpdate.Builder();
+        builder = builder
+            .WithUpdatedDescription("Saved game at " + DateTime.Now);
+
         SavedGameMetadataUpdate updatedMetadata = builder.Build();
 
         savedGameClient.CommitUpdate(game, updatedMetadata, savedData, OnSavedGameWritten);
@@ -130,11 +134,11 @@ public class PlayGamesService : MonoBehaviour
     {
         if (status == SavedGameRequestStatus.Success)
         {
-            WarningAuthentication?.Invoke("Game Data saved with success!");
+            //Success
         }
         else
         {
-            WarningAuthentication?.Invoke("Game Data saved with failed!");
+            //Fail
         }
     }
 
@@ -148,13 +152,56 @@ public class PlayGamesService : MonoBehaviour
             if (gameData != null)
             {
                 PlayerPrefs.SetString("GameData", dataString);
-                WarningAuthentication?.Invoke("Game Data read with success! : " + dataString);
                 SceneManager.LoadScene(0);
+            }
+            else
+            {
+                NotifyWarningMessage("No saved game found.");
             }
         }
         else
         {
-            WarningAuthentication?.Invoke("Game Data read with failed!");
+            NotifyWarningMessage("Error to load the saved game. Please, try again later.");
+        }
+    }
+
+    public void NotifyWarningMessage(string message)
+    {
+        WarningMessage?.Invoke(message);
+    }
+
+    public void ShowSelectUI()
+    {
+        if(Social.localUser.authenticated)
+        {
+            uint maxNumToDisplay = 3;
+            bool allowCreateNew = false;
+            bool allowDelete = true;
+
+            ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
+            savedGameClient.ShowSelectSavedGameUI("Select saved game",
+                maxNumToDisplay,
+                allowCreateNew,
+                allowDelete,
+                OnSavedGameSelected);
+        }
+        else
+        {
+            NotifyWarningMessage("Please, connect to Play Games to select a saved game.");
+        }
+    }
+
+
+    public void OnSavedGameSelected(SelectUIStatus status, ISavedGameMetadata game)
+    {
+        if (status == SelectUIStatus.SavedGameSelected)
+        {
+            NotifyWarningMessage("Loading . . .");
+            OpenSavedGame(false, game.Filename);
+        }
+        else
+        {
+            // handle cancel or error
         }
     }
 }

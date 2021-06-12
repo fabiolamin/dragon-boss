@@ -3,6 +3,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private AudioOptions _audioOptions;
+    [SerializeField] private SceneLoader _sceneLoader;
 
     private void Awake()
     {
@@ -18,5 +19,10 @@ public class GameManager : MonoBehaviour
 
             PlayerPrefs.SetInt("IsFirstTime", 1);
         }
+    }
+
+    public void PlayGame()
+    {
+        _sceneLoader.LoadScene(2);
     }
 }

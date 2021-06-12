@@ -536,7 +536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fec16fd057d3a5340b7291e9ecbd33b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _duration: 6
+  _duration: 6.5
   _sceneLoader: {fileID: 1522841531}
 --- !u!1 &691262900
 GameObject:
