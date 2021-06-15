@@ -27,10 +27,13 @@ public class Tutorial : MonoBehaviour
 
     private void ActivateTip(bool isActive)
     {
-        _tutorialTips[tipIndex].SetActive(isActive);
-        _arenaHUD.ToList().ForEach(a => a.SetActive(!isActive));
-        _button.SetActive(isActive);
-        Time.timeScale = isActive ? 0 : 1;
+        if(!SceneLoader.IsLoading)
+        {
+            _tutorialTips[tipIndex].SetActive(isActive);
+            _arenaHUD.ToList().ForEach(a => a.SetActive(!isActive));
+            _button.SetActive(isActive);
+            Time.timeScale = isActive ? 0 : 1;
+        }
     }
 
     public void SetUpNewTip()
