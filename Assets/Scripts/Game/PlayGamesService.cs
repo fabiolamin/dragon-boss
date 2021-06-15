@@ -36,6 +36,8 @@ public class PlayGamesService : MonoBehaviour
     {
         if (!Social.localUser.authenticated)
         {
+            NotifyWarningMessage("Connecting . . .");
+
             PlayGamesPlatform.Instance.Authenticate(SignInInteractivity.CanPromptAlways, (result) =>
             {
                 if (result == SignInStatus.Success)

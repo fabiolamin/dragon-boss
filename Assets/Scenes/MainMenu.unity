@@ -665,9 +665,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3575690224084551676}
     - target: {fileID: 1549008122, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549008122, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 7529665510639314706}
+      objectReference: {fileID: 2019126658399506763}
+    - target: {fileID: 1549008122, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549008122, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneLoader, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1716201191, guid: c95d91455b5752241977fbb3b19f6c84, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -951,14 +963,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b4b451b397e7ac4fabb1499bb399c9f, type: 3}
---- !u!114 &7529665510639314706 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7529665509278197635, guid: 8b4b451b397e7ac4fabb1499bb399c9f, type: 3}
-  m_PrefabInstance: {fileID: 7529665510639314705}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffb30ee49cd300e4d8446701a328875a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
