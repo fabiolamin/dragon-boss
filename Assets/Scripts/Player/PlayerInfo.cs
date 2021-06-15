@@ -10,9 +10,9 @@ public class PlayerInfo : MonoBehaviour
     public int Coins { get; private set; }
     public GameObject PlayerCoinsDisplay { get { return playerCoinsDisplay.gameObject; } }
 
-    private void Awake()
+    private void Start()
     {
-        Coins = PlayerPrefs.GetInt("Coins");
+        Coins = GameDataController.Instance.GameData.Coins;
         UpdatePlayerCoinsDisplay();
     }
 
@@ -23,29 +23,31 @@ public class PlayerInfo : MonoBehaviour
 
     public void Save()
     {
-        PlayerPrefs.SetInt("Coins", Coins);
+        int dragonsDefeated = _dragonManager.CurrentDragon - 1;
 
-        int wonArenas = _dragonManager.CurrentDragon - 1;
-        if ((wonArenas) > PlayerPrefs.GetInt("HighScore"))
-            PlayerPrefs.SetInt("HighScore", wonArenas);
+        if (dragonsDefeated > GameDataController.Instance.GameData.HighScore)
+        {
+            GameDataController.Instance.SaveHighScore(dragonsDefeated);
+        }
+
+        GameDataController.Instance.SaveGameData();
     }
 
     public void AddCoin()
     {
         Coins++;
+        GameDataController.Instance.SaveCoins(Coins);
         UpdatePlayerCoinsDisplay();
     }
 
-    public int GetAmountOfSpells(SpellName spellName)
+    public int GetAmountOfSpells(int spellId)
     {
-        return PlayerPrefs.GetInt(spellName.ToString());
+        return GameDataController.Instance.GetSpellAmount(spellId);
     }
 
-    public void UpdateAmountOfSpells(SpellName spellName, int value)
+    public void UpdateAmountOfSpells(int spellId, int amount)
     {
-        int amount = GetAmountOfSpells(spellName);
-        amount += value;
-        PlayerPrefs.SetInt(spellName.ToString(), amount);
+        GameDataController.Instance.SaveSpellAmount(spellId, amount);
         _spellHUDs.ToList().ForEach(s => s.UpdateDisplay());
     }
 }

@@ -18,7 +18,6 @@ public class PlayerHealth : Health
 
     private void Start()
     {
-        animator = _heroController.HeroAnimator;
         _dragonManager.DragonDeath += RecoverHealth;
     }
 
@@ -45,14 +44,17 @@ public class PlayerHealth : Health
 
     protected override void SetDamageAnimation()
     {
-        StartCoroutine(SetPlayerDamageAnimation());
+        WasHit = true;
+        _heroController.HeroAnimator.SetTrigger("Damage");
     }
 
-    private IEnumerator SetPlayerDamageAnimation()
+    protected override void SetDeathAnimation()
     {
-        WasHit = true;
-        animator.SetTrigger("Damage");
-        yield return new WaitForSeconds(_player.PlayerData.DelayFinishDamage);
+        _heroController.HeroAnimator.SetBool("IsAlive", IsAlive);
+    }
+
+    public void FinishDamage()
+    {
         WasHit = false;
     }
 

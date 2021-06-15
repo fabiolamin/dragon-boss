@@ -93,7 +93,7 @@ public class ArenaMenuGUI : MonoBehaviour
     private void SetGameInfo()
     {
         _scoreDisplay.text = (_dragonManager.CurrentDragon - 1).ToString();
-        _highScoreDisplay.text = PlayerPrefs.GetInt("HighScore").ToString();
+        _highScoreDisplay.text = GameDataController.Instance.GameData.HighScore.ToString();
         _totalCoins.text = _playerInfo.Coins.ToString();
     }
 
@@ -111,7 +111,7 @@ public class ArenaMenuGUI : MonoBehaviour
             MusicPlayer.Instance.PlayMainMusic();
         }
 
-        _sceneLoader.LoadScene(0);
+        _sceneLoader.LoadScene(1);
     }
 
     public void ActivateExitWarningPanel()

@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     [SerializeField] private Animator _fadeAnimator;
+    [SerializeField] private float _fadeDuration = 2f;
 
     public static bool IsLoading { get; private set; }
 
@@ -30,7 +31,7 @@ public class SceneLoader : MonoBehaviour
 
     private IEnumerator SetScene(int index)
     {
-        yield return new WaitForSeconds(_fadeAnimator.GetCurrentAnimatorStateInfo(0).length);
+        yield return new WaitForSeconds(_fadeDuration);
         SceneManager.LoadScene(index);
     }
 }

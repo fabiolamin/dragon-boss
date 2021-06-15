@@ -24,11 +24,11 @@ public class SpellRecycling : MonoBehaviour
         }
     }
 
-    public void ActivateSpell(SpellName spellName)
+    public void ActivateSpell(int id)
     {
         foreach (var spell in SpellsInstantiated)
         {
-            if (!spell.gameObject.activeSelf && spell.SpellData.SpellName == spellName)
+            if (!spell.gameObject.activeSelf && spell.SpellData.Id == id)
             {
                 spell.gameObject.SetActive(true);
                 spell.transform.position = transform.position;

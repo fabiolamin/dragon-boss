@@ -1,14 +1,16 @@
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HeroPurchasing : MonoBehaviour
 {
     [SerializeField] private HeroSelection _heroSelection;
+    [SerializeField] private Text _playerCoinsDisplay;
 
     public void PurchaseHero()
     {
         Hero selectedHero = _heroSelection.Heroes.Single(h => h.gameObject.activeSelf);
-        int playerCoinsAmount = PlayerPrefs.GetInt("Coins");
+        int playerCoinsAmount = GameDataController.Instance.GameData.Coins;
 
         if (playerCoinsAmount >= selectedHero.HeroData.Price)
         {
@@ -23,23 +25,23 @@ public class HeroPurchasing : MonoBehaviour
     private void CompletePurchasing(Hero selectedHero, int playerCoinsAmount)
     {
         SaveHero(selectedHero.HeroData.Id);
-        playerCoinsAmount = Mathf.Clamp(playerCoinsAmount - selectedHero.HeroData.Price, 0, PlayerPrefs.GetInt("Coins"));
-        PlayerPrefs.SetInt("Coins", playerCoinsAmount);
+        GameDataController.Instance.SaveCoins(playerCoinsAmount - selectedHero.HeroData.Price);
         _heroSelection.UpdateHeroDisplayAfterPurchasing(playerCoinsAmount);
+        _playerCoinsDisplay.text = GameDataController.Instance.GameData.Coins.ToString();
     }
 
     private void SaveHero(int id)
     {
-        string heroesData = PlayerPrefs.GetString("Heroes");
+        string heroesData = GameDataController.Instance.GameData.HeroesData;
         var heroList = JsonUtility.FromJson<HeroList>(heroesData);
         heroList.HeroesId.Add(id);
         heroesData = JsonUtility.ToJson(heroList);
-        PlayerPrefs.SetString("Heroes", heroesData);
+        GameDataController.Instance.SaveHeroesData(heroesData);
     }
 
     public bool IsHeroAlreadyPurchased(int id)
     {
-        string heroesData = PlayerPrefs.GetString("Heroes");
+        string heroesData = GameDataController.Instance.GameData.HeroesData;
         var heroList = JsonUtility.FromJson<HeroList>(heroesData);
 
         if (heroList.HeroesId.Count > 0)

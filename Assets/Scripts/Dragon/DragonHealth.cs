@@ -32,4 +32,9 @@ public class DragonHealth : Health
     {
         animator.SetTrigger("Damage");
     }
+
+    protected override void SetDeathAnimation()
+    {
+        animator.SetBool("IsAlive", IsAlive);
+    }
 }

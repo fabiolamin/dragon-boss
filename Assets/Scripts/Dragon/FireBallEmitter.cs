@@ -5,6 +5,7 @@ public class FireBallEmitter : MonoBehaviour
 {
     [SerializeField] private FireBallEmitterData _fireBallEmitterData;
     [SerializeField] private SpellRecycling _spellRecycling;
+    [SerializeField] private SpellData _fireBallData;
 
     public SpellRecycling SpellRecycling { get { return _spellRecycling; } }
 
@@ -20,6 +21,6 @@ public class FireBallEmitter : MonoBehaviour
 
     private void Emit()
     {
-        _spellRecycling.ActivateSpell(SpellName.Default);
+        _spellRecycling.ActivateSpell(_fireBallData.Id);
     }
 }

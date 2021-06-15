@@ -9,7 +9,7 @@ public class SpellHUD : MonoBehaviour, IPointerDownHandler
     [SerializeField] private Text _spellAmountDisplay;
     [SerializeField] private GameObject _block;
 
-    private void Awake()
+    private void Start()
     {
         _block.SetActive(true);
         UpdateDisplay();
@@ -17,7 +17,7 @@ public class SpellHUD : MonoBehaviour, IPointerDownHandler
 
     public void UpdateDisplay()
     {
-        int amount = PlayerPrefs.GetInt(_spellData.SpellName.ToString());
+        int amount = GameDataController.Instance.GetSpellAmount(_spellData.Id);
         _spellAmountDisplay.text = amount.ToString();
         _block.SetActive(amount == 0);
     }
@@ -29,6 +29,6 @@ public class SpellHUD : MonoBehaviour, IPointerDownHandler
 
     private void SelectSpellToCast()
     {
-        _playerAttack.SpellName = _spellData.SpellName;
+        _playerAttack.SpellId = _spellData.Id;
     }
 }

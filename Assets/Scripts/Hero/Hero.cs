@@ -15,4 +15,14 @@ public class Hero : MonoBehaviour
             playerHealth.SetDeath();
         }
     }
+
+    public void FinishDamage()
+    {
+        PlayerHealth playerHealth = FindObjectOfType<PlayerHealth>();
+
+        if (playerHealth != null)
+        {
+            playerHealth.FinishDamage();
+        }
+    }
 }

@@ -42,7 +42,7 @@ public class HeroSelection : MonoBehaviour
     public void ShowSelectedHero()
     {
         Heroes.ForEach(h => h.gameObject.SetActive(false));
-        Hero selectedHero = Heroes.Single(h => h.HeroData.Id == PlayerPrefs.GetInt("Hero"));
+        Hero selectedHero = Heroes.Single(h => h.HeroData.Id == GameDataController.Instance.GameData.Hero);
         SetHeroTransform(selectedHero, _selectedHeroPlaceholder);
     }
 
@@ -85,7 +85,7 @@ public class HeroSelection : MonoBehaviour
         _buyButton.SetActive(false);
         _heroPriceDisplay.gameObject.SetActive(false);
 
-        if (hero.HeroData.Id == PlayerPrefs.GetInt("Hero"))
+        if (hero.HeroData.Id == GameDataController.Instance.GameData.Hero)
         {
             _selectButton.SetActive(false);
             _selectedDisplay.SetActive(true);
@@ -95,7 +95,7 @@ public class HeroSelection : MonoBehaviour
     public void SelectHero()
     {
         Hero hero = Heroes.Single(h => h.gameObject.activeSelf);
-        PlayerPrefs.SetInt("Hero", hero.HeroData.Id);
+        GameDataController.Instance.SaveHero(hero.HeroData.Id);
         _selectButton.SetActive(false);
         _selectedDisplay.SetActive(true);
     }

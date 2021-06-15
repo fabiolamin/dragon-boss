@@ -7,14 +7,14 @@ public class HeroController : MonoBehaviour
     public GameObject Hero { get; private set; }
     public Animator HeroAnimator { get; private set; }
 
-    private void Awake()
+    private void Start()
     {
         SpawnHero();
     }
 
     private void SpawnHero()
     {
-        int currentHeroId = PlayerPrefs.GetInt("Hero");
+        int currentHeroId = GameDataController.Instance.GameData.Hero;
         Hero availableHero = _heroes.Single(h => h.HeroData.Id == currentHeroId);
         Hero = Instantiate(availableHero, transform.position, Quaternion.identity, transform).gameObject;
         Hero.SetActive(true);
