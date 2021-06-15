@@ -3182,7 +3182,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.03
-  m_Text: Your progress will be lost. Are you sure you want to leave?
+  m_Text: Are you sure you want to leave?
 --- !u!114 &8526149847188431376
 MonoBehaviour:
   m_ObjectHideFlags: 0

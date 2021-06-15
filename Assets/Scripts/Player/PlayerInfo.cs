@@ -23,8 +23,6 @@ public class PlayerInfo : MonoBehaviour
 
     public void Save()
     {
-        GameDataController.Instance.SaveCoins(Coins);
-
         int dragonsDefeated = _dragonManager.CurrentDragon - 1;
 
         if (dragonsDefeated > GameDataController.Instance.GameData.HighScore)
@@ -38,6 +36,7 @@ public class PlayerInfo : MonoBehaviour
     public void AddCoin()
     {
         Coins++;
+        GameDataController.Instance.SaveCoins(Coins);
         UpdatePlayerCoinsDisplay();
     }
 
