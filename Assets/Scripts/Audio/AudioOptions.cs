@@ -31,8 +31,8 @@ public class AudioOptions : MonoBehaviour
     {
         if (_optionsPanel.activeSelf)
         {
-            PlayerPrefs.SetFloat("Music", Mathf.Clamp(_musicSlider.value, 0f, _maxMusicVolume));
-            PlayerPrefs.SetFloat("Sound", Mathf.Clamp(_soundsSlider.value, 0f, _maxSoundVolume));
+            PlayerPrefs.SetFloat("Music", _musicSlider.value);
+            PlayerPrefs.SetFloat("Sound", _soundsSlider.value);
             MusicPlayer.Instance.UpdateVolume();
         }
     }

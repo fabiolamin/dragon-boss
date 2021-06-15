@@ -33,7 +33,20 @@ public class MusicPlayer : MonoBehaviour
             DontDestroyOnLoad(this);
         }
 
+        Initialize();
         PlayMainMusic();
+        UpdateVolume();
+    }
+
+    private void Initialize()
+    {
+        if (PlayerPrefs.GetInt("IsFirstTime") == 0)
+        {
+            PlayerPrefs.SetFloat("Music", 1);
+            PlayerPrefs.SetFloat("Sound", 1);
+
+            PlayerPrefs.SetInt("IsFirstTime", 1);
+        }
     }
 
     public void PlayMainMusic()
