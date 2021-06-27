@@ -7,6 +7,7 @@ public class SceneLoader : MonoBehaviour
 {
     [SerializeField] private Animator _fadeAnimator;
     [SerializeField] private float _fadeDuration = 2f;
+    [SerializeField] private GameAds _gameAds;
 
     public static bool IsLoading { get; private set; }
 
@@ -32,6 +33,7 @@ public class SceneLoader : MonoBehaviour
     private IEnumerator SetScene(int index)
     {
         yield return new WaitForSeconds(_fadeDuration);
+        _gameAds.ShowInterstitialAd();
         SceneManager.LoadScene(index);
     }
 }
