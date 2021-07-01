@@ -1,3 +1,4 @@
+using GoogleMobileAds.Api;
 using UnityEngine;
 using UnityEngine.UI;
 public class MainMenuGUI : MonoBehaviour
@@ -13,13 +14,13 @@ public class MainMenuGUI : MonoBehaviour
     [SerializeField] private GameObject _backButton;
     [SerializeField] private GameObject _signInButton;
     [SerializeField] private GameObject _playGamesSignInNotification;
+    [SerializeField] private GameAds _gameAds;
 
     private void Start()
     {
         _versionDisplay.text = "Version " + Application.version;
         _playGamesService.WarningMessage += ActivateWarningPanel;
         _highScoreDisplay.text = GameDataController.Instance.GameData.HighScore.ToString();
-
     }
 
     public void ActivateOptionsPanel()
@@ -89,5 +90,20 @@ public class MainMenuGUI : MonoBehaviour
     public void DeactivateWarningPanel()
     {
         _warningPanel.SetActive(false);
+    }
+
+    public void ActivateRewardedAd()
+    {
+        _gameAds.RewardedAd.OnUserEarnedReward += HandlePlayerEarnedCoins;
+        _gameAds.ShowRewardedAd();
+    }
+
+    private void HandlePlayerEarnedCoins(object sender, Reward args)
+    {
+        int coins = GameDataController.Instance.GameData.Coins;
+        coins += (int)args.Amount;
+        GameDataController.Instance.SaveCoins(coins);
+
+        _playerCoinsDisplay.GetComponent<Text>().text = coins.ToString();
     }
 }

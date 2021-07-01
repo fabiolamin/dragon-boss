@@ -4421,9 +4421,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: PlayGame
-        m_Mode: 1
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4858,7 +4858,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1679289114}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5027248897959522208}
+        m_TargetAssemblyTypeName: MainMenuGUI, Assembly-CSharp
+        m_MethodName: ActivateRewardedAd
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8288699743106842016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9688,6 +9700,7 @@ MonoBehaviour:
   _backButton: {fileID: 1536926584}
   _signInButton: {fileID: 8850638773645528319}
   _playGamesSignInNotification: {fileID: 4573385292803123241}
+  _gameAds: {fileID: 0}
 --- !u!1 &5334419313492120043
 GameObject:
   m_ObjectHideFlags: 0
